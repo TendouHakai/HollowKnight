@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e44ce9ab58f8eff4a92d912edd551628, type: 3}
+  m_Name: SoundConfig
+  m_EditorClassIdentifier: 
+  configs:
+  - ID: knight_damage
+    clip: {fileID: 8300000, guid: 9e357cb3dc9ba364585625102a71d0c5, type: 3}
+  - ID: knight_die
+    clip: {fileID: 8300000, guid: 66d74da3b40b615449900ef78ab7c577, type: 3}
+  - ID: knight_jump
+    clip: {fileID: 8300000, guid: 8248dea4fa878d44785b1482baa40ad1, type: 3}
+  - ID: knight_land
+    clip: {fileID: 8300000, guid: db86619b97e11c94f8e5ba3e56a5a81c, type: 3}
+  - ID: knight_run
+    clip: {fileID: 8300000, guid: bf63cebb91b5e2b4485cb7e0e3857bcf, type: 3}
+  - ID: knight_attackSword
+    clip: {fileID: 8300000, guid: 7fcd0dd6a52a4874e9eff0c0589f9a8f, type: 3}
+  - ID: knight_attackSwordReject
+    clip: {fileID: 8300000, guid: 9a0b88b28183c8e41a060322c40439be, type: 3}
+  - ID: Enemy_die
+    clip: {fileID: 8300000, guid: 1312002449554b248befd686e4c37fcf, type: 3}
+  - ID: Geo_Collect
+    clip: {fileID: 8300000, guid: de13880782b48b146a12ee7443528783, type: 3}
+  - ID: Rock_hit
+    clip: {fileID: 8300000, guid: 50997809a015c31488ae95a274c2db6c, type: 3}
