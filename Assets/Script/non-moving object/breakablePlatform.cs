@@ -32,7 +32,6 @@ public class breakablePlatform : MonoBehaviour
 
                 int right = Random.Range(0, 2);
 
-                Debug.Log(right);
                 if (right == 1)
                 {
                     rb.AddForce(Vector2.left * Random.Range(5, 20), ForceMode2D.Impulse);

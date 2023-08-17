@@ -1,0 +1,4933 @@
+fileFormatVersion: 2
+guid: 43ab9d0ab34c18e46affac501328b4f4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plaformPlus_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57e94db33bb49f40ab507c247315c17
+      internalID: 858053582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42470f3db386a0243902a7f27f380e3a
+      internalID: -807396217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880027bb718b6924b93b48b0fa7f9ef5
+      internalID: -1643259289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a69c0342fb27f44baaf38497a6163cd
+      internalID: 1968963831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b1ad539ac0aed488af70ebaaebbc1f
+      internalID: -1387439194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddeb7518d56bf7448af034f19463fa14
+      internalID: -1530548411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80786c2faeb5b2439608d6d8e92c1e4
+      internalID: 1654857180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_7
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f37e1b16c3f514eb75ccb888b1a0cd
+      internalID: -874718674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039e2d052935fc542972de4448aaf350
+      internalID: 77023820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_9
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678ff34c402e3ce4a9959e4826ce321c
+      internalID: 380076138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_10
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b8ed31c1f21364c94bcc6dde5d55bd
+      internalID: -1595492347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_11
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14db7f3016ccdfa4a925734bd310bf24
+      internalID: 1373801171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_12
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f23fe0c1d179624196ed0d907415622
+      internalID: 1489304313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_13
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dabaa82446665d46aa1ffa10d3530c6
+      internalID: 489229979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_14
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40d379c4115abc49a77f96db1ee6898
+      internalID: 784508204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_15
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7395fc7b3a1104d9f3809b6add9f68
+      internalID: 1229527668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_16
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd88675d78f2262429cd72e0123469c4
+      internalID: -1217443016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1eb55436aab72142bbca9f8389011a1
+      internalID: 777528686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_18
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 777
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c59c271500d1b42a4196b86bad0657
+      internalID: 2036186375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8635bc7988418294b979009d7007d6f2
+      internalID: 2110293784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6344c74da36c404291aaaec0b7fcda4
+      internalID: -462638876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b424ab8cb3b6eb84ab9c4be87ccbd623
+      internalID: 2114942465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3861900ad5d242f4f8ca2b96602e151c
+      internalID: -2125530081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39423c049d1208e4b9a341cf7ec04cea
+      internalID: 20585486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6225b541ec29aa42915f1d3e7e7781c
+      internalID: -875602501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_25
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d721f47d113254a8e7e1986b3ce40d
+      internalID: 1273482038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_26
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972aea2a123ca5d4bbc44442b5da4fb8
+      internalID: 467306520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_27
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b129b93addca8042b7fc983d9bb9c0a
+      internalID: 2024206887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_28
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f038a55c67e1a2541b43dd95813578fe
+      internalID: 321357720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_29
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9466488415ab1f14383d4a8ed89b1aaf
+      internalID: -918784858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_30
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f06f48f4da7dc47b6da0da12f9b385
+      internalID: -1924474326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_31
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766b48512788993418f1f4450ade9862
+      internalID: 56563204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_32
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08917f7f1688be4da5d5bcfcfc9b24a
+      internalID: -1772355164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_33
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7623b883c7c77d843bd92be386c82d1f
+      internalID: 2068740704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_34
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7596e6aad4713419022c68d9c316b1
+      internalID: -444412607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_35
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14efdaa20164b3439197b2179be567e
+      internalID: 2027724630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_36
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1da992cb238a540a9f59ddd220db80
+      internalID: -1722698178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_37
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d02f0693e02ae4aa926781918efb13
+      internalID: -1830297392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_38
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9211bb46d4b3bd44498527b2922bdbd9
+      internalID: -1419069867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_39
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f39daec9fc08054e98b41ed0c562320
+      internalID: 1048977354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_40
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1ca50d7620f144083e508a1d295945
+      internalID: -127084763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_41
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64495abe26adaa48b8f539efaf0fba0
+      internalID: -647443003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_42
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f9beec1c12bb445bc6811810b3be30
+      internalID: 264428382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_43
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b69f6a40ee31c849921e6bea2949385
+      internalID: 1863715733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_44
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 713
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab147571233fc7429f1c2672a49bedd
+      internalID: 13091559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_52
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f9d1c655db135489a4b9f3ce9f9359
+      internalID: -712206222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_53
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793d720cbdc348745b0f53d4c41e8dcb
+      internalID: -1231510003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_54
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60446534406d6143892f29ffc31296d
+      internalID: 331514483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_55
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35879c8d01a51e64e9c2c618a6ba89f5
+      internalID: -181442613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_56
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797685005ff456e4193d9b922b0ee8ee
+      internalID: -38255911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_57
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7f8e66915b7944f85cfdb7ecdd0b1c
+      internalID: 2074981963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_58
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9b9032f1c83a141b95dc6968616d5e
+      internalID: 1619014825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_59
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8bbb04c82f8134cbc55f4877a4ee4b
+      internalID: 363306926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_60
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e287e9f0688144e9bb3bb1079ac0bb
+      internalID: 410088195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_61
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050b68077db9d7b45aa99062fb530c50
+      internalID: -1705544551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_62
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d9c03c0b1af17428a216918ebafb37
+      internalID: -187077209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_63
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0190fe2bf41faf04d9bea0d7374c6107
+      internalID: 1367174853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_64
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fb13f4470eb7b40bfe22e82c8fb3d7
+      internalID: -575303344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_65
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c370a10f49f5a4ab53302d05d28c4e
+      internalID: 984650323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_66
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a635bc174b6fcd1488606bb63b42a422
+      internalID: 423611373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_67
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2983ca5c95dc66646b0d87372b70c38b
+      internalID: -1265533921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_68
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44753d612706cb48bf6ca5b6f46b956
+      internalID: 732556571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_69
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3edc835edce8ffe43809eaa7415eef55
+      internalID: 1675590233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_70
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 649
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fc80fc262543046aa16d7ce91e95fa
+      internalID: -1624622005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_71
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b9b4c907baf504c824803bc1d1c3bf
+      internalID: 799270020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682f157782ea49040afbed64af9d8cc7
+      internalID: 411810892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_73
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2214a45740f4d1e4e8c86b17056e3469
+      internalID: 1840408664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_74
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92443ad62d30554da5d41feb358cc29
+      internalID: 554330520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_75
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69554204d7b04964081799c88aa046bd
+      internalID: -778650893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_76
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813b7f43b0715104381a751aa2f029c2
+      internalID: -1796098130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_77
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b30b2f10f9a534eab5666c755dd5fc
+      internalID: 922698848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_78
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce65f5bcf45d194e8f7af962baec554
+      internalID: -144425907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_79
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa9a34f52ff3fe4ca392a76e6e92e93
+      internalID: 1425672402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_80
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -5}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16fde81b4d2e2554294ed30f880681b4
+      internalID: -2060677885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_81
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3db20bf31546db4aaef8ec596356e5f
+      internalID: -459857806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_82
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46a0d7ea1275f640b7b4a3cb3260621
+      internalID: 1649296285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_83
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d3af0efd0de9046afae1f630a0a77b
+      internalID: 1961867817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_84
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150347d094196ef4e86b97c349eb775d
+      internalID: 519213654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_85
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ee990ec37fc0a438c1ab0e6e870488
+      internalID: 1588418746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_86
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 585
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5d95330ea41424dae60075973b8c53
+      internalID: -2043768925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_88
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ceaf6cfab416164b846418384b6e6bb
+      internalID: -518270682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_89
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d95c8bb4f01bf441908516ab2f88ef4
+      internalID: -1217164090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_90
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d721b9bc655a540b225651d10b9fde
+      internalID: 875413285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_91
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474d897a16f5f7646bac3242a816cfc9
+      internalID: 1987807873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_92
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78f761645cb32f439c36b0ef36f8c75
+      internalID: -374364429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_93
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1402eb6b4893619448a002e5d6b4b489
+      internalID: 1102666000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_94
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743f7bf65d85f2449bf19938ab53d45b
+      internalID: 1690077625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_95
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca0f3d07ced44e4fb593bd826e81555
+      internalID: 409550710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_96
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20919f0e2caacc46a97b4f562bee9cc
+      internalID: -339813979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_98
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac634c878bb07641b3d6157c15288d7
+      internalID: -134967160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_99
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35562abf8e51ec48ab07db9ce5b8f73
+      internalID: -1264439087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_100
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d7322acada1fb45bf3ab18f46cbf79
+      internalID: -157763871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_102
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834debeded27df34db133184a94fcafa
+      internalID: 1910680653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_103
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 521
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64302c83785786740a29234604f283ca
+      internalID: -451037295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_105
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af04e51e0924ebe40b83244612782088
+      internalID: -109890653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_106
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f020c12dfb5eb545ba66d5c58129f55
+      internalID: -498354102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_107
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfccafcd07925e4498851d722fe7f0be
+      internalID: -1336426640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_108
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10b8c4a02c73fb449aa18d789ded865
+      internalID: 1753088453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_109
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698405c0326a491419a5a2a54710b5e4
+      internalID: 1504884380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_110
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79577298c0055a44bec29264aae28f7
+      internalID: -685796329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_111
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c664872a84f154fba0723c6133e4ec
+      internalID: -1852541075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_112
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc11281d167e2b54e88000aaf61bf3c1
+      internalID: -240023529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_113
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b90407bcb0e3df42b320906513a8839
+      internalID: -1676667383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_114
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5acf9742f6fff34b8022cff8f0cdc0d
+      internalID: -1970871013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_115
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df3f8546b07b334d8bfeaf0c7b99c77
+      internalID: -5209349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_116
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f268fe45282cff4984017c03c479d8a
+      internalID: -198630492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_117
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c0f142da8c6944ca89458a21a47120
+      internalID: 1433385074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_118
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3a1b7b6cdc4784084f4800e548fe8f
+      internalID: 1129571015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_119
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0b101166a300546bbec9c993417162
+      internalID: 1681950761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_120
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8fcc9a21f149c46a13212d44fa7c3a
+      internalID: -1995530192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_121
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c04d6cbe7bd2b42b789d495363e3ce
+      internalID: 58904294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_122
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5dbe8dc9a139334a994cac902250d1c
+      internalID: -1448952536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_123
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df889dc190d53143aa4922afbb4828b
+      internalID: 1694332959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_124
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 457
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bcb915f38777842b53a04976866f1a
+      internalID: 113042073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_126
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3ed968df2b8414ca42013cb22e5f7a
+      internalID: 2039166617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_127
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b1008336f131843bcfb89e42b5c7de
+      internalID: -625268560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_128
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66699d0b3e6cf304f85b5b56cdcc2ddf
+      internalID: 1187183858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_129
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a86151ed81da049bc6a44c57a8a783
+      internalID: 1239497505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_130
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29123c80dbf56d46850ce8c523ef1f3
+      internalID: -404263303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_131
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0f537d9c83415438c33b81d0d0e2b7
+      internalID: -345457640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_132
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cf3a04ff51dd342b4bef4204c984ce
+      internalID: -686368192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_133
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2df40b9e8d97b4e917a08c91fdf142
+      internalID: -308314181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_134
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9be13e44984a0f4b9dc89c2745964d2
+      internalID: -965992701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_135
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdba1cf191c670b428f1881a9e285c25
+      internalID: 373117225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_136
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df87557ffebedf41ac4805b81698c45
+      internalID: -1304621474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_137
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f100c06ed90c02646aa59f8a1a87d3df
+      internalID: 1562592753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_138
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5490632644a904fbd02b2175627f78
+      internalID: 1549258260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_139
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4601bc039b7f2274599a30357cf2ec68
+      internalID: 587718123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_140
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86f5220b2c19b44ca89f58c06afa6b3
+      internalID: -1594511099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_141
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1168c5032a17149a42a7ac00d8c507
+      internalID: -1116000214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_142
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce48cd63dfd5adf4b887cb1059dcbd2b
+      internalID: -1700399141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_143
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fbc457381113c4fa320dce7d6cb58f
+      internalID: 1758957452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_144
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8806c1ec4e85c38458217cfcc51c7e50
+      internalID: -541125223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_145
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 393
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af567e8a52e2af04dba94fbbc554f9c0
+      internalID: -975559742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_147
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b82829ea5881bd47a646d782eb9a214
+      internalID: -81199325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_148
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66b83d443d5b1345bc5ca8e90f30e27
+      internalID: -1932086032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_149
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b36564cad3900419ff44d171f94abd
+      internalID: -659057871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_150
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46db1fd3dbe4dd842841a18a001858d9
+      internalID: -1185863893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_151
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573e37c37d0c25e44be1f0c2b97864ee
+      internalID: -498233719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_152
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d704d184cd73ec4794b869d44f617d1
+      internalID: 2037049046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_153
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e390f392b53c9a549b3d66529463ab71
+      internalID: -461470039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_154
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3d67923e6736248926e8a1b8ed58a1
+      internalID: 389106803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_155
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d171b925dde59f4185b16abb04eeb73
+      internalID: 1350132848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_156
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cdc25fa61e83c04fbe3a880a08749a8
+      internalID: 2096418322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_157
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf31d2dc786d0b43a06667907d34364
+      internalID: 85367612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_158
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6269ef03d123b1940a15fa0b50e7e522
+      internalID: 1738914190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_159
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ca70f6dac44a546aca7f976041af9d
+      internalID: -29985816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_160
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c348d69d7c5144485be581b9db6a4e
+      internalID: 757841090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_161
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801f9417d2520da48bc6c58e908906c6
+      internalID: -1111575060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_162
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ddf335b5613804a8a3a8703ebe84a4
+      internalID: -1568183498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_163
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198d316727b1a504686a525c41564584
+      internalID: -1153591755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_164
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 329
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddbe933a88ea4c408e49704412290bc
+      internalID: 1127840948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_170
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 265
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0ed3d91b0dc734ca7070a584aa106a
+      internalID: 819172069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_171
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 265
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4071817041491ea4da90e739fcd9a55f
+      internalID: 2098982630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_172
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 265
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc9cdeea290f9240bbb65f26220b612
+      internalID: 2144587441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_174
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 265
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -21}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -21}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba11765b4a637047a2f8871e1e16d3a
+      internalID: -982959932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_175
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 265
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3f7c0b5d9f5d14397ffed1d120ae63
+      internalID: -937537111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_176
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 265
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32006cd4b2439f5449bf273baaefc34f
+      internalID: 2140907362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_177
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 265
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c61242e0e503404ab36d7b29c9df5cd
+      internalID: 1268294511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_178
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 265
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -24}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -24}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685eb942e58762747b38a98cae6e967e
+      internalID: -878035759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_184
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 201
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0125c16c11fd5024aa003c59c336d399
+      internalID: 361355527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_185
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 201
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0e8687e16a28148a176b363412955d
+      internalID: 286662854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_186
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 201
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5566a68917c48844a1930baa33a7034
+      internalID: 926977806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_187
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 201
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548d5360956f12b40b178ccb7db35e74
+      internalID: 938591743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_188
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 201
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a325ff95681131e42acf12bfb83a3715
+      internalID: -1100350971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_189
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 201
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd05a4a137f465b4eb664d3293171b41
+      internalID: -891125771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_191
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 201
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f0b29dfc0abf746bdc7c250ddd5dc3
+      internalID: -747782634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_192
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 201
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e835dafed5edeb4983648f827a1fb0c
+      internalID: 835038012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_193
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 201
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ce52adab3af0f43af89b34d48cc95c
+      internalID: 750521553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_194
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 201
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2dc7349d8b92824b908eea0777f8e5c
+      internalID: -2037807266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_195
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -4}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2710733d0d23c924aacb39696b114fa3
+      internalID: 2059270702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_196
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56215570c116b85449270585b2cbef16
+      internalID: 2120448130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_197
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc06a6fc13f1f0846a93d664bd9c1fc5
+      internalID: -1935248485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_198
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -14}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5704364c466ac0041b9f013d8a3903a6
+      internalID: -1285745656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_199
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41beee4fa15bade488ac22c1479cb622
+      internalID: 3611074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_200
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62e92f9c67532c4ca1d4fea35214be4
+      internalID: 2051839233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_201
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d2f14788020be46b6beae46255a149
+      internalID: 1211870672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_202
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a7eff31c2acb54494effbb5a4ab7e9
+      internalID: -1040328649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_203
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2426c7acb80206449b5c34f357eac10f
+      internalID: 1368941857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_204
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12417e6b1ca90942946553bbe2dea04
+      internalID: -1398511314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_205
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fdfee37f5dff4409c887a4ebc0705f
+      internalID: 1490751520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_206
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482b1abc7b74cb4459c0d26b72eb2562
+      internalID: -1180604243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_207
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5daddf806cdceee4b9c9402bdbf8d3ec
+      internalID: -1535336371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_208
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 137
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+        - {x: -32, y: -32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfd612898b19914aae644ebfb6dffb9
+      internalID: 1436383186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_209
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f804377f1a732a94d8858cb24fb7615e
+      internalID: -2050630017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_210
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4ac3642fa5c1440b675013e059a947
+      internalID: 1568465163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_211
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718f1190f0a65ad45a4f0f876ea1f0c6
+      internalID: 1169293915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_212
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: 6}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11596b76e140bf4f8176cb00f228b07
+      internalID: 1102890451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_213
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc229d4c5fe4e84f9b415d4ae5f3a0a
+      internalID: 334850726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_214
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7db33012a56d74497035e258297a31
+      internalID: -113768008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_215
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7634e3df95854bf43863d888de6bd740
+      internalID: -728999224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_216
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 3}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d7af9460fcce449b298b91405cd9c0
+      internalID: -1305249105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_217
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: 7}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0d308d8d91bb147a20838b6d6e6beb
+      internalID: 1366502314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_218
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ac319d9aa5d8ee4581a8e6f5383b938
+      internalID: -705838226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_219
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2ea7a86d73f8d41b6939e47345a6b3
+      internalID: 701840637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_220
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc28d2ac48413854ea694b08e5f09b97
+      internalID: 1592908463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_221
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 73
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: -3}
+        - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: -32, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3168cbbc0284694a899a36a8affda30
+      internalID: 34480145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_223
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 9
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fa7d3cc56286c40911a41c74c7f20a
+      internalID: 36179066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_224
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 9
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15611421c9206b14596e6213f82e3029
+      internalID: -2017482825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_225
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 9
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 32}
+        - {x: 10, y: 32}
+        - {x: 10, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358c00e32edcdb2499d31cb1cbc811af
+      internalID: -1818118124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_228
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 9
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: 32}
+        - {x: -8, y: 32}
+        - {x: 32, y: 32}
+        - {x: 32, y: 32}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6476b12e95be741b97d38bc9f26099
+      internalID: -882186804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_229
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 9
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4667405c71e5d4f919547394c5d8cd
+      internalID: 192031140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plaformPlus_230
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 9
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe5eee3364088e478c2ece0ee63f8b5
+      internalID: 1494692101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      plaformPlus_0: 858053582
+      plaformPlus_1: -807396217
+      plaformPlus_10: -1595492347
+      plaformPlus_100: -157763871
+      plaformPlus_101: 525299824
+      plaformPlus_102: 1910680653
+      plaformPlus_103: -451037295
+      plaformPlus_104: 412518101
+      plaformPlus_105: -109890653
+      plaformPlus_106: -498354102
+      plaformPlus_107: -1336426640
+      plaformPlus_108: 1753088453
+      plaformPlus_109: 1504884380
+      plaformPlus_11: 1373801171
+      plaformPlus_110: -685796329
+      plaformPlus_111: -1852541075
+      plaformPlus_112: -240023529
+      plaformPlus_113: -1676667383
+      plaformPlus_114: -1970871013
+      plaformPlus_115: -5209349
+      plaformPlus_116: -198630492
+      plaformPlus_117: 1433385074
+      plaformPlus_118: 1129571015
+      plaformPlus_119: 1681950761
+      plaformPlus_12: 1489304313
+      plaformPlus_120: -1995530192
+      plaformPlus_121: 58904294
+      plaformPlus_122: -1448952536
+      plaformPlus_123: 1694332959
+      plaformPlus_124: 113042073
+      plaformPlus_125: 332249557
+      plaformPlus_126: 2039166617
+      plaformPlus_127: -625268560
+      plaformPlus_128: 1187183858
+      plaformPlus_129: 1239497505
+      plaformPlus_13: 489229979
+      plaformPlus_130: -404263303
+      plaformPlus_131: -345457640
+      plaformPlus_132: -686368192
+      plaformPlus_133: -308314181
+      plaformPlus_134: -965992701
+      plaformPlus_135: 373117225
+      plaformPlus_136: -1304621474
+      plaformPlus_137: 1562592753
+      plaformPlus_138: 1549258260
+      plaformPlus_139: 587718123
+      plaformPlus_14: 784508204
+      plaformPlus_140: -1594511099
+      plaformPlus_141: -1116000214
+      plaformPlus_142: -1700399141
+      plaformPlus_143: 1758957452
+      plaformPlus_144: -541125223
+      plaformPlus_145: -975559742
+      plaformPlus_146: -84191627
+      plaformPlus_147: -81199325
+      plaformPlus_148: -1932086032
+      plaformPlus_149: -659057871
+      plaformPlus_15: 1229527668
+      plaformPlus_150: -1185863893
+      plaformPlus_151: -498233719
+      plaformPlus_152: 2037049046
+      plaformPlus_153: -461470039
+      plaformPlus_154: 389106803
+      plaformPlus_155: 1350132848
+      plaformPlus_156: 2096418322
+      plaformPlus_157: 85367612
+      plaformPlus_158: 1738914190
+      plaformPlus_159: -29985816
+      plaformPlus_16: -1217443016
+      plaformPlus_160: 757841090
+      plaformPlus_161: -1111575060
+      plaformPlus_162: -1568183498
+      plaformPlus_163: -1153591755
+      plaformPlus_164: 1127840948
+      plaformPlus_165: -632409184
+      plaformPlus_166: 701145927
+      plaformPlus_167: -1987658720
+      plaformPlus_168: -41258700
+      plaformPlus_169: 610861937
+      plaformPlus_17: 777528686
+      plaformPlus_170: 819172069
+      plaformPlus_171: 2098982630
+      plaformPlus_172: 2144587441
+      plaformPlus_173: 1253286201
+      plaformPlus_174: -982959932
+      plaformPlus_175: -937537111
+      plaformPlus_176: 2140907362
+      plaformPlus_177: 1268294511
+      plaformPlus_178: -878035759
+      plaformPlus_179: 1329380409
+      plaformPlus_18: 2036186375
+      plaformPlus_180: -1453759341
+      plaformPlus_181: -1215525935
+      plaformPlus_182: -1505597735
+      plaformPlus_183: 1977197853
+      plaformPlus_184: 361355527
+      plaformPlus_185: 286662854
+      plaformPlus_186: 926977806
+      plaformPlus_187: 938591743
+      plaformPlus_188: -1100350971
+      plaformPlus_189: -891125771
+      plaformPlus_19: 2110293784
+      plaformPlus_190: -96873641
+      plaformPlus_191: -747782634
+      plaformPlus_192: 835038012
+      plaformPlus_193: 750521553
+      plaformPlus_194: -2037807266
+      plaformPlus_195: 2059270702
+      plaformPlus_196: 2120448130
+      plaformPlus_197: -1935248485
+      plaformPlus_198: -1285745656
+      plaformPlus_199: 3611074
+      plaformPlus_2: -1643259289
+      plaformPlus_20: -462638876
+      plaformPlus_200: 2051839233
+      plaformPlus_201: 1211870672
+      plaformPlus_202: -1040328649
+      plaformPlus_203: 1368941857
+      plaformPlus_204: -1398511314
+      plaformPlus_205: 1490751520
+      plaformPlus_206: -1180604243
+      plaformPlus_207: -1535336371
+      plaformPlus_208: 1436383186
+      plaformPlus_209: -2050630017
+      plaformPlus_21: 2114942465
+      plaformPlus_210: 1568465163
+      plaformPlus_211: 1169293915
+      plaformPlus_212: 1102890451
+      plaformPlus_213: 334850726
+      plaformPlus_214: -113768008
+      plaformPlus_215: -728999224
+      plaformPlus_216: -1305249105
+      plaformPlus_217: 1366502314
+      plaformPlus_218: -705838226
+      plaformPlus_219: 701840637
+      plaformPlus_22: -2125530081
+      plaformPlus_220: 1592908463
+      plaformPlus_221: 34480145
+      plaformPlus_222: 315994755
+      plaformPlus_223: 36179066
+      plaformPlus_224: -2017482825
+      plaformPlus_225: -1818118124
+      plaformPlus_226: -939078355
+      plaformPlus_227: 1860141134
+      plaformPlus_228: -882186804
+      plaformPlus_229: 192031140
+      plaformPlus_23: 20585486
+      plaformPlus_230: 1494692101
+      plaformPlus_24: -875602501
+      plaformPlus_25: 1273482038
+      plaformPlus_26: 467306520
+      plaformPlus_27: 2024206887
+      plaformPlus_28: 321357720
+      plaformPlus_29: -918784858
+      plaformPlus_3: 1968963831
+      plaformPlus_30: -1924474326
+      plaformPlus_31: 56563204
+      plaformPlus_32: -1772355164
+      plaformPlus_33: 2068740704
+      plaformPlus_34: -444412607
+      plaformPlus_35: 2027724630
+      plaformPlus_36: -1722698178
+      plaformPlus_37: -1830297392
+      plaformPlus_38: -1419069867
+      plaformPlus_39: 1048977354
+      plaformPlus_4: -1387439194
+      plaformPlus_40: -127084763
+      plaformPlus_41: -647443003
+      plaformPlus_42: 264428382
+      plaformPlus_43: 1863715733
+      plaformPlus_44: 13091559
+      plaformPlus_45: 982499248
+      plaformPlus_46: 1943422635
+      plaformPlus_47: 1887016161
+      plaformPlus_48: -620235493
+      plaformPlus_49: 952985718
+      plaformPlus_5: -1530548411
+      plaformPlus_50: -470806054
+      plaformPlus_51: -2004693301
+      plaformPlus_52: -712206222
+      plaformPlus_53: -1231510003
+      plaformPlus_54: 331514483
+      plaformPlus_55: -181442613
+      plaformPlus_56: -38255911
+      plaformPlus_57: 2074981963
+      plaformPlus_58: 1619014825
+      plaformPlus_59: 363306926
+      plaformPlus_6: 1654857180
+      plaformPlus_60: 410088195
+      plaformPlus_61: -1705544551
+      plaformPlus_62: -187077209
+      plaformPlus_63: 1367174853
+      plaformPlus_64: -575303344
+      plaformPlus_65: 984650323
+      plaformPlus_66: 423611373
+      plaformPlus_67: -1265533921
+      plaformPlus_68: 732556571
+      plaformPlus_69: 1675590233
+      plaformPlus_7: -874718674
+      plaformPlus_70: -1624622005
+      plaformPlus_71: 799270020
+      plaformPlus_72: 411810892
+      plaformPlus_73: 1840408664
+      plaformPlus_74: 554330520
+      plaformPlus_75: -778650893
+      plaformPlus_76: -1796098130
+      plaformPlus_77: 922698848
+      plaformPlus_78: -144425907
+      plaformPlus_79: 1425672402
+      plaformPlus_8: 77023820
+      plaformPlus_80: -2060677885
+      plaformPlus_81: -459857806
+      plaformPlus_82: 1649296285
+      plaformPlus_83: 1961867817
+      plaformPlus_84: 519213654
+      plaformPlus_85: 1588418746
+      plaformPlus_86: -2043768925
+      plaformPlus_87: -1461143283
+      plaformPlus_88: -518270682
+      plaformPlus_89: -1217164090
+      plaformPlus_9: 380076138
+      plaformPlus_90: 875413285
+      plaformPlus_91: 1987807873
+      plaformPlus_92: -374364429
+      plaformPlus_93: 1102666000
+      plaformPlus_94: 1690077625
+      plaformPlus_95: 409550710
+      plaformPlus_96: -339813979
+      plaformPlus_97: 1119713088
+      plaformPlus_98: -134967160
+      plaformPlus_99: -1264439087
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

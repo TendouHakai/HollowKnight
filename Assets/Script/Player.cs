@@ -107,7 +107,6 @@ public class Player : PlayObject
             case (int)STATE_PLAYER.MoveRight:
                 isWall = Physics2D.BoxCast(colider.bounds.center, colider.bounds.size, 0f, Vector2.right, .1f, layerMask);
                 temp.x = isWall == true ? 0 : 1;
-                temp.x = 1;
                 velocity = temp;
                 isRight = true;
 
@@ -137,6 +136,7 @@ public class Player : PlayObject
                 break;
             case (int)STATE_PLAYER.Die:
                 isMove = false;
+                atacando = true;
                 ani.Play("player_DEADTH");
                 rb.gravityScale = 0f;
                 SoundManager.getInstance().PlaySFXPlayer("knight_die");
@@ -149,6 +149,7 @@ public class Player : PlayObject
                 break;
             case (int)STATE_PLAYER.Focus:
                 isMove = false;
+                atacando = true;
                 ani.Play("player_FOCUS_START");
                 break;
             case (int)STATE_PLAYER.EndFocus:
@@ -217,6 +218,7 @@ public class Player : PlayObject
 
         if(isDead == false)
         {
+            atacando = true;
             ani.Play("player_TAKE_DAMAGE");
 
             isUndying = true;
