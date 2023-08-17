@@ -27,6 +27,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 7fcd0dd6a52a4874e9eff0c0589f9a8f, type: 3}
   - ID: knight_attackSwordReject
     clip: {fileID: 8300000, guid: 9a0b88b28183c8e41a060322c40439be, type: 3}
+  - ID: knight_focus_charging
+    clip: {fileID: 8300000, guid: aabf9b1d7cf5c374d8c9193ed987ba8d, type: 3}
+  - ID: knight_focus_GET
+    clip: {fileID: 8300000, guid: a7ac9b0b9033a5a45b99657e935fc038, type: 3}
+  - ID: HUD_focus_ready
+    clip: {fileID: 8300000, guid: 5256ec14865d4174b8a484776329dbfd, type: 3}
   - ID: Enemy_die
     clip: {fileID: 8300000, guid: 1312002449554b248befd686e4c37fcf, type: 3}
   - ID: Geo_Collect

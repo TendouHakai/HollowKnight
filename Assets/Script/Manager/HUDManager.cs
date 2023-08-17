@@ -61,6 +61,7 @@ public class HUDManager : MonoBehaviour
                 break;
             case 3:
                 SoulAni.Play("Soul_FULL");
+                SoundManager.getInstance().PlaySFXPlayer("HUD_focus_ready");
                 break;
         }
 

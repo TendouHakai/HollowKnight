@@ -151,6 +151,7 @@ public class Player : PlayObject
                 isMove = false;
                 atacando = true;
                 ani.Play("player_FOCUS_START");
+                SoundManager.getInstance().PlaySFXPlayer("knight_focus_charging");
                 break;
             case (int)STATE_PLAYER.EndFocus:
                 isMove= true;
@@ -273,6 +274,7 @@ public class Player : PlayObject
 
     public void getFocus()
     {
+        SoundManager.getInstance().PlaySFXPlayer("knight_focus_GET");
         HUDManager.getInstance().isGetFocus = false;
         currentHP += 1;
 

@@ -19,6 +19,7 @@ public class slashEffect : MonoBehaviour
     [Header("----------Up slash----------")]
     [SerializeField] Transform upSlashPoint;
     [SerializeField] Vector2 offsetupSlash;
+    bool isUP = false;
 
     
 
@@ -47,11 +48,14 @@ public class slashEffect : MonoBehaviour
         collider.offset = offsetupSlash;
         transform.position = upSlashPoint.position;  
         ani.Play("UpSlashEffect");
+
+        isUP = true;
     }
 
     public void finishSlash()
     {
         this.gameObject.SetActive(false);
+        isUP = false;
     }
 
     //public void flip()
@@ -108,7 +112,7 @@ public class slashEffect : MonoBehaviour
                     if (obj.canStun == true) return;
                     if(obj is Vengefly) 
                     {
-                        obj.GetComponent<Repel>().repel(player.isRight);
+                        obj.GetComponent<Repel>().repel(player.isRight, isUP);
                         return;
                     }
 

@@ -11,6 +11,7 @@ public class Repel : MonoBehaviour
     [SerializeField] protected Enemy enemy;
 
     protected bool isrepel = false;
+    protected bool isUP = false;
 
     void Start()
     {
@@ -23,7 +24,12 @@ public class Repel : MonoBehaviour
         if (isrepel)
         {
             speedStart += accelerationStart * Time.deltaTime;
-            enemy.transform.position += new Vector3(speedStart, 0, 0) * Time.deltaTime + 0.5f * new Vector3(accelerationStart, 0, 0) * Time.deltaTime * Time.deltaTime;
+
+            if(isUP)
+            {
+                enemy.transform.position += new Vector3(0, speedStart, 0) * Time.deltaTime + 0.5f * new Vector3(0, accelerationStart, 0) * Time.deltaTime * Time.deltaTime;
+            }
+            else enemy.transform.position += new Vector3(speedStart, 0, 0) * Time.deltaTime + 0.5f * new Vector3(accelerationStart, 0, 0) * Time.deltaTime * Time.deltaTime;
 
             if (accelerationStart * speedStart > 0f)
             {
@@ -33,10 +39,14 @@ public class Repel : MonoBehaviour
         
     }
 
-    public virtual void repel(bool isRight)
+    public virtual void repel(bool isRight, bool isUP = false)
     {
         startRepel();
-        if(isRight)
+        if (isUP)
+        {
+            repelUP();
+        }
+        else if(isRight)
         {
             speedStart = Mathf.Abs(speedStart);
             accelerationStart = -Mathf.Abs(accelerationStart);
@@ -48,6 +58,14 @@ public class Repel : MonoBehaviour
         }
     }
 
+    public virtual void repelUP()
+    {
+        isUP = true;
+
+        speedStart = Mathf.Abs(speedStart);
+        accelerationStart = -Mathf.Abs(accelerationStart);
+    }
+
     public virtual void startRepel()
     {
         isrepel = true;
@@ -56,5 +74,6 @@ public class Repel : MonoBehaviour
     public virtual void stopRepel()
     {
         isrepel = false;
+        isUP = false;
     }
 }
