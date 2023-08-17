@@ -100,6 +100,7 @@ public class HUDManager : MonoBehaviour
     // health
     public void healthDown(int healthCount)
     {
+        if(health == 1) return;
         for(int i = 0; i < healthCount; i++)
         {
             healthList[health - i - 1].Play("Health_BREAK");

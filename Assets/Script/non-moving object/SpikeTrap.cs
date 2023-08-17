@@ -24,6 +24,7 @@ public class SpikeTrap : BaseObject
 
             obj.takeDamage(Damage);
 
+
             collision.transform.position = pointRevival.position;
         }
     }
