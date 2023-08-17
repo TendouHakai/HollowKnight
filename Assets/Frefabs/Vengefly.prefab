@@ -314,7 +314,7 @@ MonoBehaviour:
   geoCount: 3
   geoFrefabs: {fileID: 3653567954370150305, guid: ddddba1f5b6df10448a808df2e887a0e, type: 3}
   timeToChangeDirect: 1
-  speed_ATTACK: 4
+  speed_ATTACK: 5
   collision: {fileID: 1324349482}
   RangeRepel: 2
 --- !u!114 &1703524988

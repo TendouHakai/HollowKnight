@@ -65,7 +65,6 @@ public class Vengefly : Enemy
             Vector3 temp = velocity;
             if (timeMoveStart > timeToChangeDirect)
             {
-                Debug.Log("change");
                 temp.x = Random.Range(-1f, 1f);
                 temp.y = Random.Range(-1f, 1f);
 

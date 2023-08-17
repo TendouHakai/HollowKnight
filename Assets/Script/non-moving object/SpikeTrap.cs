@@ -22,7 +22,7 @@ public class SpikeTrap : BaseObject
         {
             BaseObject obj = collision.GetComponent<BaseObject>();
 
-            //obj.takeDamage(Damage);
+            obj.takeDamage(Damage);
 
             collision.transform.position = pointRevival.position;
         }

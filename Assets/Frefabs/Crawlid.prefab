@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2824406071413346105}
   - component: {fileID: 2824406071413346103}
   - component: {fileID: 2824406071413346100}
+  - component: {fileID: 6677248906618777258}
   m_Layer: 6
   m_Name: Crawlid
   m_TagString: Enemy
@@ -147,14 +148,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b0011c11e95b4408c6e99418b9e581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 0
-  Speed: 4
+  Damage: 1
+  Speed: 4.5
   velocity: {x: 0, y: 0, z: 0}
   Target: {fileID: 0}
   State: 0
   isMove: 0
   isDead: 0
   isRight: 0
+  canStun: 0
+  isStun: 0
   rb: {fileID: 2824406071413346105}
   render: {fileID: 2824406071413346106}
   ani: {fileID: 2824406071413346107}
@@ -185,6 +188,21 @@ MonoBehaviour:
   duration: 0.15
   isloop: 0
   isFlash: 0
+--- !u!114 &6677248906618777258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2824406071413346110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39b64a720649404eb2726e19d589d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedStart: 10
+  accelerationStart: 50
+  enemy: {fileID: 2824406071413346103}
 --- !u!1 &2824406071457636267
 GameObject:
   m_ObjectHideFlags: 0

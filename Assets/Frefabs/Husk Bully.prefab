@@ -432,6 +432,7 @@ GameObject:
   - component: {fileID: 978002198746210258}
   - component: {fileID: 978002198746210261}
   - component: {fileID: 1522545261}
+  - component: {fileID: 2022850525}
   m_Layer: 6
   m_Name: Husk Bully
   m_TagString: Enemy
@@ -574,6 +575,8 @@ MonoBehaviour:
   isMove: 0
   isDead: 0
   isRight: 0
+  canStun: 0
+  isStun: 0
   rb: {fileID: 978002198746210258}
   render: {fileID: 978002198746210257}
   ani: {fileID: 978002198746210286}
@@ -587,9 +590,9 @@ MonoBehaviour:
   flashEffect: {fileID: 1522545261}
   geoCount: 4
   geoFrefabs: {fileID: 3653567954370150305, guid: ddddba1f5b6df10448a808df2e887a0e, type: 3}
-  timeAttack: 2
+  rangeAttack: 3
   speed_WALK: 1.5
-  speed_RUN: 5
+  speed_RUN: 10
   collision: {fileID: 573055384}
 --- !u!114 &1522545261
 MonoBehaviour:
@@ -607,3 +610,18 @@ MonoBehaviour:
   duration: 0.15
   isloop: 0
   isFlash: 0
+--- !u!114 &2022850525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978002198746210287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39b64a720649404eb2726e19d589d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedStart: 10
+  accelerationStart: 30
+  enemy: {fileID: 978002198746210261}

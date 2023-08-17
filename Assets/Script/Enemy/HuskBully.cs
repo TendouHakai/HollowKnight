@@ -28,6 +28,7 @@ public class HuskBully : Enemy
 
     protected override void Update()
     {
+        if (isDead) return;
         base.Update();
 
         ani.SetFloat("SpeedEnemy", Mathf.Abs(velocity.x));
@@ -36,7 +37,7 @@ public class HuskBully : Enemy
     public override void setState(int state)
     {
         Vector3 temp = velocity;
-        if (isDead) return;
+        if(isDead) return;
         switch (state)
         {
             case (int)STATE_HUSKBULLY.IDLE:
@@ -60,7 +61,8 @@ public class HuskBully : Enemy
             case (int)STATE_HUSKBULLY.Attack:
                 isAttack = true;
                 isMove = false;
-                ani.SetTrigger("Attack");
+                //ani.SetTrigger("Attack");
+                ani.Play("HuskBully_ANTICIPATE");
                 break;
             case (int)STATE_HUSKBULLY.StopAttack:
                 ani.SetTrigger("StopAttack");
@@ -114,8 +116,8 @@ public class HuskBully : Enemy
     // dead
     public override void Dead()
     {
-        base.Dead();
         setState((int)STATE_HUSKBULLY.Die);
+        base.Dead();
     }
 }
 
