@@ -6,7 +6,7 @@ public class BaseCollission : MonoBehaviour
 {
     [SerializeField] protected BaseObject Bobj;
 
-    protected void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (Bobj.isDead == false)
         {
@@ -41,7 +41,7 @@ public class BaseCollission : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    protected virtual void OnTriggerStay2D(Collider2D collision)
     {
         if (Bobj.isDead == false)
         {

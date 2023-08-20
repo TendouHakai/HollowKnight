@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Husk Guard ATTACK_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1144
+        width: 704.25
+        height: 572
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c99656b5faf999429bcb280205e10b4
+      internalID: 1375743917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard ATTACK_1
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1144
+        width: 704.25
+        height: 572
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c216ec6456edd44ba314d0fb162c1bf
+      internalID: 731209875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard ATTACK_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1144
+        width: 704.25
+        height: 572
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd980fffb0bcb44a9aab210cda0333b
+      internalID: -100328231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard ATTACK_3
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1144
+        width: 704.25
+        height: 572
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c544649e05cbfd488f77b2a6c421414
+      internalID: 1916427597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard ATTACK_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 572
+        width: 704.25
+        height: 572
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c991d46e786424b4cbbc6322b3c6546f
+      internalID: 1198680716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard ATTACK_5
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 572
+        width: 704.25
+        height: 572
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3ca96e4128e884aa6a4392c6f8cb81
+      internalID: -1238430463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard ATTACK_6
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 572
+        width: 704
+        height: 572
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff5ab35d2159bf40890746a68e765c9
+      internalID: -1815649714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard ATTACK_7
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 572
+        width: 704.25
+        height: 572
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9151e17160ed9042a3335d5813f2c2e
+      internalID: 1614885840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard ATTACK_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 704.25
+        height: 572
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42aa9d70efdbf0944bbade2c5e7efa74
+      internalID: 1740777851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard ATTACK_9
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 704.25
+        height: 572
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8edcd5952a189c4ab5945e24f89b09d
+      internalID: 532883660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +336,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Husk Guard ATTACK_0: 1375743917
+      Husk Guard ATTACK_1: 731209875
+      Husk Guard ATTACK_2: -100328231
+      Husk Guard ATTACK_3: 1916427597
+      Husk Guard ATTACK_4: 1198680716
+      Husk Guard ATTACK_5: -1238430463
+      Husk Guard ATTACK_6: -1815649714
+      Husk Guard ATTACK_7: 1614885840
+      Husk Guard ATTACK_8: 1740777851
+      Husk Guard ATTACK_9: 532883660
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -7,6 +7,11 @@ public class PlayerControl : MonoBehaviour
 {
     [SerializeField] private Player player;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {

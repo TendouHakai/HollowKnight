@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea23a5240503d14fa9de7057dcf5b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2824406071413346103}
+  obj: {fileID: 2824406071413346103}
   coll: {fileID: 2824406071457636261}
   layerMask:
     serializedVersion: 2

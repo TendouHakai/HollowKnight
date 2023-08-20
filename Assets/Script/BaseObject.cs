@@ -7,7 +7,7 @@ public class BaseObject : MonoBehaviour
     public float Damage;
     public float Speed;
     [SerializeField] protected Vector3 velocity;
-    [SerializeField] protected Transform Target;
+    [SerializeField] public Transform Target;
     [SerializeField] protected int State;
     public bool isMove;
     public bool isDead;

@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Husk Guard WAKE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 429.6
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89c5811e9f67fc4e8e0baed049876bf
+      internalID: 1402986379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WAKE_1
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 0
+        width: 429.6
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daadfabc3ce4ca845bd17c73f147dfa7
+      internalID: 1501966036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WAKE_2
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 0
+        width: 429.6
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbd63479138d6a4c846eacaf1f52ee2
+      internalID: 1439872408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WAKE_3
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 0
+        width: 429.6
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdbc2eaf4a515848ac7fedc93048714
+      internalID: 1507469893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WAKE_4
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 0
+        width: 429.6
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b2775c90493a242ad9341bcbc2b990
+      internalID: -1542120053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +231,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Husk Guard WAKE_0: 1402986379
+      Husk Guard WAKE_1: 1501966036
+      Husk Guard WAKE_2: 1439872408
+      Husk Guard WAKE_3: 1507469893
+      Husk Guard WAKE_4: -1542120053
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -18,6 +18,8 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+
+        DontDestroyOnLoad(gameObject);
     }
 
     [Header("----------MENU----------")]

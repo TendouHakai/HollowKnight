@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GeoCheckIsGround : isGroundCheckPlayer
+public class GeoCheckIsGround : isGroundCheck
 {
     public override void NotIsInAir()
     {
-        if(((Geo)player).canCollect == false)
-            ((Geo)player).canCollect = true;
+        if(((Geo)obj).canCollect == false)
+            ((Geo)obj).canCollect = true;
         base.NotIsInAir();
     }
 }

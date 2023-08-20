@@ -125,7 +125,7 @@ TextureImporter:
         width: 244
         height: 495
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,7 +146,7 @@ TextureImporter:
         width: 393
         height: 324
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,7 +167,7 @@ TextureImporter:
         width: 644
         height: 437
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,7 +188,7 @@ TextureImporter:
         width: 337
         height: 673
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,7 +209,7 @@ TextureImporter:
         width: 299
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,7 +230,7 @@ TextureImporter:
         width: 176
         height: 357
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,7 +251,7 @@ TextureImporter:
         width: 585
         height: 501
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,7 +272,7 @@ TextureImporter:
         width: 264
         height: 397
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,6 +280,174 @@ TextureImporter:
       bones: []
       spriteID: 0fa169747c2b75140a3b581599633511
       internalID: -1483690058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HK_snail_house_8
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 497
+        width: 295
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134dd5efa2541fe4ca838822d359d5fa
+      internalID: 912321190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HK_snail_house_9
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 441
+        width: 337
+        height: 655
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b947540d43b9048849f5382a48cb8c
+      internalID: -1530050138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HK_snail_house_10
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 450
+        width: 290
+        height: 541
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313de9630cf95ff46a1912b92458ff3a
+      internalID: -2127106741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HK_snail_house_11
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 1142
+        width: 307
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe97a1b492b4f31458d7c61b849149f5
+      internalID: 873946387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HK_snail_house_12
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 992
+        width: 289
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b98df50819bc04cb454e8b31dca992
+      internalID: -6263374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HK_snail_house_13
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 1409
+        width: 213
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab53120a8e36834fb5ba4df567ff147
+      internalID: -669982490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HK_snail_house_14
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1410
+        width: 78
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fed185e99836442a69e63a597e5d68
+      internalID: -2018851366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HK_snail_house_15
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1539
+        width: 99
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174ef044cc2717e4b84eb98a5649c694
+      internalID: 747005403
       vertices: []
       indices: 
       edges: []
@@ -297,12 +465,20 @@ TextureImporter:
     nameFileIdTable:
       HK_snail_house_0: -1512206749
       HK_snail_house_1: -361676203
+      HK_snail_house_10: -2127106741
+      HK_snail_house_11: 873946387
+      HK_snail_house_12: -6263374
+      HK_snail_house_13: -669982490
+      HK_snail_house_14: -2018851366
+      HK_snail_house_15: 747005403
       HK_snail_house_2: 1350117762
       HK_snail_house_3: -171202451
       HK_snail_house_4: 750881274
       HK_snail_house_5: -1218784371
       HK_snail_house_6: -1087674042
       HK_snail_house_7: -691237890
+      HK_snail_house_8: 912321190
+      HK_snail_house_9: -1530050138
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

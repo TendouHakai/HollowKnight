@@ -28,7 +28,6 @@ public class HuskBully : Enemy
 
     protected override void Update()
     {
-        if (isDead) return;
         base.Update();
 
         ani.SetFloat("SpeedEnemy", Mathf.Abs(velocity.x));

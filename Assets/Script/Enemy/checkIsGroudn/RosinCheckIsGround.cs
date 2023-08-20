@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RosinCheckIsGround : isGroundCheckPlayer
+public class RosinCheckIsGround : isGroundCheck
 {
     public override void NotIsInAir()
     {
-        player.Dead();
+        obj.Dead();
     }
 
     public override void IsInAir()

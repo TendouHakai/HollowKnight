@@ -10,7 +10,7 @@ public class Door : BaseObject
     [SerializeField] protected Rigidbody2D stone02;
     [SerializeField] protected Rigidbody2D stone03;
 
-    List<Rigidbody2D> listStone = new List<Rigidbody2D>();
+    protected List<Rigidbody2D> listStone = new List<Rigidbody2D>();
 
     [Header("----------Effect----------")]
     [SerializeField] protected GameObject effectFrefabs;

@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Husk Guard WALK_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 339.5
+        width: 455.83334
+        height: 339.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82585725b1bb08043be465ea91ef764b
+      internalID: 966950125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WALK_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 339.5
+        width: 455.83334
+        height: 339.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8beb8d6890238824da4a0c85111a424b
+      internalID: 776401249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WALK_2
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 339.5
+        width: 455.83334
+        height: 339.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca4e3ab84f6ff744a45a9c5bbf3e23a
+      internalID: 581677594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WALK_3
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 339.5
+        width: 455.83334
+        height: 339.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97c104c80ea5ec44b2f184b2af3f4a4
+      internalID: -300082191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WALK_4
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 339.5
+        width: 455.83334
+        height: 339.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccef8be369fb2524499d2b5bdd82c4cd
+      internalID: 792859139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WALK_5
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 339.5
+        width: 455.83334
+        height: 339.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e96df07f338184ba5fd4e51b402fba
+      internalID: 1012006830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WALK_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 455.83334
+        height: 339.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93365258ff6c444ab09d9076f040004
+      internalID: 829899342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WALK_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0.5
+        width: 455.83334
+        height: 339.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e2b3b3882851a4db7e880784693db5
+      internalID: -479083348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WALK_8
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0.5
+        width: 455.83334
+        height: 339.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ae386c370625340a95aca8d043f74c
+      internalID: -225287134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard WALK_9
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 0.5
+        width: 455.83334
+        height: 339.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f7b8b7031fa9646a21dbbe7449445a
+      internalID: 220477867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +336,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Husk Guard WALK_0: 966950125
+      Husk Guard WALK_1: 776401249
+      Husk Guard WALK_2: 581677594
+      Husk Guard WALK_3: -300082191
+      Husk Guard WALK_4: 792859139
+      Husk Guard WALK_5: 1012006830
+      Husk Guard WALK_6: 829899342
+      Husk Guard WALK_7: -479083348
+      Husk Guard WALK_8: -225287134
+      Husk Guard WALK_9: 220477867
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

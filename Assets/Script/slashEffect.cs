@@ -110,11 +110,12 @@ public class slashEffect : MonoBehaviour
                 else
                 {
                     if (obj.canStun == true) return;
-                    if(obj is Vengefly) 
+                    if (obj is Vengefly)
                     {
                         obj.GetComponent<Repel>().repel(player.isRight, isUP);
                         return;
                     }
+                    else if (obj as Boss) return;
 
                     if (player.isRight)
                     {

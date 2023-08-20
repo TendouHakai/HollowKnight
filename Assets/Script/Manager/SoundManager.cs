@@ -18,6 +18,8 @@ public class SoundManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+
+        DontDestroyOnLoad(gameObject);
     }
 
     [SerializeField] private AudioSource sourceMusic;

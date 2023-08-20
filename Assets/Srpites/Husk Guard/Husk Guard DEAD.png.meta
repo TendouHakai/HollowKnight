@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Husk Guard DEAD_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 331.33334
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847039ee055e6b14a969b6d4327167f5
+      internalID: 2038326073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard DEAD_1
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 0
+        width: 331.33334
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddee1a4cd33104e40a053d49fae11e72
+      internalID: -1432298325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard DEAD_2
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 0
+        width: 331.33334
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8637615acc4c9914da20f565af9a37fb
+      internalID: 122196287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard DEAD_3
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 0
+        width: 331.33334
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077f226389ef9f34ea028cacba4cf211
+      internalID: 120404421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard DEAD_4
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 0
+        width: 331.33334
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb72f5a55bb926c4195f3007e6572b7f
+      internalID: 2092827402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard DEAD_5
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 0
+        width: 331.33334
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95182bf4cbe2b9f48abcd7ccb93028de
+      internalID: 1086102770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard DEAD_6
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 0
+        width: 331.33334
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d71dbbac0433554e93e2d8fc44b686a
+      internalID: 631141766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard DEAD_7
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 0
+        width: 331.33334
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37a0c143733351479d9e9b504fd7753
+      internalID: 266278350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard DEAD_8
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 0
+        width: 331.33334
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4326e64aa176a45a76b88872b1b851
+      internalID: 2026144780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +315,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Husk Guard DEAD_0: 2038326073
+      Husk Guard DEAD_1: -1432298325
+      Husk Guard DEAD_2: 122196287
+      Husk Guard DEAD_3: 120404421
+      Husk Guard DEAD_4: 2092827402
+      Husk Guard DEAD_5: 1086102770
+      Husk Guard DEAD_6: 631141766
+      Husk Guard DEAD_7: 266278350
+      Husk Guard DEAD_8: 2026144780
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

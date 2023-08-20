@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e96000badfbc44e932754771cac624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1160499632}
+  obj: {fileID: 1160499632}
   coll: {fileID: 1160499630}
   layerMask:
     serializedVersion: 2

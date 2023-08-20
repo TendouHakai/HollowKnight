@@ -37,6 +37,8 @@ public class Player : PlayObject
 
     private void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
+
         jumpForce = Mathf.Sqrt(jumpHeight * (Physics2D.gravity.y * rb.gravityScale) * (-2)) * rb.mass;
         isRight = true;
         combo = 0;
@@ -101,7 +103,6 @@ public class Player : PlayObject
         {
             case (int)STATE_PLAYER.MoveLeft:
                 isWall = Physics2D.BoxCast(colider.bounds.center, colider.bounds.size - new Vector3(0.1f,0f, 0f), 0f, Vector2.left, .2f, layerMask);
-                Debug.Log(isWall);
                 temp.x = isWall == true? 0: -1;
                 velocity = temp;
                 isRight = false;
@@ -111,7 +112,6 @@ public class Player : PlayObject
                 break;
             case (int)STATE_PLAYER.MoveRight:
                 isWall = Physics2D.BoxCast(colider.bounds.center, colider.bounds.size - new Vector3(0.1f, 0f, 0f), 0f, Vector2.right, .2f, layerMask);
-                Debug.Log(isWall);
                 temp.x = isWall == true ? 0 : 1;
                 velocity = temp;
                 isRight = true;

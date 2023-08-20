@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Husk Guard IDLE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 422.42856
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ff392e1c51cf74aad36180963837cb
+      internalID: -1403689741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 0
+        width: 422.42856
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bab18372e999744088e299f0490fe3e
+      internalID: 870576439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 0
+        width: 422.42856
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2c7462454f21142a6e68bcad547fac
+      internalID: -391307980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 0
+        width: 422.42856
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4b7864b5107024caee5be051c2d250
+      internalID: -299839405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 0
+        width: 422.42856
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d58e1d86d218cb4ab1939bba54be832
+      internalID: -1464335433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard IDLE_5
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 0
+        width: 422.42856
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ce212e7d54a654c865e09379938441
+      internalID: -1768555746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Husk Guard IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 0
+        width: 422.42856
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783ef183d00a0344f9c8dfd24b6864ec
+      internalID: -1803481351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +273,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Husk Guard IDLE_0: -1403689741
+      Husk Guard IDLE_1: 870576439
+      Husk Guard IDLE_2: -391307980
+      Husk Guard IDLE_3: -299839405
+      Husk Guard IDLE_4: -1464335433
+      Husk Guard IDLE_5: -1768555746
+      Husk Guard IDLE_6: -1803481351
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
