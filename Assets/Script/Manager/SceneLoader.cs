@@ -36,6 +36,14 @@ public class SceneLoader : MonoBehaviour
 
     int sceneNumber;
 
+    private void Start()
+    {
+        if(player == null)
+        {
+            player = GameObject.FindObjectOfType<Player>();
+        }
+    }
+
     private void Update()
     {
         if(isChangeScene)

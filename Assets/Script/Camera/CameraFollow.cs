@@ -7,10 +7,48 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] float speed;
     [SerializeField] Vector3 offset;
-    // Start is called before the first frame update
+
+    // start Scene
+    [Header("----------Start scene----------")]
+    [SerializeField] Player playerFrefabs;
+    [SerializeField] Vector3 playerPosStart;
+    [SerializeField] PlayerControl playerControlFrefabs;
+    [SerializeField] UIManager uIManagerFrefabs;
+    [SerializeField] SoundManager soundManagerFrefabs;
+
+    private void Awake()
+    {
+        //Player player = GameObject.FindObjectOfType<Player>();
+        //if (target == null)
+        //{
+        //    player = Instantiate(playerFrefabs, playerPosStart, Quaternion.identity);
+        //    target = player.transform;
+
+        //    Instantiate(playerControlFrefabs, Vector3.zero, Quaternion.identity);
+        //    Instantiate(uIManagerFrefabs, Vector3.zero, Quaternion.identity);
+        //    Instantiate(soundManagerFrefabs, Vector3.zero, Quaternion.identity);
+        //}
+        //else
+        //{
+        //    target = player.transform;
+        //}
+    }
     void Start()
     {
-        target = GameObject.FindObjectOfType<Player>().transform;
+        Player player = GameObject.FindObjectOfType<Player>();
+        if (player == null)
+        {
+            player = Instantiate(playerFrefabs, playerPosStart, Quaternion.identity);
+            target = player.transform;
+
+            Instantiate(playerControlFrefabs, Vector3.zero, Quaternion.identity);
+            Instantiate(uIManagerFrefabs, Vector3.zero, Quaternion.identity);
+            Instantiate(soundManagerFrefabs, Vector3.zero, Quaternion.identity);
+        }
+        else
+        {
+            target = player.transform;
+        }
     }
 
     // Update is called once per frame

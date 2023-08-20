@@ -15,7 +15,8 @@ public class PlayerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if (player == null) 
+            player = GameObject.FindObjectOfType<Player>();
     }
 
     // Update is called once per frame

@@ -8,6 +8,9 @@ public class Gate : Door
     [SerializeField] int HP;
     [SerializeField] int takedameStonecount;
 
+    [Header("----------Portal----------")]
+    [SerializeField] GameObject portalFrefab;
+
     public override void takeDamage(float damage)
     {
         HP -= 1;
@@ -43,6 +46,7 @@ public class Gate : Door
 
         if (HP <= 0)
         {
+            Instantiate(portalFrefab, transform.position + new Vector3(0,-2,0), Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayObject : BaseObject
 {
-    [SerializeField] protected float currentHP;
-    [SerializeField] protected float MaxHP;
+    [SerializeField] public float currentHP;
+    [SerializeField] public float MaxHP;
     [SerializeField] public bool isAttack;
 
     protected override void Start()

@@ -45,9 +45,6 @@ public class Player : PlayObject
 
         isUndying = false;
         timeStartUndying = 0f;
-
-        MaxHP = HUDManager.getInstance().health;
-        currentHP = MaxHP;
     }
 
     private void FixedUpdate()

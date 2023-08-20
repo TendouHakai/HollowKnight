@@ -21,6 +21,11 @@ public class GameConstant : MonoBehaviour
     public const int ENEMY_STATE_DEAD = 14;
     #endregion
 
+    #region NPC STATE
+    public const int NPC_STATE_TALK = 10;
+    public const int NPC_STATE_END_TALK = 11;
+    #endregion
+
     #region ENEMY FLY TURN STATE
     public const int ENEMYFLY_STATE_TURNX = 20;
     public const int ENEMYFLY_STATE_TURNY = 21;

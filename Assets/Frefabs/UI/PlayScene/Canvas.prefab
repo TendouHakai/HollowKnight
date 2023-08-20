@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554099aa1a7898f4994b494aa6554d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soul: 4
+  soul: 0
   SoulAni: {fileID: 2061858882}
   maxHealth: 5
   health: 5

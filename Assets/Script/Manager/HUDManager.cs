@@ -23,7 +23,14 @@ public class HUDManager : MonoBehaviour
 
     private void Start()
     {
+        if (player == null)
+        {
+            player = GameObject.FindObjectOfType<Player>();
+        }
         coinText.text = coin.ToString();
+
+        player.MaxHP = health;
+        player.currentHP = health;
     }
 
     [Header("----------Soul----------")]    
