@@ -16,22 +16,13 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] UIManager uIManagerFrefabs;
     [SerializeField] SoundManager soundManagerFrefabs;
 
+    [Header("----------Viewport Size----------")]
+    [SerializeField] Vector2 MaxPosition;
+    [SerializeField] Vector2 MinPosition;
+
     private void Awake()
     {
-        //Player player = GameObject.FindObjectOfType<Player>();
-        //if (target == null)
-        //{
-        //    player = Instantiate(playerFrefabs, playerPosStart, Quaternion.identity);
-        //    target = player.transform;
 
-        //    Instantiate(playerControlFrefabs, Vector3.zero, Quaternion.identity);
-        //    Instantiate(uIManagerFrefabs, Vector3.zero, Quaternion.identity);
-        //    Instantiate(soundManagerFrefabs, Vector3.zero, Quaternion.identity);
-        //}
-        //else
-        //{
-        //    target = player.transform;
-        //}
     }
     void Start()
     {
@@ -59,14 +50,10 @@ public class CameraFollow : MonoBehaviour
         Vector3 smoothPosition = Vector3.Slerp(transform.position, desiredPosition, speed * Time.deltaTime);
 
         smoothPosition.x = desiredPosition.x;
-        transform.position = desiredPosition;
+
+        smoothPosition.x = Mathf.Clamp(smoothPosition.x, MinPosition.x, MaxPosition.x);
+        smoothPosition.y = Mathf.Clamp(smoothPosition.y, MinPosition.y, MaxPosition.y);
+
+        transform.position = smoothPosition;
     }
-
-    //private void FixedUpdate()
-    //{
-    //    Vector3 desiredPosition = target.position + offset;
-    //    Vector3 smoothPosition = Vector3.Slerp(transform.position, desiredPosition, speed * Time.deltaTime);
-
-    //    transform.position = smoothPosition;
-    //}
 }

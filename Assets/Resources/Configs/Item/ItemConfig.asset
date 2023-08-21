@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c6086c685460d41b666ae768c9349a, type: 3}
+  m_Name: ItemConfig
+  m_EditorClassIdentifier: 
+  configs:
+  - ID: 0
+    Name: Wayward Compass
+    img: {fileID: 21300000, guid: a89f86ac5eeaa0046921d03586230dba, type: 3}
+    Description: "R\u1EA5t khuy\u1EBFn kh\xEDch! N\u1EBFu b\u1EA1n g\u1EB7p kh\xF3
+      kh\u0103n trong vi\u1EC7c t\xECm \u0111\u01B0\u1EDDng trong m\xEA cung \u0111\u1ED5
+      n\xE1t b\xEAn d\u01B0\u1EDBi ch\xFAng t\xF4i, h\xE3y th\u1EED chi\u1EBFc b\xF9a
+      n\xE0y. \n\nN\xF3 s\u1EBD x\xE1c \u0111\u1ECBnh v\u1ECB tr\xED c\u1EE7a b\u1EA1n
+      tr\xEAn b\u1EA3n \u0111\u1ED3 c\u1EE7a b\u1EA1n. C\u1EF1c k\u1EF3 h\u1EEFu
+      \xEDch cho vi\u1EC7c t\xECm ph\u01B0\u01A1ng h\u01B0\u1EDBng c\u1EE7a b\u1EA1n
+      \u1EDF nh\u1EEFng \u0111\u1ECBa \u0111i\u1EC3m kh\xF4ng quen thu\u1ED9c!"
+    geoCount: 220
+  - ID: 1
+    Name: Quill
+    img: {fileID: 21300000, guid: d3b91d25dc2951344a49035921b2a7fe, type: 3}
+    Description: "B\u1EA1n s\u1EBD c\u1EA7n n\xF3 n\u1EBFu b\u1EA1n mu\u1ED1n c\u1EADp
+      nh\u1EADt b\u1EA3n \u0111\u1ED3 c\u1EE7a m\xECnh v\u1EDBi c\xE1c khu v\u1EF1c
+      m\u1EDBi khi b\u1EA1n kh\xE1m ph\xE1.\r\n\nN\xF3 c\u1EA7n thi\u1EBFt cho b\u1EA5t
+      c\u1EE9 ai nghi\xEAm t\xFAc v\u1EC1 l\u1EADp b\u1EA3n \u0111\u1ED3!"
+    geoCount: 120
+  - ID: 2
+    Name: Vendor Pin
+    img: {fileID: 21300000, guid: 52f61dc6471fe9f48973bcba822895d9, type: 3}
+    Description: "S\u1EED d\u1EE5ng nh\u1EEFng chi\u1EBFc ghim n\xE0y \u0111\u1EC3
+      \u0111\xE1nh d\u1EA5u nh\u1EEFng ng\u01B0\u1EDDi b\xE1n h\xE0ng ho\u1EB7c b\u1EA5t
+      k\u1EF3 bugs th\xFA v\u1ECB n\xE0o kh\xE1c m\xE0 b\u1EA1n t\xECm th\u1EA5y
+      trong chuy\u1EBFn du l\u1ECBch c\u1EE7a m\xECnh.\r\n\nTh\u1EC9nh tho\u1EA3ng,
+      b\u1EA1n n\xEAn \u0111i ngang qua v\xE0 xem h\u1ECD \u0111ang l\xE0m nh\u01B0
+      th\u1EBF n\xE0o. T\xF4i ch\u1EAFc r\u1EB1ng h\u1ECD s\u1EBD th\xEDch \u0111i\u1EC1u
+      \u0111\xF3."
+    geoCount: 100
+  - ID: 3
+    Name: Bench Pin
+    img: {fileID: 21300000, guid: 0e81b672c123b9f49bb9caaaf9f81786, type: 3}
+    Description: "Nh\u1EEFng c\xE1i ghim n\xE0y s\u1EBD \u0111\xE1nh d\u1EA5u nh\u1EEFng
+      b\u0103ng gh\u1EBF v\xE0 nh\u1EEFng n\u01A1i c\xF3 th\u1EC3 ngh\u1EC9 ch\xE2n
+      tr\xEAn b\u1EA3n \u0111\u1ED3. N\xF3 s\u1EBD r\u1EA5t h\u1EEFu \xEDch khi b\u1EA1n
+      m\u1EC7t m\u1ECFi v\xE0 mu\u1ED1n t\xECm m\u1ED9t n\u01A1i n\xE0o \u0111\xF3
+      \u0111\u1EC3 ng\u1ED3i"
+    geoCount: 100
+  - ID: 4
+    Name: Cocoon Pin
+    img: {fileID: 21300000, guid: 17be8c8333e277149b8da4b27fe89826, type: 3}
+    Description: "C\xF3 bao gi\u1EDD b\u1EA1n th\u1EA5y nh\u1EEFng chi\u1EBFc k\xE9n
+      m\xE0u x\xE1nh tuy\u1EC7t \u0111\u1EB9p \u0111\u1EA5y ch\u01B0a? T\xF4i \u0111\xE3
+      l\xE0m nh\u1EEFng chi\u1EBFc ghim n\xE0y \u0111\u1EC3 \u0111\xE1nh d\u1EA5u
+      ch\xFAng.\n\nNh\u1EEFng c\xE1i k\xE9n \u0111\u1EA5y r\u1EA5t \u0111\u1EB9p,
+      nh\u01B0ng c\u0169ng r\u1EA5t m\u1ECFng manh. H\xE3y c\u1EA9n th\u1EADn khi
+      \u1EDF g\u1EA7n ch\xFAng."
+    geoCount: 100
+  - ID: 5
+    Name: Hot Spring Pin
+    img: {fileID: 21300000, guid: 5f0cdaab3403b79449895378590ab8b4, type: 3}
+    Description: "T\xF4i \u0111\xE3 thi\u1EBFt k\u1EBF nh\u1EEFng c\xE1i ghim \u0111\u1EC3
+      \u0111\xE1nh d\u1EA5u nh\u1EEFng su\u1ED1i n\u01B0\u1EDBc n\xF3ng \u1EDF quanh
+      v\u01B0\u01A1ng qu\u1ED1c. \n\nT\xF4i ch\u01B0a t\u1EEBng t\u1EDBi nh\u1EEFng
+      su\u1ED1i n\u01B0\u1EDBc n\xF3ng \u1EA5y... Li\u1EC7u Cornifer c\xF3 \u0111\u01B0a
+      t\xF4i t\u1EDBi kh\xF4ng nh\u1EC9? T\xF4i ngh\u0129 c\u1EADu s\u1EBD c\u1EA7n
+      n\xF3 h\u01A1n cho t\u1EDBi khi \u0111\u1EA5y."
+    geoCount: 100
+  - ID: 6
+    Name: Scarab Marker
+    img: {fileID: 21300000, guid: c23adccc0ca1a4b448ee9844c6ab74a6, type: 3}
+    Description: "Nh\u1EEFng con d\u1EA5u n\xE0y l\xE0 s\u1EA3n ph\u1EA9m m\u1EDBi
+      c\u1EE7a c\u1EEDa h\xE0ng. C\u1EADu c\xF3 th\u1EC3 s\u1EED d\u1EE5ng n\xF3
+      \u0111\u1EC3 \u0111\xE1nh d\u1EA5u c\xE1c \u0111\u1ECBa \u0111i\u1EC3m th\xFA
+      v\u1ECB kh\xE1c nhau tr\xEAn b\u1EA3n \u0111\u1ED3! M\xE0u s\u1EAFc c\u1EE7a
+      ch\xFAng kh\xE1 nh\u1EB9 nh\xE0ng ph\u1EA3i kh\xF4ng?"
+    geoCount: 100
+  - ID: 7
+    Name: Shell Marker
+    img: {fileID: 21300000, guid: 980c7607b0a4582478946fd1f7fef325, type: 3}
+    Description: "Nh\u1EEFng con d\u1EA5u n\xE0y l\xE0 s\u1EA3n ph\u1EA9m m\u1EDBi
+      c\u1EE7a c\u1EEDa h\xE0ng. C\u1EADu c\xF3 th\u1EC3 s\u1EED d\u1EE5ng n\xF3
+      \u0111\u1EC3 \u0111\xE1nh d\u1EA5u nh\u1EEFng v\u1ECB tr\xED \u0111\xE1ng ch\xFA
+      \xFD \u1EDF tr\xEAn b\u1EA3n \u0111\u1ED3!\n\nC\u1EADu c\xF3 th\u1EC3 s\u1EED
+      d\u1EE5ng ch\xFAng \u0111\u1EC3 \u0111\xE1nh d\u1EA5u nh\u1EEFng tr\u1EADn
+      chi\u1EBFn kh\xF3 chi\u1EBFn th\u1EAFng \u0111\u01B0\u1EE3c."
+    geoCount: 100

@@ -167,7 +167,7 @@ TextureImporter:
         width: 406
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,7 +188,7 @@ TextureImporter:
         width: 342
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,6 +196,132 @@ TextureImporter:
       bones: []
       spriteID: 4c3668a8b33240e44a59c676124a1d12
       internalID: -984860198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prompts Cln_4
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 11
+        width: 185
+        height: 635
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae857f16de2e66743adcb4952219a982
+      internalID: 1568341058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prompts Cln_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 327
+        width: 467
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b4f26db6826574dbb80a114850a481
+      internalID: 632941586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prompts Cln_6
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 426
+        width: 29
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af13da78451cfa41adf77a20d9de98f
+      internalID: -1372798354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prompts Cln_7
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 360
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4137964773a45024a9e875e0fdf8addc
+      internalID: -1598970762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prompts Cln_8
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 855
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd6068767729ae459072821117b873c
+      internalID: -1290817433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prompts Cln_9
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 853
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb219d5c4afa9a147926c29e3bdb42d1
+      internalID: -539212709
       vertices: []
       indices: 
       edges: []
@@ -215,6 +341,12 @@ TextureImporter:
       Prompts Cln_1: -78261936
       Prompts Cln_2: 597912652
       Prompts Cln_3: -984860198
+      Prompts Cln_4: 1568341058
+      Prompts Cln_5: 632941586
+      Prompts Cln_6: -1372798354
+      Prompts Cln_7: -1598970762
+      Prompts Cln_8: -1290817433
+      Prompts Cln_9: -539212709
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
