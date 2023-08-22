@@ -10,7 +10,7 @@ public class ItemDisplayControler : MonoBehaviour
     [SerializeField] Shop shopcontroler;
 
     [SerializeField] GameObject listItemUI;
-    [SerializeField] Item[] listItems;
+    [SerializeField] List<Item> listItems;
 
     [SerializeField] SelectAnimation selectAni;
     [SerializeField] Animator selectItemAni;
@@ -23,6 +23,19 @@ public class ItemDisplayControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        List<int> listItemPurchased = InventoryConfig.getInstance().getInventoryItemShops();
+
+        for(int i = 0; i< listItems.Count; i++)
+        {
+            Debug.Log(listItems[i].ID);
+            if (listItemPurchased.Contains(listItems[i].ID))
+            {
+                Destroy(listItems[i].gameObject);
+                listItems.RemoveAt(i);
+
+                i--;
+            }
+        }
         loadContent(listItems[0].ID);
     }
 
@@ -44,7 +57,7 @@ public class ItemDisplayControler : MonoBehaviour
             shopcontroler.endInteract();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && listItems.Count != 0)
         {
             //InventoryManager.getInstance().addItemShop(listItems[index].ID);
             ItemConfig item = ItemConfigs.getInstance().getConfig(listItems[index].ID);
@@ -63,7 +76,7 @@ public class ItemDisplayControler : MonoBehaviour
 
     public void Up()
     {
-        if (index != 0)
+        if (index > 0)
         {
             //listItemUI.transform.position -= new Vector3(0, Height,0);
             selectAni.runAnimation(DIRECT.up, listItemUI.transform.position.y - Height);
@@ -75,7 +88,7 @@ public class ItemDisplayControler : MonoBehaviour
 
     public void Down()
     {
-        if (index < listItems.Length - 1)
+        if (index < listItems.Count - 1)
         {
             //listItemUI.transform.position += new Vector3(0, Height, 0);
             selectAni.runAnimation(DIRECT.down, listItemUI.transform.position.y + Height);
@@ -91,5 +104,15 @@ public class ItemDisplayControler : MonoBehaviour
 
         nameText.text = item.Name;
         descriptionText.text = item.Description;
+    }
+
+    public void removeItem()
+    {
+        Destroy(listItems[index].gameObject);
+        listItems.RemoveAt(index);
+        if (listItems.Count == 0)
+            index = 0;
+        else if (index >= listItems.Count)
+            index = listItems.Count - 1;
     }
 }
