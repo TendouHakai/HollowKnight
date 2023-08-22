@@ -5,12 +5,26 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    [SerializeField] private Player player;
+    private static PlayerControl instance;
+
+    public static PlayerControl getInstance()
+    {
+        if (instance == null)
+        {
+            instance = GameObject.FindObjectOfType<PlayerControl>();
+        }
+        return instance;
+    }
 
     private void Awake()
     {
+        instance = this;
+
         DontDestroyOnLoad(gameObject);
     }
+
+    [SerializeField] private Player player;
+    public bool isInteract = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +36,7 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(player.isDead) return;
+        if(player.isDead || isInteract) return;
 
         player.ani.SetBool("IsLookUp", false);
         player.ani.SetBool("IsLookDown", false);

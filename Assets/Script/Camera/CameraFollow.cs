@@ -15,6 +15,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] PlayerControl playerControlFrefabs;
     [SerializeField] UIManager uIManagerFrefabs;
     [SerializeField] SoundManager soundManagerFrefabs;
+    [SerializeField] SceneLoader sceneLoaderFrefabs;
 
     [Header("----------Viewport Size----------")]
     [SerializeField] Vector2 MaxPosition;
@@ -35,6 +36,7 @@ public class CameraFollow : MonoBehaviour
             Instantiate(playerControlFrefabs, Vector3.zero, Quaternion.identity);
             Instantiate(uIManagerFrefabs, Vector3.zero, Quaternion.identity);
             Instantiate(soundManagerFrefabs, Vector3.zero, Quaternion.identity);
+            Instantiate(sceneLoaderFrefabs, Vector3.zero, Quaternion.identity);
         }
         else
         {
@@ -51,9 +53,9 @@ public class CameraFollow : MonoBehaviour
 
         smoothPosition.x = desiredPosition.x;
 
-        smoothPosition.x = Mathf.Clamp(smoothPosition.x, MinPosition.x, MaxPosition.x);
-        smoothPosition.y = Mathf.Clamp(smoothPosition.y, MinPosition.y, MaxPosition.y);
+        desiredPosition.x = Mathf.Clamp(desiredPosition.x, MinPosition.x, MaxPosition.x);
+        desiredPosition.y = Mathf.Clamp(desiredPosition.y, MinPosition.y, MaxPosition.y);
 
-        transform.position = smoothPosition;
+        transform.position = desiredPosition;
     }
 }

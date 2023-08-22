@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class SelectAnimation : MonoBehaviour
 {
-    [SerializeField] GameObject UI;
+    [SerializeField] protected RectTransform UI;
 
-    [SerializeField] float speed;
-    [SerializeField] float acceleration;
-    [SerializeField] DIRECT direct;
+    [SerializeField] protected DIRECT direct;
+    [SerializeField] protected float speed;
+    
+    [SerializeField] protected float DesPosition;
+    protected Vector3 velocity;
 
-    [SerializeField] float DesPosition;
-    Vector3 velocity;
+    protected bool isRun;
 
-    bool isRun;
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         isRun = false;
         setDirect(direct);
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if(isRun)
         {
@@ -70,7 +70,7 @@ public class SelectAnimation : MonoBehaviour
                     }
                     break;
             }
-            UI.transform.position += speed * velocity;
+            UI.position += speed * velocity;
         }
     }
 

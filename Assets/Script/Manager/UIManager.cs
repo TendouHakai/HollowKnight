@@ -24,10 +24,32 @@ public class UIManager : MonoBehaviour
 
     [Header("----------MENU----------")]
     public GameObject GuideMenu;
+    public GameObject HUD;
+    public GameObject Inventory;
 
     void Start()
     {
         GuideMenu.SetActive(false);
+        HUD.SetActive(true);
+        Inventory.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.I) && !Inventory.activeInHierarchy)
+        {
+            Inventory.SetActive(true);
+            PlayerControl.getInstance().isInteract = true;
+        }
+
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            if (Inventory.activeInHierarchy)
+            {
+                Inventory.SetActive(false);
+                PlayerControl.getInstance().isInteract = false;
+            }
+        }
     }
 
     public void OpenGuideMenu()

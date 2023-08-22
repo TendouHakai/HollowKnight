@@ -293,7 +293,7 @@ TextureImporter:
         width: 49
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,7 +314,7 @@ TextureImporter:
         width: 49
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -322,6 +322,27 @@ TextureImporter:
       bones: []
       spriteID: bb219d5c4afa9a147926c29e3bdb42d1
       internalID: -539212709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prompts Cln_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 642
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257a076be303efc4f889d96fe836e9a5
+      internalID: -2133582079
       vertices: []
       indices: 
       edges: []
@@ -339,6 +360,7 @@ TextureImporter:
     nameFileIdTable:
       Prompts Cln_0: 1600811904
       Prompts Cln_1: -78261936
+      Prompts Cln_10: -2133582079
       Prompts Cln_2: 597912652
       Prompts Cln_3: -984860198
       Prompts Cln_4: 1568341058

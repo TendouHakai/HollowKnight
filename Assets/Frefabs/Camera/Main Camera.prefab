@@ -66,7 +66,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1013
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -106,6 +106,9 @@ MonoBehaviour:
   playerControlFrefabs: {fileID: 3755663078654526352, guid: b22d19280b0a7bd4f8c2b113895798b0, type: 3}
   uIManagerFrefabs: {fileID: 7445170975922481532, guid: 8163ac8847a451a469e1da73a212e190, type: 3}
   soundManagerFrefabs: {fileID: 7490267206879715791, guid: 3024a4b2c323d6348a09ec5538251d33, type: 3}
+  sceneLoaderFrefabs: {fileID: 5135139575218562422, guid: 07cfab60541ece44294f1b6c14b53f57, type: 3}
+  MaxPosition: {x: -26.02, y: 13.16}
+  MinPosition: {x: -26.02, y: 13.16}
 --- !u!114 &4088467667529954754
 MonoBehaviour:
   m_ObjectHideFlags: 0
