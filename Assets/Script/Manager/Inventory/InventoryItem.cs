@@ -25,6 +25,9 @@ public class InventoryItem : MonoBehaviour
     [SerializeField] Item itemFrefabs;
     [SerializeField] GameObject inventoryShop;
 
+    [Header("_____________IMENU CONTROLER---------")]
+    [SerializeField] InventoryManager inventoryManager;
+
     int index = 0;
 
     public void Start()
@@ -222,6 +225,14 @@ public class InventoryItem : MonoBehaviour
             }
 
             selectAni.runAni(items[index].transform.position, items[index].GetComponent<RectTransform>().sizeDelta);
+        }
+        else
+        {
+            if (direct == DIRECT.left)
+            {
+                inventoryManager.changeToMap();
+                return;
+            }
         }
     }
 }

@@ -32,4 +32,9 @@ public class InventoryConfig : ScriptableObject
     {
         listInventoryItemShop.Add(id);
     }
+
+    public bool IsInInventory(int ID)
+    {
+        return listInventoryItemShop.Contains(ID);
+    }
 }

@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Non-moving object
   - Wall
+  - MapCoordinates
   layers:
   - Default
   - TransparentFX

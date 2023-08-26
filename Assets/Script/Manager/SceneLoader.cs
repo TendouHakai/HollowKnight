@@ -66,6 +66,7 @@ public class SceneLoader : MonoBehaviour
             {
                 isSetplayerPos = false;
                 setPlayerPosition();
+
                 timeStart = 0f;
             }
             else timeStart += Time.deltaTime;

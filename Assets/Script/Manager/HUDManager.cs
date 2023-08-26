@@ -25,7 +25,7 @@ public class HUDManager : MonoBehaviour
     {
         if (player == null)
         {
-            player = GameObject.FindObjectOfType<Player>();
+            player = GameObject.FindObjectOfType<Player>();            
         }
         coinText.text = coin.ToString();
 

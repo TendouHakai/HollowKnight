@@ -1,6 +1,8 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -26,12 +28,15 @@ public class UIManager : MonoBehaviour
     public GameObject GuideMenu;
     public GameObject HUD;
     public GameObject Inventory;
+    public GameObject Map;
 
     void Start()
     {
         GuideMenu.SetActive(false);
         HUD.SetActive(true);
         Inventory.SetActive(false);
+
+        updateCurrentMap();
     }
 
     private void Update()
@@ -60,5 +65,21 @@ public class UIManager : MonoBehaviour
     public void CloseGuideMenu()
     {
         GuideMenu.SetActive(false);
+    }
+
+    public void closeAllMenu()
+    {
+        Inventory.SetActive(false );
+    }
+
+    // Map
+    public void addMarker(int id, Vector3 pos)
+    {
+        Map.GetComponent<MapMenuControler>().addMarker(id, pos);
+    }
+
+    public void updateCurrentMap()
+    {
+        Map.GetComponent<MapMenuControler>().updateCurrentMap(SceneManager.GetActiveScene().buildIndex);
     }
 }

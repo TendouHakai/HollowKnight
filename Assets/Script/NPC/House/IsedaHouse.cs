@@ -20,7 +20,7 @@ public class IsedaHouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.UpArrow))
+        if(Input.GetKeyDown(KeyCode.UpArrow) && PlayerIsInRange)
         {
             SceneLoader.getInstance().loadScene(sceneNumber, posPlayer);
         }
