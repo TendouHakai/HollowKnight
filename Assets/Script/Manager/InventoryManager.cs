@@ -14,10 +14,17 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI leftNameMenuText;
     [SerializeField] TextMeshProUGUI rightNameMenuText;
 
+    IMENU_MENU currentMenu = IMENU_MENU.Inventory;
+
     private void Start()
     {
         inventoryItemMenu.gameObject.SetActive(true);
         mapMenu.gameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        
     }
 
     public void addItemShop(int id)
@@ -28,6 +35,9 @@ public class InventoryManager : MonoBehaviour
     public void changeToMap()
     {
         Ani.Play("ChangeInventoryToMap");
+
+        currentMenu = IMENU_MENU.Map;
+
         inventoryItemMenu.gameObject.SetActive(false);
         mapMenu.gameObject.SetActive(true);
 
@@ -39,6 +49,9 @@ public class InventoryManager : MonoBehaviour
     public void changeToInventory()
     {
         Ani.Play("ChangeMapToInventory");
+
+        currentMenu = IMENU_MENU.Inventory;
+
         mapMenu.gameObject.SetActive(false);
         inventoryItemMenu.gameObject.SetActive(true);
 
@@ -48,4 +61,22 @@ public class InventoryManager : MonoBehaviour
         rightNameMenuText.gameObject.SetActive(true);
         rightNameMenuText.text = "Bùa chú";
     }
+
+    public void OnEnable()
+    {
+        if(currentMenu == IMENU_MENU.Inventory)
+        {
+            Ani.Play("IMenuStart");
+        }
+        else if(currentMenu == IMENU_MENU.Map)
+        {
+            Ani.Play("IMenuMap");
+        }
+    }
+}
+
+public enum IMENU_MENU
+{
+    Inventory=1,
+    Map=2,
 }
