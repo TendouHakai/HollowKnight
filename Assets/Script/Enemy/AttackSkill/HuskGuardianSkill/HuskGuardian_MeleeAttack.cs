@@ -31,6 +31,7 @@ public class HuskGuardian_MeleeAttack : AttackSkill
         {
             case 0:
                 collision.SetActive(true);
+                SoundManager.getInstance().PlaySFXEnemy("Boss_trike_ground");
                 aniEventCount += 1;
                 break;
             case 1:

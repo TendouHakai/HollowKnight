@@ -95,11 +95,11 @@ public class Player : PlayObject
     {
         Vector3 temp = velocity;
         bool isWall = false;
-        if (state == this.State) return;
+        if (state == this.State && state != (int)STATE_PLAYER.Jump) return;
         switch (state)
         {
             case (int)STATE_PLAYER.MoveLeft:
-                isWall = Physics2D.BoxCast(colider.bounds.center, colider.bounds.size - new Vector3(0.1f,0f, 0f), 0f, Vector2.left, .2f, layerMask);
+                isWall = Physics2D.BoxCast(colider.bounds.center, colider.bounds.size - new Vector3(0.1f,0f, 0f), 0f, Vector2.left, .3f, layerMask);
                 temp.x = isWall == true? 0: -1;
                 velocity = temp;
                 isRight = false;
@@ -108,7 +108,7 @@ public class Player : PlayObject
                 else return;
                 break;
             case (int)STATE_PLAYER.MoveRight:
-                isWall = Physics2D.BoxCast(colider.bounds.center, colider.bounds.size - new Vector3(0.1f, 0f, 0f), 0f, Vector2.right, .2f, layerMask);
+                isWall = Physics2D.BoxCast(colider.bounds.center, colider.bounds.size - new Vector3(0.1f, 0f, 0f), 0f, Vector2.right, .3f, layerMask);
                 temp.x = isWall == true ? 0 : 1;
                 velocity = temp;
                 isRight = true;

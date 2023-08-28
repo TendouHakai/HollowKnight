@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 6398078956168716361}
   - component: {fileID: 6398078956168716362}
   - component: {fileID: 6398078956168716363}
+  - component: {fileID: 1993207758}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -479,7 +480,6 @@ MonoBehaviour:
   isMove: 0
   isDead: 0
   isRight: 0
-  canStun: 0
   isStun: 0
   rb: {fileID: 6398078956168716373}
   render: {fileID: 6398078956168716374}
@@ -541,6 +541,21 @@ MonoBehaviour:
   duration: 0.2
   isloop: 1
   isFlash: 0
+--- !u!114 &1993207758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6398078956168716372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f32e09438e4d0349ba67080d319374d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedStart: 10
+  accelerationStart: 100
+  obj: {fileID: 6398078956168716361}
 --- !u!1 &6398078956212042229
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +698,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 6398078956168716375}
     m_Modifications:
     - target: {fileID: 90094319, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
+      propertyPath: repel
+      value: 
+      objectReference: {fileID: 1993207758}
+    - target: {fileID: 90094319, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 6398078956168716361}
@@ -712,15 +731,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1767357077, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
       propertyPath: m_Size.x
-      value: 0.92
+      value: 0.94
       objectReference: {fileID: 0}
     - target: {fileID: 1767357077, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
       propertyPath: m_Size.y
-      value: 0.79
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 1767357077, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
       propertyPath: m_Offset.x
-      value: -0.16
+      value: -0.19
       objectReference: {fileID: 0}
     - target: {fileID: 1767357077, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
       propertyPath: m_Offset.y
@@ -728,15 +747,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1767357077, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6003373833743844070, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
       propertyPath: m_Size.x
-      value: 1.7
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 6003373833743844070, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
       propertyPath: m_Size.y
-      value: 1.89
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 6003373833743844070, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -800,11 +819,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8097360331074329446, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8097360331074329446, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ed6c61b2a00d9419deb78b0635734d, type: 3}

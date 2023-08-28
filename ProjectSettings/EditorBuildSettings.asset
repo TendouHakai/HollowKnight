@@ -9,12 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/PlayScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Map01.unity
+    path: Assets/Scenes/DirtMouth01.unity
     guid: 231310071d126e24e9d25f989345bb51
   - enabled: 1
-    path: Assets/Scenes/Map02.unity
+    path: Assets/Scenes/DirtMouth02.unity
     guid: a884d398299f5d04ca44ed6771e44415
   - enabled: 1
     path: Assets/Scenes/Iseda's house.unity
     guid: 446be6ad0e1360b4d8f29bb43c8ae844
+  - enabled: 1
+    path: Assets/Scenes/ForgottenCrossroad01.unity
+    guid: 7d81b944192851c47bdb585afb6a072c
+  - enabled: 1
+    path: Assets/Scenes/ForgottenCrossroad02.unity
+    guid: bc1daf78046e54b4d9082ae81181c4ab
+  - enabled: 1
+    path: Assets/Scenes/ForgottenCrossroad03.unity
+    guid: 5ad21f87031868c44ae55ebedd5c3f30
+  - enabled: 1
+    path: Assets/Scenes/ForgottenCrossroad04.unity
+    guid: 94e9f4c64925df740a71a87d2bc4c716
+  - enabled: 1
+    path: Assets/Scenes/ForgottenCrossroad05.unity
+    guid: 9eed8327d6005164f9f971df8e3dd42d
   m_configObjects: {}

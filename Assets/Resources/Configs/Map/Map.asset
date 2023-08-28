@@ -16,12 +16,12 @@ MonoBehaviour:
   - ID: 0
     Name: DIRTMOUTH
     isUnlock: 1
-    SceneIDs: 0100000002000000
+    SceneIDs: 010000000200000003000000
     Markers:
     - ID: 1
       position: {x: 97.96102, y: -50.53827, z: 0}
   - ID: 1
     Name: FORGOTTEN CROSSROADS
     isUnlock: 1
-    SceneIDs: 03000000
+    SceneIDs: 0400000005000000060000000700000008000000
     Markers: []

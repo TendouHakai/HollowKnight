@@ -19,7 +19,12 @@ public class slashEffect : MonoBehaviour
     [Header("----------Up slash----------")]
     [SerializeField] Transform upSlashPoint;
     [SerializeField] Vector2 offsetupSlash;
+
+    [Header("---------Repel--------------")]
+    [SerializeField] Repel repel;
     bool isUP = false;
+
+    bool isAttacked = false;
 
     
 
@@ -54,8 +59,9 @@ public class slashEffect : MonoBehaviour
 
     public void finishSlash()
     {
-        this.gameObject.SetActive(false);
+        isAttacked = false;
         isUP = false;
+        this.gameObject.SetActive(false);
     }
 
     //public void flip()
@@ -67,29 +73,44 @@ public class slashEffect : MonoBehaviour
     //    else transform.rotation = Quaternion.Euler(0, 0, 0);
     //}
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
+    private void OnTriggerEnter2D(Collider2D collision)
+    {     
+        //if (isAttacked)
+        //{
+        //    return;
+        //}
+        //else
+        //{
+        //    isAttacked = true;
+        //}
+
         if (player.isDead == false)
         {
-            if (collision.transform.tag == "Platform" || collision.transform.tag == "Untagged" || collision.transform.tag == "Wall")
+            if(collision.tag== "Untagged")
             {
-                
+
             }
-            else if(collision.transform.tag == "Non-moving object")
+            else if (collision.tag == "Platform" || collision.tag == "Wall")
+            {
+                repel.repel(!player.isRight, isUP, true);
+            }
+            else if(collision.tag == "Non-moving object")
             {
                 BaseObject obj = collision.transform.GetComponent<BaseObject>();
-                
+
+                repel.repel(!player.isRight, isUP, true);
                 obj.takeDamage(player.Damage);
             }
-            else if (collision.transform.tag != transform.tag)
+            else if (collision.tag != transform.tag)
             {
                 BaseObject obj = collision.transform.GetComponent<BaseObject>();
                 if (obj == null) obj = collision.transform.GetComponentInParent<BaseObject>();
 
-                Rigidbody2D rb = collision.transform.GetComponent<Rigidbody2D>();
+                Rigidbody2D rb = collision.transform.GetComponentInParent<Rigidbody2D>();
 
                 if (obj.isDead == true) return;
 
+                repel.repel(!player.isRight, isUP, true);
                 obj.takeDamage(player.Damage);
 
 
@@ -109,35 +130,20 @@ public class slashEffect : MonoBehaviour
                 }
                 else
                 {
-                    if (obj.canStun == true) return;
-                    if (obj is Vengefly)
-                    {
-                        obj.GetComponent<Repel>().repel(player.isRight, isUP);
-                        return;
-                    }
-                    else if (obj as Boss) return;
+                    Repel repl = obj.GetComponent<Repel>();
 
-                    if (player.isRight)
+                    if(repl != null)
                     {
-                        //rb.AddForce(Vector2.right * GameConstant.collisionForceSlash, ForceMode2D.Impulse);
-                        obj.GetComponent<Repel>().repel(player.isRight);
-                    }
-                    else
-                    {
-                        //rb.AddForce(Vector2.left * GameConstant.collisionForceSlash, ForceMode2D.Impulse);
+                        if (obj is Vengefly || obj is Gruzzer)
+                        {
+                            obj.GetComponent<Repel>().repel(player.isRight, isUP);
+                            return;
+                        }
+                        else if (obj as Boss) return;
                         obj.GetComponent<Repel>().repel(player.isRight);
                     }
                 } 
             }
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.transform.tag == "Non-moving object")
-        {
-            BaseObject obj = collision.transform.GetComponent<BaseObject>();
-            obj.takeDamage(player.Damage);
         }
     }
 }

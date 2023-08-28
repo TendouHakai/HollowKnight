@@ -39,3 +39,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: de13880782b48b146a12ee7443528783, type: 3}
   - ID: Rock_hit
     clip: {fileID: 8300000, guid: 50997809a015c31488ae95a274c2db6c, type: 3}
+  - ID: Boss_dead
+    clip: {fileID: 8300000, guid: 8f144afb737e84d4c8842c07679401fe, type: 3}
+  - ID: Boss_land
+    clip: {fileID: 8300000, guid: a958a9de309965745b81f5acc6b0bf40, type: 3}
+  - ID: Boss_trike_ground
+    clip: {fileID: 8300000, guid: dc0770ed7c612f948b8e976c160faae4, type: 3}
+  - ID: Boss_battle_music
+    clip: {fileID: 8300000, guid: 0cb4a89b455520443ad8f9709c20fa79, type: 3}
+  - ID: AbyssMusic01
+    clip: {fileID: 8300000, guid: 3b4ef70857954db43a9e9b5408db0bf9, type: 3}

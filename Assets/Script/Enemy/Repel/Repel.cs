@@ -8,10 +8,13 @@ public class Repel : MonoBehaviour
     [SerializeField] protected float speedStart;
     [SerializeField] protected float accelerationStart;
 
-    [SerializeField] protected Enemy enemy;
+    [SerializeField] protected BaseObject obj;
 
     protected bool isrepel = false;
     protected bool isUP = false;
+
+    float speed;
+    float a;
 
     void Start()
     {
@@ -23,15 +26,15 @@ public class Repel : MonoBehaviour
     {
         if (isrepel)
         {
-            speedStart += accelerationStart * Time.deltaTime;
+            speed += a * Time.deltaTime;
 
             if(isUP)
             {
-                enemy.transform.position += new Vector3(0, speedStart, 0) * Time.deltaTime + 0.5f * new Vector3(0, accelerationStart, 0) * Time.deltaTime * Time.deltaTime;
+                obj.transform.position += new Vector3(0, speed, 0) * Time.deltaTime + 0.5f * new Vector3(0, a, 0) * Time.deltaTime * Time.deltaTime;
             }
-            else enemy.transform.position += new Vector3(speedStart, 0, 0) * Time.deltaTime + 0.5f * new Vector3(accelerationStart, 0, 0) * Time.deltaTime * Time.deltaTime;
+            else obj.transform.position += new Vector3(speed, 0, 0) * Time.deltaTime + 0.5f * new Vector3(a, 0, 0) * Time.deltaTime * Time.deltaTime;
 
-            if (accelerationStart * speedStart > 0f)
+            if (a * speed > 0f)
             {
                 stopRepel();
             }
@@ -39,41 +42,52 @@ public class Repel : MonoBehaviour
         
     }
 
-    public virtual void repel(bool isRight, bool isUP = false)
+    public virtual void repel(bool isRight, bool isUP = false, bool isPlayer = false)
     {
-        startRepel();
         if (isUP)
         {
-            repelUP();
+            repelUP(isPlayer);
         }
         else if(isRight)
         {
-            speedStart = Mathf.Abs(speedStart);
-            accelerationStart = -Mathf.Abs(accelerationStart);
+            speed = Mathf.Abs(speedStart);
+            a = -Mathf.Abs(accelerationStart);
         }
         else
         {
-            speedStart = -Mathf.Abs(speedStart);
-            accelerationStart = Mathf.Abs(accelerationStart);
+            speed = -Mathf.Abs(speedStart);
+            a = Mathf.Abs(accelerationStart);
         }
+        startRepel();
     }
 
-    public virtual void repelUP()
+    public virtual void repelUP(bool isplayer = false)
     {
         isUP = true;
+        obj.rb.velocity = Vector2.zero;
 
-        speedStart = Mathf.Abs(speedStart);
-        accelerationStart = -Mathf.Abs(accelerationStart);
+        if(isplayer)
+        {
+            speed = -Mathf.Abs(speedStart);
+            a = Mathf.Abs(accelerationStart);
+        }
+        else
+        {
+            speed = Mathf.Abs(speedStart);
+            a = -Mathf.Abs(accelerationStart);
+        }
     }
 
     public virtual void startRepel()
     {
         isrepel = true;
+        obj.isMove = false;
     }
 
     public virtual void stopRepel()
     {
         isrepel = false;
         isUP = false;
+        obj.isMove = true;
     }
 }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 60632709}
   - component: {fileID: 60632710}
+  - component: {fileID: 2050563578}
   m_Layer: 2
   m_Name: BoxColiderMoving
   m_TagString: Untagged
@@ -39,7 +40,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60632708}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -58,6 +59,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.8600719}
   m_EdgeRadius: 0
+--- !u!70 &2050563578
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60632708}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.8, y: 0.5}
+  m_Direction: 1
 --- !u!1 &422650337
 GameObject:
   m_ObjectHideFlags: 0
@@ -68,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 422650338}
   - component: {fileID: 422650339}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckisGrounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58856ab0075072242bb991b884bc3c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 0
+  Damage: 1
   Speed: 1
   velocity: {x: 0, y: 0, z: 0}
   Target: {fileID: 0}
@@ -334,7 +351,6 @@ MonoBehaviour:
   isMove: 0
   isDead: 0
   isRight: 1
-  canStun: 1
   isStun: 0
   rb: {fileID: 6817365472752039531}
   render: {fileID: 6817365472752039527}
@@ -349,6 +365,8 @@ MonoBehaviour:
   flashEffect: {fileID: 675931910}
   geoCount: 3
   geoFrefabs: {fileID: 3653567954370150305, guid: ddddba1f5b6df10448a808df2e887a0e, type: 3}
+  IDSoundDeath: Enemy_die
+  IDSoundTakeDamage: knight_damage
   collision: {fileID: 1581160209}
   timeStun: 1
   StunEffect: {fileID: 7245646321708736216, guid: 5bfa3e17dab1b8a4680984252b5f8afb, type: 3}
@@ -379,7 +397,7 @@ GameObject:
   - component: {fileID: 6817365474429764200}
   - component: {fileID: 6817365474429764207}
   - component: {fileID: 6817365474429764206}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckNextIsGrounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +469,7 @@ GameObject:
   - component: {fileID: 6817365474705705597}
   - component: {fileID: 6817365474705705539}
   - component: {fileID: 6817365474705705596}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -466,7 +484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6817365474705705598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.64, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -510,5 +528,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.3}
+  m_Size: {x: 0.3, y: 0.3}
   m_EdgeRadius: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 385637895}
   - component: {fileID: 385637897}
   - component: {fileID: 385637896}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckNextIsGrounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 2254457997945279548}
   - component: {fileID: 2254457997945279549}
   - component: {fileID: 2254457997945279546}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: checkPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,6 +360,7 @@ GameObject:
   - component: {fileID: 2254457998342205356}
   - component: {fileID: 2254457998342205357}
   - component: {fileID: 42314378}
+  - component: {fileID: 3540865291355144250}
   m_Layer: 6
   m_Name: Leaping Husk
   m_TagString: Enemy
@@ -481,12 +482,13 @@ MonoBehaviour:
   isMove: 0
   isDead: 0
   isRight: 0
+  isStun: 0
   rb: {fileID: 2254457998342205357}
   render: {fileID: 2254457998342205358}
   ani: {fileID: 2254457998342205329}
   isGrounded: 1
   currentHP: 0
-  MaxHP: 2
+  MaxHP: 3
   isAttack: 0
   isTurn: 0
   hitEffect: {fileID: 6332868833296583621, guid: dbf1ae818d7eada45b8e262855c261e7, type: 3}
@@ -494,6 +496,8 @@ MonoBehaviour:
   flashEffect: {fileID: 42314378}
   geoCount: 3
   geoFrefabs: {fileID: 3653567954370150305, guid: ddddba1f5b6df10448a808df2e887a0e, type: 3}
+  IDSoundDeath: Enemy_die
+  IDSoundTakeDamage: knight_damage
   jumpHeight: 3
   collision: {fileID: 2044921519}
 --- !u!50 &2254457998342205357
@@ -533,6 +537,21 @@ MonoBehaviour:
   duration: 0.15
   isloop: 0
   isFlash: 0
+--- !u!114 &3540865291355144250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2254457998342205328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f32e09438e4d0349ba67080d319374d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedStart: 10
+  accelerationStart: 45
+  obj: {fileID: 2254457998342205356}
 --- !u!1 &2254457998965992657
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +563,7 @@ GameObject:
   - component: {fileID: 2254457998965992686}
   - component: {fileID: 2254457998965992687}
   - component: {fileID: 2254457998965992684}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckIsGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}

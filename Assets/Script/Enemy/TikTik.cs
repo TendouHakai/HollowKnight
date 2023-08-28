@@ -20,10 +20,14 @@ public class TikTik : Enemy
         base.Start();
 
         state_Turn = State_Turn_Tiktik.Right;
+
+        rotationTemp = transform.rotation;  
     }
 
     protected override void Update()
     {
+        if(isDead) return;
+        rb.velocity = Vector2.zero;
         if (isStun)
         {
             if(timeStunStart > timeStun)
@@ -36,11 +40,15 @@ public class TikTik : Enemy
 
             return; 
         }
-
-        if (isTurn)
+        if(isTurn)
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, rotationTemp, Time.deltaTime * 5);
+            if(transform.rotation.eulerAngles.z >= rotationTemp.eulerAngles.z -1.0f && transform.rotation.eulerAngles.z <= rotationTemp.eulerAngles.z + 1.0f)
+            {
+                isTurn = false;
+            }
+            else transform.rotation = Quaternion.Lerp(transform.rotation, rotationTemp, Time.deltaTime * 5);
         }
+        
         if(isMove)
             Move();
     }
@@ -51,13 +59,45 @@ public class TikTik : Enemy
         switch (state)
         {
             case (int)STATE_TIKTIK.Turn1:
-                temp.x = -temp.x;
-                velocity = temp;
-                if(velocity.x > 0)
+                //temp.x = -temp.x;
+                //velocity = temp;
+                //if(velocity.x > 0)
+                //{
+                //    isRight = true;
+                //}
+                //else isRight = false;
+
+                isTurn = true;
+                switch (state_Turn)
                 {
-                    isRight = true;
+                    case State_Turn_Tiktik.Right:
+                        //temp.x = 0;
+                        temp.y = 1;
+                        state_Turn = State_Turn_Tiktik.Up;
+                        transform.rotation = Quaternion.Euler(0, 180, 360);
+                        rotationTemp = Quaternion.Euler(0, 180, 270);
+                        break;
+                    case State_Turn_Tiktik.Down:;
+                        //temp.y = 0;
+                        temp.x = 1;
+                        state_Turn = State_Turn_Tiktik.Right;
+                        rotationTemp = Quaternion.Euler(0, 180, 0);
+                        break;
+                    case State_Turn_Tiktik.Left:
+                        //temp.x = 0;
+                        temp.y = -1;
+                        rotationTemp = Quaternion.Euler(0, 180, 90);
+                        state_Turn = State_Turn_Tiktik.Down;
+                        break;
+                    case State_Turn_Tiktik.Up:
+                        //temp.y = 0;
+                        temp.x = -1;
+                        state_Turn = State_Turn_Tiktik.Left;
+                        rotationTemp = Quaternion.Euler(0, 180, 180);
+                        break;
                 }
-                else isRight = false;
+
+                velocity = temp;
                 break;
             case (int)STATE_TIKTIK.Turn2:
                 isTurn = true;

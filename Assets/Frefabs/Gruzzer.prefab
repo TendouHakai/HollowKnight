@@ -82,7 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1660860159}
   - component: {fileID: 1660860160}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckisGrounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 515014691826475071}
   - component: {fileID: 515014691826475009}
   - component: {fileID: 1459158682}
+  - component: {fileID: -388467705978595054}
   m_Layer: 6
   m_Name: Gruzzer
   m_TagString: Enemy
@@ -253,7 +254,6 @@ MonoBehaviour:
   isMove: 0
   isDead: 0
   isRight: 0
-  canStun: 0
   isStun: 0
   rb: {fileID: 515014691826475009}
   render: {fileID: 515014691826475011}
@@ -268,6 +268,8 @@ MonoBehaviour:
   flashEffect: {fileID: 1459158682}
   geoCount: 3
   geoFrefabs: {fileID: 3653567954370150305, guid: ddddba1f5b6df10448a808df2e887a0e, type: 3}
+  IDSoundDeath: Enemy_die
+  IDSoundTakeDamage: knight_damage
   angle: 20
   collision: {fileID: 906822224}
 --- !u!50 &515014691826475009
@@ -307,6 +309,21 @@ MonoBehaviour:
   duration: 0.15
   isloop: 0
   isFlash: 0
+--- !u!114 &-388467705978595054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515014691826475013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f32e09438e4d0349ba67080d319374d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedStart: 10
+  accelerationStart: 35
+  obj: {fileID: 515014691826475071}
 --- !u!1 &515014691837679960
 GameObject:
   m_ObjectHideFlags: 0

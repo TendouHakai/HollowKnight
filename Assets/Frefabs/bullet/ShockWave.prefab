@@ -122,21 +122,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 1
-  Speed: 3
+  Speed: 5
   velocity: {x: 0, y: 0, z: 0}
   Target: {fileID: 0}
   State: 0
   isMove: 1
   isDead: 0
   isRight: 0
-  canStun: 0
   isStun: 0
   rb: {fileID: 0}
   render: {fileID: 7978001527623303348}
   ani: {fileID: 7978001527623303351}
   isGrounded: 0
-  acceleration: 10
-  MaxSpeed: 8
+  acceleration: 20
+  MaxSpeed: 10
 --- !u!70 &7978001527623303345
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

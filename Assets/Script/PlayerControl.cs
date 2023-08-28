@@ -77,6 +77,7 @@ public class PlayerControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             player.setState((int)STATE_PLAYER.Jump);
+            Debug.Log("jump");
         } 
 
         if (player.rb.velocity.y > 0)

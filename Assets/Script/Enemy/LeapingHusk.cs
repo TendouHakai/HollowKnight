@@ -21,6 +21,7 @@ public class LeapingHusk : Enemy
 
     protected override void Update()
     {
+        if(isDead) return;
         base.Update();
 
         ani.SetFloat("speedEnemy", Mathf.Abs(velocity.x));
@@ -29,7 +30,7 @@ public class LeapingHusk : Enemy
     public override void setState(int state)
     {
         Vector3 temp = velocity;
-
+        if (isDead)  return; 
         switch (state)
         {
             case (int)STATE_LEAPINGHUSK.Turn:
@@ -54,10 +55,10 @@ public class LeapingHusk : Enemy
                 isAttack = true;
                 break;
             case (int)STATE_LEAPINGHUSK.Die:
-                temp.x = 0;
                 ani.Play("LeapingHusk_DEAD_IN_AIR");
                 collision.SetActive(false);
                 this.transform.Find("BoxCollisionMoving").GetComponent<BoxCollider2D>().size = new Vector2(1, 0.8f);
+                temp.x = 0;
                 break;
         }
         velocity = temp;
@@ -104,8 +105,8 @@ public class LeapingHusk : Enemy
     // dead
     public override void Dead()
     {
-        base.Dead();
         setState((int)STATE_LEAPINGHUSK.Die);
+        base.Dead();
     }
 }
 

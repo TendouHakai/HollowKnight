@@ -71,6 +71,7 @@ public class HuskGuard : Boss
                 break;
             case (int)STATE_HUSKGUARD.WAKE:
                 ani.Play("HuskGuardian_WAKE");
+                SoundManager.getInstance().PlayMusic("Boss_battle_music");
                 break;
             default:
                 return;

@@ -26,16 +26,21 @@ public class CameraFollow : MonoBehaviour
     }
     void Start()
     {
+        if (target != null) return;
         Player player = GameObject.FindObjectOfType<Player>();
         if (player == null)
         {
-            player = Instantiate(playerFrefabs, transform.position, Quaternion.identity);
+            Vector3 pos = transform.position;
+            pos.z = -0.01f;
+            player = Instantiate(playerFrefabs, pos, Quaternion.identity);
             target = player.transform;
 
             Instantiate(playerControlFrefabs, Vector3.zero, Quaternion.identity);
             Instantiate(uIManagerFrefabs, Vector3.zero, Quaternion.identity);
             Instantiate(soundManagerFrefabs, Vector3.zero, Quaternion.identity);
             Instantiate(sceneLoaderFrefabs, Vector3.zero, Quaternion.identity);
+
+            SoundManager.getInstance().PlayMusic("AbyssMusic01");
         }
         else
         {

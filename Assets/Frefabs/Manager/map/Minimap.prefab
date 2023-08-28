@@ -989,6 +989,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7def817edfc8e43a8d6054eb60b9e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinimapUI: {fileID: 6779983519499373570}
+  MinimapUI: {fileID: 6779983519499373568}
   NoMapUI: {fileID: 175431320}
   isNoMap: 0

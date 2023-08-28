@@ -19,6 +19,10 @@ public class Enemy : PlayObject
     [SerializeField] protected int geoCount;
     [SerializeField] protected GameObject geoFrefabs;
 
+    [Header("---------SOUND----------")]
+    [SerializeField] string IDSoundDeath;
+    [SerializeField] string IDSoundTakeDamage;
+
     protected override void Start()
     {
         base.Start();
@@ -50,12 +54,12 @@ public class Enemy : PlayObject
         if (isDead)
         {
             effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
-            SoundManager.getInstance().PlaySFXEnemy("Enemy_die");
+            SoundManager.getInstance().PlaySFXEnemy(IDSoundDeath);
         }
         else
         {
             effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-            SoundManager.getInstance().PlaySFXEnemy("knight_damage");
+            SoundManager.getInstance().PlaySFXEnemy(IDSoundTakeDamage);
             flashEffect.startFlash();
         }
 

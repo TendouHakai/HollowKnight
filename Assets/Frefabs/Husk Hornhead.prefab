@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 575925086}
   - component: {fileID: 575925088}
   - component: {fileID: 575925087}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckNextIsGrounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 1530430392}
   - component: {fileID: 1530430394}
   - component: {fileID: 1530430393}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckIsGrounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 6847065884655175592}
   - component: {fileID: 6847065884655175594}
   - component: {fileID: 6847065884655175593}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,6 @@ MonoBehaviour:
   isMove: 0
   isDead: 0
   isRight: 0
-  canStun: 0
   isStun: 0
   rb: {fileID: 6847065884824085797}
   render: {fileID: 6847065884824085816}
@@ -518,6 +517,8 @@ MonoBehaviour:
   flashEffect: {fileID: 1556217799}
   geoCount: 5
   geoFrefabs: {fileID: 3653567954370150305, guid: ddddba1f5b6df10448a808df2e887a0e, type: 3}
+  IDSoundDeath: Enemy_die
+  IDSoundTakeDamage: knight_damage
   rangeAttack: 2.5
   speed_WALK: 1.5
   speed_RUN: 10
@@ -552,7 +553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedStart: 10
   accelerationStart: 40
-  enemy: {fileID: 6847065884824085796}
+  obj: {fileID: 6847065884824085796}
 --- !u!1 &6847065885246578509
 GameObject:
   m_ObjectHideFlags: 0

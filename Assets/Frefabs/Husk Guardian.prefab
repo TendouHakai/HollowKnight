@@ -294,6 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2638933156114365930}
   - component: {fileID: 2638933156114365931}
+  - component: {fileID: 1252645059}
   m_Layer: 0
   m_Name: Stomp
   m_TagString: Untagged
@@ -337,6 +338,22 @@ MonoBehaviour:
   MinRange: 0
   stopMove: 1
   shockWaveFrefabs: {fileID: 7978001527623303350, guid: 1e9cedf3c90819d4eb5eb55e318ead2f, type: 3}
+  repel: {fileID: 1252645059}
+--- !u!114 &1252645059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2638933156114365933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f32e09438e4d0349ba67080d319374d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedStart: 10
+  accelerationStart: 30
+  obj: {fileID: 2638933156496066528}
 --- !u!1 &2638933156317666517
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +616,6 @@ MonoBehaviour:
   isMove: 0
   isDead: 0
   isRight: 0
-  canStun: 0
   isStun: 0
   rb: {fileID: 2638933156496066530}
   render: {fileID: 2638933156496066532}
@@ -614,6 +630,8 @@ MonoBehaviour:
   flashEffect: {fileID: 2638933156496066531}
   geoCount: 10
   geoFrefabs: {fileID: 3653567954370150305, guid: ddddba1f5b6df10448a808df2e887a0e, type: 3}
+  IDSoundDeath: Boss_dead
+  IDSoundTakeDamage: knight_damage
   coliderCombat: {fileID: 2638933154875268488}
   rangeCombat: 30
   isCombat: 0

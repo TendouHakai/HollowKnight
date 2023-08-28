@@ -12,7 +12,6 @@ public class BaseObject : MonoBehaviour
     public bool isMove;
     public bool isDead;
     public bool isRight;
-    public bool canStun;
     public bool isStun;
 
     [Header("----------Component----------")]

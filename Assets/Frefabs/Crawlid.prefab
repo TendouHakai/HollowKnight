@@ -156,7 +156,6 @@ MonoBehaviour:
   isMove: 0
   isDead: 0
   isRight: 0
-  canStun: 0
   isStun: 0
   rb: {fileID: 2824406071413346105}
   render: {fileID: 2824406071413346106}
@@ -171,6 +170,8 @@ MonoBehaviour:
   flashEffect: {fileID: 2824406071413346100}
   geoCount: 3
   geoFrefabs: {fileID: 3653567954370150305, guid: ddddba1f5b6df10448a808df2e887a0e, type: 3}
+  IDSoundDeath: Enemy_die
+  IDSoundTakeDamage: knight_damage
   collision: {fileID: 2824406072992730695}
 --- !u!114 &2824406071413346100
 MonoBehaviour:
@@ -202,7 +203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedStart: 10
   accelerationStart: 50
-  enemy: {fileID: 2824406071413346103}
+  obj: {fileID: 2824406071413346103}
 --- !u!1 &2824406071457636267
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +273,7 @@ GameObject:
   - component: {fileID: 2824406071595260508}
   - component: {fileID: 2824406071595260510}
   - component: {fileID: 2824406071595260511}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,7 +345,7 @@ GameObject:
   - component: {fileID: 2824406072222391702}
   - component: {fileID: 2824406072222391696}
   - component: {fileID: 2824406072222391697}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckNextIsGrounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2824406072365899874}
   - component: {fileID: 2824406072365899901}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CheckisGrounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}

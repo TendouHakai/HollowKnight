@@ -298,7 +298,6 @@ MonoBehaviour:
   isMove: 0
   isDead: 0
   isRight: 0
-  canStun: 0
   isStun: 0
   rb: {fileID: 1255309099958903599}
   render: {fileID: 1255309099958903596}
@@ -313,6 +312,8 @@ MonoBehaviour:
   flashEffect: {fileID: 1703524988}
   geoCount: 3
   geoFrefabs: {fileID: 3653567954370150305, guid: ddddba1f5b6df10448a808df2e887a0e, type: 3}
+  IDSoundDeath: Enemy_die
+  IDSoundTakeDamage: knight_damage
   timeToChangeDirect: 1
   speed_ATTACK: 5
   collision: {fileID: 1324349482}
@@ -346,8 +347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedStart: 10
-  accelerationStart: 25
-  enemy: {fileID: 1255309099958903598}
+  accelerationStart: 35
+  obj: {fileID: 1255309099958903598}
 --- !u!1 &1255309100769005017
 GameObject:
   m_ObjectHideFlags: 0

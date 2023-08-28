@@ -6,10 +6,12 @@ public class HuskGuardian_STOMP : AttackSkill
 {
     [Header("----------shockWave----------")]
     [SerializeField] shockWave shockWaveFrefabs;
+    [SerializeField] Repel repel;
+
 
     public override void startAttack()
     {
-        base.startAttack();
+        base.startAttack(); 
         boss.ani.Play("HuskGuardian_START_STOMP");
     }
 
@@ -23,12 +25,25 @@ public class HuskGuardian_STOMP : AttackSkill
     // animation event
     public override void aniEvent()
     {
-        shockWave shockwave = Instantiate(shockWaveFrefabs, transform.position + new Vector3(0,-1.5f,0), Quaternion.identity);
-        shockwave.isRight = true;
-        Destroy(shockwave.gameObject, 4f);
+        switch (aniEventCount)
+        {
+            case 0:
+                repel.repel(!boss.isRight);
+                aniEventCount+=1;
+                break;
+            case 1:
+                SoundManager.getInstance().PlaySFXEnemy("Boss_land");
 
-        shockWave shockwave1 = Instantiate(shockWaveFrefabs, transform.position + new Vector3(0, -1.5f, 0), Quaternion.identity);
-        shockwave1.isRight = false;
-        Destroy(shockwave1.gameObject, 4f);
+                shockWave shockwave = Instantiate(shockWaveFrefabs, transform.position + new Vector3(0, -1.5f, 0), Quaternion.identity);
+                shockwave.isRight = true;
+                Destroy(shockwave.gameObject, 4f);
+
+                shockWave shockwave1 = Instantiate(shockWaveFrefabs, transform.position + new Vector3(0, -1.5f, 0), Quaternion.identity);
+                shockwave1.isRight = false;
+                Destroy(shockwave1.gameObject, 4f);
+
+                aniEventCount = 0;
+                break;
+        } 
     }
 }

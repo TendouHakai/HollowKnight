@@ -334,7 +334,6 @@ MonoBehaviour:
   isMove: 0
   isDead: 0
   isRight: 0
-  canStun: 0
   isStun: 0
   rb: {fileID: 0}
   render: {fileID: 1404660212682907545}
