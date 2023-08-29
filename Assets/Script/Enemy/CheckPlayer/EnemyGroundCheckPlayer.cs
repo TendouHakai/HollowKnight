@@ -8,7 +8,7 @@ public class EnemyGroundCheckPlayer : MonoBehaviour
     [SerializeField] Enemy enemy;
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision != null && collision.tag == "Player")
+        if (collision.tag == "Player")
         {
             if(enemy.isAttack == false  && enemy.isDead == false)
             {
@@ -20,7 +20,7 @@ public class EnemyGroundCheckPlayer : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision != null && collision.tag == "Player" && enemy.isDead == false)
+        if (collision.tag == "Player" && enemy.isDead == false)
         {
             if (enemy.isAttack == false)
             {

@@ -29,6 +29,7 @@ public class LeapingHusk : Enemy
 
     public override void setState(int state)
     {
+        if(isDead) return;
         Vector3 temp = velocity;
         if (isDead)  return; 
         switch (state)
@@ -59,6 +60,8 @@ public class LeapingHusk : Enemy
                 collision.SetActive(false);
                 this.transform.Find("BoxCollisionMoving").GetComponent<BoxCollider2D>().size = new Vector2(1, 0.8f);
                 temp.x = 0;
+
+                isDead = true;
                 break;
         }
         velocity = temp;

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     private static SoundManager instance;
+    public const int MaxVolume = 10;
 
     public static SoundManager getInstance()
     {
@@ -62,5 +64,26 @@ public class SoundManager : MonoBehaviour
         sourceSFXEnemy.clip = SoundConfigs.getInstance().getConfig(ID).clip;
         sourceSFXEnemy.loop = false;
         sourceSFXEnemy.Play();
+    }
+
+    public void setVolumeSFX(int volume)
+    {
+        sourceSFXEnemy.volume = volume*1.0f/MaxVolume;
+        sourceSFXPlayer.volume = volume*1.0f/MaxVolume;
+    }
+
+    public int getVolumeSFX()
+    {
+        return Convert.ToInt32(sourceSFXEnemy.volume * MaxVolume);
+    }
+
+    public void setVolumeMusic(int volume)
+    {
+        sourceMusic.volume = volume*1.0f/MaxVolume;
+    }
+
+    public int getVolumeMusic()
+    {
+        return Convert.ToInt32(sourceMusic.volume * MaxVolume);
     }
 }

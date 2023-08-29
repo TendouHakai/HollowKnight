@@ -55,6 +55,7 @@ public class TikTik : Enemy
 
     public override void setState(int state)
     {
+        if (isDead) return;
         Vector3 temp = velocity;
         switch (state)
         {
@@ -136,6 +137,7 @@ public class TikTik : Enemy
                 collision.SetActive(false);
                 rb.gravityScale = 3.5f;
                 isMove = false;
+                isDead = true;
                 break;
             case (int)STATE_TIKTIK.Stun:
                 ani.Play("TikTik_STUN");
@@ -155,8 +157,8 @@ public class TikTik : Enemy
     // dead
     public override void Dead()
     {
-        base.Dead();
         setState((int)STATE_TIKTIK.Die);
+        base.Dead();
     }
 
     // take damge

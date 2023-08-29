@@ -236,6 +236,7 @@ public class Player : PlayObject
             flashEffect.startFlash();
 
             effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            SoundManager.getInstance().PlaySFXPlayer("knight_takeDamage");
             Destroy(effect, 1f);
         }
         else

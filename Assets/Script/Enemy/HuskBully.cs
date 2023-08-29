@@ -16,6 +16,8 @@ public class HuskBully : Enemy
     [Header("----------Collision----------")]
     [SerializeField] protected GameObject collision;
 
+    protected bool isAttackSkill = false;
+
     protected override void Start()
     {
         base.Start();
@@ -35,8 +37,8 @@ public class HuskBully : Enemy
 
     public override void setState(int state)
     {
+        if (isDead) return;
         Vector3 temp = velocity;
-        if(isDead) return;
         switch (state)
         {
             case (int)STATE_HUSKBULLY.IDLE:
@@ -60,17 +62,19 @@ public class HuskBully : Enemy
             case (int)STATE_HUSKBULLY.Attack:
                 isAttack = true;
                 isMove = false;
-                //ani.SetTrigger("Attack");
                 ani.Play("HuskBully_ANTICIPATE");
                 break;
             case (int)STATE_HUSKBULLY.StopAttack:
-                ani.SetTrigger("StopAttack");
+                isAttackSkill = false;
+                ani.Play("HuskBully_STOP_ATTACK");
                 break;
             case (int)STATE_HUSKBULLY.Die:
                 ani.Play("HuskBully_DEADinAIR");
                 collision.SetActive(false);
                 this.transform.Find("BoxColiderMoving").GetComponent<BoxCollider2D>().size = new Vector2(1,1);
                 temp.x = 0;
+
+                isDead = true;
                 break;
         }
         velocity = temp;
@@ -92,6 +96,7 @@ public class HuskBully : Enemy
         isMove = true;
         Speed = speed_RUN;
         timeAttackStart = 0f;
+        isAttackSkill = true;
     }
 
     public void finishAttack()
@@ -103,13 +108,22 @@ public class HuskBully : Enemy
 
     public override void Attack()
     {
-        if (isMove == false) return;
-        if (timeAttackStart > timeAttack)
+        if (isAttackSkill)
         {
-            setState((int)STATE_HUSKBULLY.StopAttack);
-            timeAttackStart = 0f;
+            //Debug.Log("timeStart: " + timeAttackStart);
+            if (timeAttackStart > timeAttack)
+            {
+                setState((int)STATE_HUSKBULLY.StopAttack);
+                timeAttackStart = 0f;
+            }
+            else timeAttackStart += Time.deltaTime;
         }
-        else timeAttackStart += Time.deltaTime;
+    }
+
+    // takeDamage
+    public override void takeDamage(float damage)
+    {
+        base.takeDamage(damage);
     }
 
     // dead

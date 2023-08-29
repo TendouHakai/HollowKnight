@@ -10,11 +10,16 @@ public class shockWave : BaseObject
     protected override void Start()
     {
         base.Start();
-        if(isRight)
+        if (isRight)
         {
             acceleration = Mathf.Abs(acceleration);
+            Speed = Mathf.Abs(Speed);
         }
-        else acceleration = -Mathf.Abs(acceleration);
+        else
+        {
+            acceleration = -Mathf.Abs(acceleration);
+            Speed = -Mathf.Abs(Speed);
+        }
 
         flip();
     }

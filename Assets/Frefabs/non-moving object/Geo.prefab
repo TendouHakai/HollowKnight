@@ -285,12 +285,11 @@ MonoBehaviour:
   isMove: 0
   isDead: 0
   isRight: 0
-  canStun: 0
   isStun: 0
   rb: {fileID: 1160499631}
   render: {fileID: 3653567954370150311}
   ani: {fileID: 3653567954370150304}
   isGrounded: 0
-  coin: 5
+  coin: 1
   canCollect: 0
   isCollect: 0

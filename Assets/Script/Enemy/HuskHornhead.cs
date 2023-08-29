@@ -6,6 +6,7 @@ public class HuskHornhead : HuskBully
 {
     public override void setState(int state)
     {
+        if(isDead) return;
         Vector3 temp = velocity;
         switch (state)
         {
@@ -33,13 +34,16 @@ public class HuskHornhead : HuskBully
                 ani.SetTrigger("Attack");
                 break;
             case (int)STATE_HUSKBULLY.StopAttack:
-                ani.SetTrigger("StopAttack");
+                isAttackSkill = false;
+                ani.Play("HuskHornhead_END_ATTACK");
                 break;
             case (int)STATE_HUSKBULLY.Die:
                 ani.Play("HuskHornhead_DEAD_IN_AIR");
                 collision.SetActive(false);
                 this.transform.Find("BoxColisionMoving").GetComponent<BoxCollider2D>().size = new Vector2(1, 1);
                 temp.x = 0;
+
+                isDead = true;
                 break;
         }
         velocity = temp;

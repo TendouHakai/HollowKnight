@@ -23,6 +23,7 @@ public class Vengefly : Enemy
 
     public override void setState(int state)
     {
+        if(isDead) return;
         Vector3 temp = velocity;
         switch (state)
         {
@@ -47,6 +48,7 @@ public class Vengefly : Enemy
                 isMove = false;
                 rb.gravityScale = 3.5f;
                 ani.Play("Vengefly_DEAD");
+                isDead = true;  
                 break;
         }
         base.setState(state);
@@ -109,8 +111,8 @@ public class Vengefly : Enemy
     // dead
     public override void Dead()
     {
-        base.Dead();
         setState((int)STATE_VENGEFLY.Die);
+        base.Dead();
     }
 }
 

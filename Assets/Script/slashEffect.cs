@@ -24,10 +24,6 @@ public class slashEffect : MonoBehaviour
     [SerializeField] Repel repel;
     bool isUP = false;
 
-    bool isAttacked = false;
-
-    
-
     private void Start()
     {
         isRight = false;
@@ -59,7 +55,6 @@ public class slashEffect : MonoBehaviour
 
     public void finishSlash()
     {
-        isAttacked = false;
         isUP = false;
         this.gameObject.SetActive(false);
     }
@@ -75,15 +70,6 @@ public class slashEffect : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {     
-        //if (isAttacked)
-        //{
-        //    return;
-        //}
-        //else
-        //{
-        //    isAttacked = true;
-        //}
-
         if (player.isDead == false)
         {
             if(collision.tag== "Untagged")

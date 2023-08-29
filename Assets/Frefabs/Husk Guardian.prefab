@@ -628,7 +628,7 @@ MonoBehaviour:
   hitEffect: {fileID: 4310211813239416989, guid: 02dfc1c9063bf9a498fb4078409e5ab3, type: 3}
   deathEffect: {fileID: 7047995445300688200, guid: 8207926826a15d2428f5fc4fa3e0c45b, type: 3}
   flashEffect: {fileID: 2638933156496066531}
-  geoCount: 10
+  geoCount: 30
   geoFrefabs: {fileID: 3653567954370150305, guid: ddddba1f5b6df10448a808df2e887a0e, type: 3}
   IDSoundDeath: Boss_dead
   IDSoundTakeDamage: knight_damage

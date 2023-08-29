@@ -18,6 +18,7 @@ public class Gruzzer : Enemy
     }
     public override void setState(int state)
     {
+        if(isDead) return;
         Vector3 temp = velocity;
         switch (state)
         {
@@ -35,6 +36,7 @@ public class Gruzzer : Enemy
                 temp.y = 0;
 
                 rb.gravityScale = 3.5f;
+                isDead = true;
                 break;
         }
         velocity = temp;
@@ -44,8 +46,8 @@ public class Gruzzer : Enemy
     // dead
     public override void Dead()
     {
-        base.Dead();
         setState((int)STATE_GRUZZER.Die);
+        base.Dead();
     }
 
     public void deadFinish()

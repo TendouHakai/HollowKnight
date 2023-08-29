@@ -509,7 +509,7 @@ MonoBehaviour:
   ani: {fileID: 6847065884824085799}
   isGrounded: 0
   currentHP: 0
-  MaxHP: 2
+  MaxHP: 3
   isAttack: 0
   isTurn: 0
   hitEffect: {fileID: 6332868833296583621, guid: dbf1ae818d7eada45b8e262855c261e7, type: 3}

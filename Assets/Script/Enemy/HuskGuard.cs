@@ -25,12 +25,14 @@ public class HuskGuard : Boss
         
     protected override void Update()
     {
+        if(isDead) return;
         base.Update();
         ani.SetFloat("SpeedEnemy", Mathf.Abs(velocity.x * Speed));
     }
 
     public override void setState(int state)
     {
+        if(isDead) return;
         Vector3 temp = velocity;
         if (this.State == state) return;
         switch (state)

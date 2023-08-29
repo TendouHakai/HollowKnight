@@ -812,7 +812,7 @@ MonoBehaviour:
   - {fileID: 7072448362980018894}
   - {fileID: 7072448363663550959}
   - {fileID: 7072448363161042329}
-  coin: 1000
+  coin: 0
   coinAni: {fileID: 340204474}
   coinText: {fileID: 295990220}
   player: {fileID: 0}

@@ -50,6 +50,8 @@ public class breakablePlatform : MonoBehaviour
 
             Destroy(effect, 1f);
 
+            SoundManager.getInstance().PlaySFXEnemy("Rock_hit");
+
             Destroy(this.gameObject);
         }
     }
