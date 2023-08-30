@@ -48,6 +48,7 @@ public class PauseMenu : MonoBehaviour
         // save game data
         // save HUD data
         SaveLoadSystem.SaveHUDData(HUDManager.getInstance());
+        SaveLoadSystem.SaveSettingData(SoundManager.getInstance().getVolumeSFX(), SoundManager.getInstance().getVolumeMusic());
 
 
         GameStateManager.getInstance().setState(Game_State.BacktoMenu);

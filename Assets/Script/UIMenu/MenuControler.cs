@@ -101,6 +101,9 @@ public class MenuControler : MonoBehaviour
 
     public void BackToSettingMenu()
     {
+        // save soundSetting
+        SaveLoadSystem.SaveSettingData(SoundManager.getInstance().getVolumeSFX(), SoundManager.getInstance().getVolumeMusic());
+
         SettingMenu.SetActive(true);
         SoundSettingMenu.SetActive(false);
         GameSettingMenu.SetActive(false);

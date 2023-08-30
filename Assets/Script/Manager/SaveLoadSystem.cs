@@ -72,4 +72,38 @@ public static class SaveLoadSystem
             return null;
         }
     }
+
+    // save setting data
+    public static void SaveSettingData(int volumeSFX, int volumeMusic)
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/SettingData.fun";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        SettingData data = new SettingData(volumeSFX, volumeMusic);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
+    }
+
+    public static SettingData LoadSettingData()
+    {
+        string path = Application.persistentDataPath + "/SettingData.fun";
+        Debug.Log(path);
+
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            SettingData data = formatter.Deserialize(stream) as SettingData;
+            stream.Close();
+            return data;
+        }
+        else
+        {
+            Debug.Log("Save file not found in " + path);
+            return null;
+        }
+    }
 }

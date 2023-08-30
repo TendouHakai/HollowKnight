@@ -15,6 +15,7 @@ public class SoundBtn : Button
     {
         base.Start();
         slider.maxValue = SoundManager.MaxVolume;
+
         if (isChangeSFX)
         {
             slider.value = SoundManager.getInstance().getVolumeSFX();

@@ -35,3 +35,16 @@ public class PLayerData
         this.sceneNumber = SceneNumber;
     }
 }
+
+[System.Serializable]
+public class SettingData
+{
+    public int volumeSFX;
+    public int volumeMusic;
+
+    public SettingData(int volumeSFX, int volumeMusic)
+    {
+        this.volumeSFX = volumeSFX;
+        this.volumeMusic = volumeMusic;
+    }
+}

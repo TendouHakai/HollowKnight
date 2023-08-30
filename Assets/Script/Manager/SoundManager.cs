@@ -24,6 +24,16 @@ public class SoundManager : MonoBehaviour, Subcriber
         DontDestroyOnLoad(gameObject);
     }
 
+    void Start()
+    {
+        SettingData data = SaveLoadSystem.LoadSettingData();
+        if (data != null)
+        {
+            setVolumeSFX(data.volumeSFX);
+            setVolumeMusic(data.volumeMusic);
+        }
+    }
+
     [SerializeField] private AudioSource sourceMusic;
     [SerializeField] private AudioSource sourceSFXPlayer;
     [SerializeField] private AudioSource sourceSFXEnemy;
