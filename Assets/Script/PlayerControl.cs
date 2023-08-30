@@ -1,9 +1,9 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+public class PlayerControl : MonoBehaviour, Subcriber
 {
     private static PlayerControl instance;
 
@@ -29,6 +29,7 @@ public class PlayerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameStateManager.getInstance().publisherGameState.subcribe(this);
         if (player == null) 
             player = GameObject.FindObjectOfType<Player>();
     }
@@ -90,5 +91,19 @@ public class PlayerControl : MonoBehaviour
 
         // attack combo
         player.Combo();
+    }
+
+    // subcribe
+    public void update(int state)
+    {
+        if(state == (int)Game_State.Pause)
+        {
+            SoundManager.getInstance().StopSFXPlayer();
+            enabled = false;
+        }
+        else
+        {
+            enabled = true;
+        }
     }
 }

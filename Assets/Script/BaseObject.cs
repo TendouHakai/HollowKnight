@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseObject : MonoBehaviour
+public class BaseObject : MonoBehaviour, Subcriber
 {
     public float Damage;
     public float Speed;
@@ -22,6 +22,7 @@ public class BaseObject : MonoBehaviour
     // Start is called before the first frame update
     protected virtual void Start()
     {
+        GameStateManager.getInstance().publisherGameState.subcribe(this);
         isMove = true;
         isDead = false;
     }
@@ -54,8 +55,8 @@ public class BaseObject : MonoBehaviour
     }
 
     public virtual void Dead()
-    { 
-
+    {
+        GameStateManager.getInstance().publisherGameState.unsubcribe(this);
     }
 
     public virtual void flip()
@@ -65,5 +66,43 @@ public class BaseObject : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         else transform.rotation = Quaternion.Euler(0, 0, 0);
+    }
+
+    // subcribe
+
+    public void OnDestroy()
+    {
+        GameStateManager.getInstance().publisherGameState.unsubcribe(this);
+    }
+
+    public virtual void update(int state)
+    {
+        if(state == (int)Game_State.Pause)
+        {
+            if (rb != null)
+            {
+                rb.velocity = Vector2.zero;
+                rb.isKinematic = true;
+            }
+
+            if(ani != null)
+            {
+                ani.enabled = false;
+            }
+
+            enabled = false;
+        }
+        else
+        {
+            if (rb != null)
+                rb.isKinematic = false;
+
+            if (ani != null)
+            {
+                ani.enabled = true;
+            }
+
+            enabled = true;
+        }
     }
 }

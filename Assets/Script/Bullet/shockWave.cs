@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shockWave : BaseObject
+public class shockWave : Bullet
 {
     public float acceleration;
     public float MaxSpeed;

@@ -128,7 +128,7 @@ public class HuskGuard : Boss
     public override void Dead()
     {
         base.Dead();
-
+        SoundManager.getInstance().PlayMusic("AbyssMusic01");
         ani.Play("HuskGuardian_DEAD_IN_AIR");
     }
 

@@ -69,12 +69,11 @@ public class HuskBully : Enemy
                 ani.Play("HuskBully_STOP_ATTACK");
                 break;
             case (int)STATE_HUSKBULLY.Die:
+                isDead = true;
                 ani.Play("HuskBully_DEADinAIR");
                 collision.SetActive(false);
                 this.transform.Find("BoxColiderMoving").GetComponent<BoxCollider2D>().size = new Vector2(1,1);
                 temp.x = 0;
-
-                isDead = true;
                 break;
         }
         velocity = temp;

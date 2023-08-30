@@ -36,11 +36,9 @@ public class HuskGuardian_STOMP : AttackSkill
 
                 shockWave shockwave = Instantiate(shockWaveFrefabs, transform.position + new Vector3(0, -1.5f, 0), Quaternion.identity);
                 shockwave.isRight = true;
-                Destroy(shockwave.gameObject, 4f);
 
                 shockWave shockwave1 = Instantiate(shockWaveFrefabs, transform.position + new Vector3(0, -1.5f, 0), Quaternion.identity);
                 shockwave1.isRight = false;
-                Destroy(shockwave1.gameObject, 4f);
 
                 aniEventCount = 0;
                 break;

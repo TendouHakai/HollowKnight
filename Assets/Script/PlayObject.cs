@@ -39,6 +39,7 @@ public class PlayObject : BaseObject
 
     public override void Dead()
     {
+        base.Dead();
         this.isDead = true;
     }
 }

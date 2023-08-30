@@ -23,6 +23,17 @@ public class HUDManager : MonoBehaviour
 
     private void Start()
     {
+        // create health
+        for(int i = 0; i< maxHealth; i++)
+        {
+            GameObject healthObj = Instantiate(healthFrefabs, transform.position, Quaternion.identity);
+            healthList.Add(healthObj.transform.GetComponent<Animator>());
+
+            healthObj.transform.parent = healthContains.transform;
+            healthObj.transform.localPosition = new Vector3(-742 + i*80, 0, 0);
+            healthObj.transform.transform.localScale = new Vector3(1,1,1);
+        }
+
         if (player == null)
         {
             player = GameObject.FindObjectOfType<Player>();            
@@ -38,6 +49,8 @@ public class HUDManager : MonoBehaviour
     [SerializeField] Animator SoulAni;
 
     [Header("----------Health----------")]
+    [SerializeField] GameObject healthFrefabs;
+    [SerializeField] GameObject healthContains;
     [SerializeField] public int maxHealth;
     [SerializeField] public int health;
     [SerializeField] List<Animator> healthList;

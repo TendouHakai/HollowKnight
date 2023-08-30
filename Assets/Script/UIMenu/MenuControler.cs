@@ -28,6 +28,8 @@ public class MenuControler : MonoBehaviour
         SoundSettingMenu.SetActive(false);
 
         SoundManager.getInstance().PlayMusic("DirtMouth_Music");
+
+        Screen.SetResolution(1366, 768, true);
     }
 
     // Update is called once per frame

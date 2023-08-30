@@ -134,6 +134,7 @@ MonoBehaviour:
   render: {fileID: 7978001527623303348}
   ani: {fileID: 7978001527623303351}
   isGrounded: 0
+  TimeDestroy: 4
   acceleration: 20
   MaxSpeed: 10
 --- !u!70 &7978001527623303345

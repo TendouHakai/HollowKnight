@@ -13,8 +13,8 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] Player playerFrefabs;
     [SerializeField] PlayerControl playerControlFrefabs;
     [SerializeField] UIManager uIManagerFrefabs;
-    [SerializeField] SoundManager soundManagerFrefabs;
     [SerializeField] SceneLoader sceneLoaderFrefabs;
+    [SerializeField] GameStateManager gameStateManagerFrefabs;
 
     [Header("----------Viewport Size----------")]
     [SerializeField] Vector2 MaxPosition;
@@ -38,14 +38,13 @@ public class CameraFollow : MonoBehaviour
             Instantiate(playerControlFrefabs, Vector3.zero, Quaternion.identity);
             Instantiate(uIManagerFrefabs, Vector3.zero, Quaternion.identity);
             Instantiate(sceneLoaderFrefabs, Vector3.zero, Quaternion.identity);
-
-            SoundManager.getInstance().PlayMusic("AbyssMusic01");
+            Instantiate(gameStateManagerFrefabs, Vector3.zero, Quaternion.identity);
         }
         else
         {
             target = player.transform;
         }
-
+        SoundManager.getInstance().PlayMusic("AbyssMusic01");
         MinimapManager.getInstance().setPlayer(player);
     }
 
