@@ -31,7 +31,6 @@ public class LeapingHusk : Enemy
     {
         if(isDead) return;
         Vector3 temp = velocity;
-        if (isDead)  return; 
         switch (state)
         {
             case (int)STATE_LEAPINGHUSK.Turn:
@@ -51,9 +50,9 @@ public class LeapingHusk : Enemy
                 ani.SetTrigger("Turn");
                 break;
             case (int)STATE_LEAPINGHUSK.Attack:
-                ani.SetTrigger("Attack");
                 isMove = false;
                 isAttack = true;
+                ani.Play("LeapingHusk_START_ATTACK");
                 break;
             case (int)STATE_LEAPINGHUSK.Die:
                 isDead = true;

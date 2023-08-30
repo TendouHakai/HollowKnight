@@ -47,6 +47,19 @@ public class Player : PlayObject
         timeStartUndying = 0f;
     }
 
+    protected override void Start()
+    {
+        base.Start();
+        PLayerData data = SaveLoadSystem.LoadPlayerData();
+        if (data != null)
+        {
+            transform.position = new Vector3(data.positionBench[0], data.positionBench[1], -0.01f);
+            setState((int)STATE_PLAYER.Sit);
+        }
+    }
+
+    // load data
+
     private void FixedUpdate()
     {
         if(isDead) return;
@@ -159,6 +172,16 @@ public class Player : PlayObject
             case (int)STATE_PLAYER.EndFocus:
                 isMove= true;
                 ani.Play("player_FOCUS_END");
+                break;
+            case (int)STATE_PLAYER.Sit:
+                isMove = false;
+                ani.Play("player_SIT");
+                PlayerControl.getInstance().isSitting = true;
+                effect = Instantiate(focusEffectGET, transform.position + new Vector3(0, 0.25f, -0.01f), Quaternion.identity);
+                Destroy(effect, 0.4f);
+                break;
+            case (int)STATE_PLAYER.Wake: 
+                ani.Play("player_WAKE");
                 break;
         }
         base.setState(state);
@@ -302,6 +325,14 @@ public class Player : PlayObject
         }
     }
 
+    // Sitting and save data
+    public void endSitting()
+    {
+        isMove = true;
+        PlayerControl.getInstance().isSitting = false;
+    }
+
+    // subcriber
     public override void update(int state)
     {
         if(state == (int)Game_State.BacktoMenu)
@@ -324,4 +355,6 @@ public enum STATE_PLAYER
     EndLand = 8,
     Focus = 9,
     EndFocus = 10,
+    Sit = 11,
+    Wake = 12,
 }

@@ -23,7 +23,9 @@ public class HUDManager : MonoBehaviour
 
     private void Start()
     {
-        // create health
+        // load data
+        loadData();
+        // create all health
         for(int i = 0; i< maxHealth; i++)
         {
             GameObject healthObj = Instantiate(healthFrefabs, transform.position, Quaternion.identity);
@@ -32,6 +34,12 @@ public class HUDManager : MonoBehaviour
             healthObj.transform.parent = healthContains.transform;
             healthObj.transform.localPosition = new Vector3(-742 + i*80, 0, 0);
             healthObj.transform.transform.localScale = new Vector3(1,1,1);
+        }
+
+        // set current HP
+        for (int i = health; i < maxHealth; i++)
+        {
+            healthList[i].Play("Health_BREAK");
         }
 
         if (player == null)
@@ -63,6 +71,20 @@ public class HUDManager : MonoBehaviour
     [Header("----------Player----------")]
     [SerializeField] Player player;
     public bool isGetFocus = false;
+
+    // load data
+    public void loadData()
+    {
+        HUDData data = SaveLoadSystem.LoadHUDData();
+        if(data != null)
+        {
+            maxHealth = data.MaxHP;
+            health = data.currentHP;
+            coin = data.coin;
+            soul = data.soul - 1;
+            upSoul();
+        }
+    }
 
     // Soul
     public void upSoul()
@@ -134,6 +156,16 @@ public class HUDManager : MonoBehaviour
         healthList[health].Play("Health_REFILL");
 
         health += 1;
+    }
+
+    public void healthUpFull()
+    {
+        for (int i = health; i < maxHealth; i++)
+        {
+            healthList[i].Play("Health_MAX_UP");
+        }
+
+        health = maxHealth;
     }
 
     public bool isMaxHealth()

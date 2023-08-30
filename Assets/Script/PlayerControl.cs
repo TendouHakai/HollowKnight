@@ -25,6 +25,7 @@ public class PlayerControl : MonoBehaviour, Subcriber
 
     [SerializeField] private Player player;
     public bool isInteract = false;
+    public bool isSitting = false;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +38,7 @@ public class PlayerControl : MonoBehaviour, Subcriber
     // Update is called once per frame
     void Update()
     {
-        if(player.isDead || isInteract) return;
+        if(player.isDead || isInteract || isSitting) return;
 
         player.ani.SetBool("IsLookUp", false);
         player.ani.SetBool("IsLookDown", false);
@@ -78,7 +79,6 @@ public class PlayerControl : MonoBehaviour, Subcriber
         if (Input.GetKeyDown(KeyCode.Space))
         {
             player.setState((int)STATE_PLAYER.Jump);
-            Debug.Log("jump");
         } 
 
         if (player.rb.velocity.y > 0)

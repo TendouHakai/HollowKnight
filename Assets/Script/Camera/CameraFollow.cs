@@ -29,14 +29,12 @@ public class CameraFollow : MonoBehaviour
         Player player = GameObject.FindObjectOfType<Player>();
         if (player == null)
         {
-            Vector3 pos = transform.position;
-            pos.z = -0.01f;
-            player = Instantiate(playerFrefabs, pos, Quaternion.identity);
+            player = Instantiate(playerFrefabs, transform.position, Quaternion.identity);
             target = player.transform;
 
             Instantiate(playerControlFrefabs, Vector3.zero, Quaternion.identity);
-            Instantiate(uIManagerFrefabs, Vector3.zero, Quaternion.identity);
             Instantiate(sceneLoaderFrefabs, Vector3.zero, Quaternion.identity);
+            Instantiate(uIManagerFrefabs, Vector3.zero, Quaternion.identity);
 
             GameStateManager.getInstance().addSubcriberDontDestroy();
         }
@@ -44,6 +42,7 @@ public class CameraFollow : MonoBehaviour
         {
             target = player.transform;
         }
+
         SoundManager.getInstance().PlayMusic("AbyssMusic01");
         MinimapManager.getInstance().setPlayer(player);
     }

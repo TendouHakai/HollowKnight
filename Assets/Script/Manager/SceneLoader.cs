@@ -75,8 +75,8 @@ public class SceneLoader : MonoBehaviour, Subcriber
 
     public void loadScene(int sceneNumber, Vector3 playerPos)
     {
+        ani.gameObject.SetActive(true);
         ani.Play("Sceneloader_START_CHANGE_SCENE");
-
         this.sceneNumber = sceneNumber;
         this.playerPos = playerPos;
         isChangeScene=true;

@@ -40,7 +40,12 @@ public class MenuControler : MonoBehaviour
         {
             if (timeStart > timeChange)
             {
-                SceneManager.LoadScene(numberSceneStart);
+                PLayerData data = SaveLoadSystem.LoadPlayerData();
+                if(data != null)
+                {
+                    SceneManager.LoadScene(data.sceneNumber);
+                }
+                else SceneManager.LoadScene(numberSceneStart);
 
                 timeStart = 0f;
                 isChange = false;
@@ -48,18 +53,18 @@ public class MenuControler : MonoBehaviour
             else timeStart += Time.deltaTime;
         }
 
-        // start menu
-        if (isStart)
-        {
-            if (timeStart > timeChange)
-            {
-                Ani.gameObject.SetActive(false);
+        //// start menu
+        //if (isStart)
+        //{
+        //    if (timeStart > timeChange)
+        //    {
+        //        Ani.gameObject.SetActive(false);
 
-                timeStart = 0f;
-                isStart = false;
-            }
-            else timeStart += Time.deltaTime;
-        }
+        //        timeStart = 0f;
+        //        isStart = false;
+        //    }
+        //    else timeStart += Time.deltaTime;
+        //}
     }
 
     public void startChangeScene()
