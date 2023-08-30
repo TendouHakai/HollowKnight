@@ -301,6 +301,15 @@ public class Player : PlayObject
             HUDManager.getInstance().healthDown(1);
         }
     }
+
+    public override void update(int state)
+    {
+        if(state == (int)Game_State.BacktoMenu)
+        {
+            Destroy(this.gameObject);
+        }
+        else base.update(state);
+    }
 } 
 
 public enum STATE_PLAYER

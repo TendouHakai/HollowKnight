@@ -14,7 +14,6 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] PlayerControl playerControlFrefabs;
     [SerializeField] UIManager uIManagerFrefabs;
     [SerializeField] SceneLoader sceneLoaderFrefabs;
-    [SerializeField] GameStateManager gameStateManagerFrefabs;
 
     [Header("----------Viewport Size----------")]
     [SerializeField] Vector2 MaxPosition;
@@ -38,7 +37,8 @@ public class CameraFollow : MonoBehaviour
             Instantiate(playerControlFrefabs, Vector3.zero, Quaternion.identity);
             Instantiate(uIManagerFrefabs, Vector3.zero, Quaternion.identity);
             Instantiate(sceneLoaderFrefabs, Vector3.zero, Quaternion.identity);
-            Instantiate(gameStateManagerFrefabs, Vector3.zero, Quaternion.identity);
+
+            GameStateManager.getInstance().addSubcriberDontDestroy();
         }
         else
         {

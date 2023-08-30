@@ -72,7 +72,10 @@ public class BaseObject : MonoBehaviour, Subcriber
 
     public void OnDestroy()
     {
-        GameStateManager.getInstance().publisherGameState.unsubcribe(this);
+        if(GameStateManager.getInstance() != null)
+        {
+            GameStateManager.getInstance().publisherGameState.unsubcribe(this);
+        }
     }
 
     public virtual void update(int state)

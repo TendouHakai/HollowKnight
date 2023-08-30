@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class UIManager : MonoBehaviour
+public class UIManager : MonoBehaviour, Subcriber
 {
     private static UIManager instance;
 
@@ -25,16 +25,16 @@ public class UIManager : MonoBehaviour
     }
 
     [Header("----------MENU----------")]
-    public GameObject GuideMenu;
     public GameObject HUD;
     public GameObject Inventory;
     public GameObject Map;
+    public GameObject PauseMenu;
 
     void Start()
     {
-        GuideMenu.SetActive(false);
         HUD.SetActive(true);
         Inventory.SetActive(false);
+        PauseMenu.SetActive(false);
 
         updateCurrentMap();
     }
@@ -43,33 +43,48 @@ public class UIManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.I) && !Inventory.activeInHierarchy)
         {
-            Inventory.SetActive(true);
-            PlayerControl.getInstance().isInteract = true;
+            OpenIMenu();
         }
 
         if(Input.GetKeyUp(KeyCode.Escape))
         {
             if (Inventory.activeInHierarchy)
             {
-                Inventory.SetActive(false);
-                PlayerControl.getInstance().isInteract = false;
+                CloseIMenu();
+            }
+            else
+            {
+                OpenPauseMenu();
             }
         }
-    }
-
-    public void OpenGuideMenu()
-    {
-        GuideMenu.SetActive(true);
-    }
-
-    public void CloseGuideMenu()
-    {
-        GuideMenu.SetActive(false);
     }
 
     public void closeAllMenu()
     {
         Inventory.SetActive(false );
+    }
+
+    public void OpenIMenu()
+    {
+        Inventory.SetActive(true);
+        PlayerControl.getInstance().isInteract = true;
+    }
+
+    public void CloseIMenu()
+    {
+        Inventory.SetActive(false);
+        PlayerControl.getInstance().isInteract = false;
+    }
+
+    public void OpenPauseMenu()
+    {
+        PauseMenu.SetActive(true);
+        GameStateManager.getInstance().setState(Game_State.Pause);
+    }
+
+    public void ClosePauseMenu()
+    {
+        PauseMenu.SetActive(false);
     }
 
     // Map
@@ -81,5 +96,14 @@ public class UIManager : MonoBehaviour
     public void updateCurrentMap()
     {
         Map.GetComponent<MapMenuControler>().updateCurrentMap(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    //subcribe
+    public void update(int state)
+    {
+        if (state == (int)Game_State.BacktoMenu)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

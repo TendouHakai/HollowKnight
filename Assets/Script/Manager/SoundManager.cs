@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : MonoBehaviour, Subcriber
 {
     private static SoundManager instance;
     public const int MaxVolume = 10;
@@ -85,5 +85,14 @@ public class SoundManager : MonoBehaviour
     public int getVolumeMusic()
     {
         return Convert.ToInt32(sourceMusic.volume * MaxVolume);
+    }
+
+    //subcribe
+    public void update(int state)
+    {
+        if(state == (int)Game_State.BacktoMenu)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

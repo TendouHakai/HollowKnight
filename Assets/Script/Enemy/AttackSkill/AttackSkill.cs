@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackSkill : MonoBehaviour
+public class AttackSkill : MonoBehaviour, Subcriber
 {
     [SerializeField] public Boss boss;
     [SerializeField] public float damage;
@@ -91,5 +91,15 @@ public class AttackSkill : MonoBehaviour
     public virtual void aniEvent()
     {
 
+    }
+
+    //subcribe
+    public void update(int state)
+    {
+        if (state == (int)Game_State.Pause)
+        {
+            enabled = false;
+        }
+        else enabled = true;
     }
 }

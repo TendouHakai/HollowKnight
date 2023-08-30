@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/PlayScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MenuStartScene.unity
+    guid: 102c3bde2847b504ba27962ee55981eb
   - enabled: 1
     path: Assets/Scenes/DirtMouth01.unity
     guid: 231310071d126e24e9d25f989345bb51

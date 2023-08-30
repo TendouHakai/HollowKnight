@@ -96,7 +96,11 @@ public class PlayerControl : MonoBehaviour, Subcriber
     // subcribe
     public void update(int state)
     {
-        if(state == (int)Game_State.Pause)
+        if(state == (int)Game_State.BacktoMenu)
+        {
+            Destroy(this.gameObject);
+        }
+        else if(state == (int)Game_State.Pause)
         {
             SoundManager.getInstance().StopSFXPlayer();
             enabled = false;

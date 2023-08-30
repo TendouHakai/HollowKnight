@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour
+public class SceneLoader : MonoBehaviour, Subcriber
 {
     private static SceneLoader instance;
 
@@ -86,5 +86,13 @@ public class SceneLoader : MonoBehaviour
     public void setPlayerPosition()
     {
         player.transform.position = playerPos;
+    }
+
+    public void update(int state)
+    {
+        if (state == (int)Game_State.BacktoMenu)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
