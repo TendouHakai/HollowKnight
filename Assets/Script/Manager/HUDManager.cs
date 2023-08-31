@@ -132,6 +132,12 @@ public class HUDManager : MonoBehaviour
         soul -= 1;
     }
 
+    public void downSoulToZero()
+    {
+        soul = 0;
+        SoulAni.Play("Soul_DownToEmpty");
+    }
+
     public bool isEnoughSoul()
     {
         if (soul > 1)
@@ -184,5 +190,11 @@ public class HUDManager : MonoBehaviour
         coinText.text = this.coin.ToString();
 
         coinAni.Play("Coin_GET");
+    }
+
+    public void downCointToZero()
+    {
+        this.coin = 0;
+        coinText.text = this.coin.ToString();
     }
 }

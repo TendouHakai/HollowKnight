@@ -34,7 +34,7 @@ public class SceneLoader : MonoBehaviour, Subcriber
     bool isChangeScene = false;
     bool isSetplayerPos = false;
 
-    int sceneNumber;
+    public int sceneNumber;
 
     private void Start()
     {
@@ -42,6 +42,9 @@ public class SceneLoader : MonoBehaviour, Subcriber
         {
             player = GameObject.FindObjectOfType<Player>();
         }
+
+        sceneNumber = SceneManager.GetActiveScene().buildIndex;
+        playerPos = player.transform.position;
     }
 
     private void Update()
@@ -83,9 +86,21 @@ public class SceneLoader : MonoBehaviour, Subcriber
         timeStart = 0f;
     }
 
+    public void loadSceneCurrent()
+    {
+        ani.gameObject.SetActive(true);
+        ani.Play("Sceneloader_START_CHANGE_SCENE");
+        isChangeScene = true;
+        timeStart = 0f;
+    }
+
     public void setPlayerPosition()
     {
         player.transform.position = playerPos;
+        if(player.isDead)
+        {
+            player.Revial();
+        }
     }
 
     public void update(int state)

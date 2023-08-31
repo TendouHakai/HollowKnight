@@ -47104,6 +47104,7 @@ GameObject:
   - component: {fileID: 1609383687}
   - component: {fileID: 1609383689}
   - component: {fileID: 1609383688}
+  - component: {fileID: 1609383690}
   m_Layer: 0
   m_Name: Iseda's House
   m_TagString: Untagged
@@ -47168,6 +47169,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.64}
   m_EdgeRadius: 0
+--- !u!114 &1609383690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609383686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9938d764a107484388a051f8d7096ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idMarker: 1
 --- !u!1 &1677733733
 GameObject:
   m_ObjectHideFlags: 0
@@ -49870,7 +49884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9938d764a107484388a051f8d7096ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idMarker: 1
+  idMarker: 2
 --- !u!1 &1870192420
 GameObject:
   m_ObjectHideFlags: 0
@@ -50547,6 +50561,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elderbug
       objectReference: {fileID: 0}
+    - target: {fileID: 1574579472182605022, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579472182605022, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579472182605022, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68669f8478262564fa33c704feb11925, type: 3}
 --- !u!1001 &1750258210585707631
@@ -50556,6 +50582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1750258209832801437, guid: 28de6fed290c50a499cc7c018eedf993, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1750258210542527394, guid: 28de6fed290c50a499cc7c018eedf993, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -50606,6 +50636,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28de6fed290c50a499cc7c018eedf993, type: 3}
+--- !u!1 &1750258210585707632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1750258210542527396, guid: 28de6fed290c50a499cc7c018eedf993, type: 3}
+  m_PrefabInstance: {fileID: 1750258210585707631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1750258210585707633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750258210585707632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9938d764a107484388a051f8d7096ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idMarker: 7
 --- !u!1001 &3801016780354482684
 PrefabInstance:
   m_ObjectHideFlags: 0

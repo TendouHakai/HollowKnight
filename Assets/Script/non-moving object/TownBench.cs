@@ -33,7 +33,6 @@ public class TownBench : MonoBehaviour
                 {
                     Vector3 temp = transform.position;
                     temp.y = player.transform.position.y;
-                    HUDManager.getInstance().healthUpFull();
 
                     // save data
                     SaveLoadSystem.SavePlayerData(temp, SceneManager.GetActiveScene().buildIndex);

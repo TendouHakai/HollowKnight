@@ -28,15 +28,17 @@ public class PlayerControl : MonoBehaviour, Subcriber
     public bool isSitting = false;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         GameStateManager.getInstance().publisherGameState.subcribe(this);
-        if (player == null) 
+        if (player == null)
+        {
             player = GameObject.FindObjectOfType<Player>();
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if(player.isDead || isInteract || isSitting) return;
 

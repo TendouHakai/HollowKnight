@@ -50,12 +50,12 @@ public class Player : PlayObject
     protected override void Start()
     {
         base.Start();
-        PLayerData data = SaveLoadSystem.LoadPlayerData();
-        if (data != null)
-        {
-            transform.position = new Vector3(data.positionBench[0], data.positionBench[1], -0.01f);
-            setState((int)STATE_PLAYER.Sit);
-        }
+        //PLayerData data = SaveLoadSystem.LoadPlayerData();
+        //if (data != null)
+        //{
+        //    transform.position = new Vector3(data.positionBench[0], data.positionBench[1], -0.01f);
+        //    setState((int)STATE_PLAYER.Sit);
+        //}
     }
 
     // load data
@@ -155,6 +155,9 @@ public class Player : PlayObject
                 endCombo();
                 ani.Play("player_DEADTH");
                 rb.gravityScale = 0f;
+
+                HUDManager.getInstance().downSoulToZero();
+                HUDManager.getInstance().downCointToZero();
                 SoundManager.getInstance().PlaySFXPlayer("knight_die");
                 break;
             case (int)STATE_PLAYER.Land:
@@ -174,7 +177,11 @@ public class Player : PlayObject
                 ani.Play("player_FOCUS_END");
                 break;
             case (int)STATE_PLAYER.Sit:
+                currentHP = MaxHP;
+                HUDManager.getInstance().healthUpFull();
+
                 isMove = false;
+                endCombo();
                 ani.Play("player_SIT");
                 PlayerControl.getInstance().isSitting = true;
                 effect = Instantiate(focusEffectGET, transform.position + new Vector3(0, 0.25f, -0.01f), Quaternion.identity);
@@ -284,6 +291,31 @@ public class Player : PlayObject
         rb.gravityScale = 3.5f;
         rb.AddForce(Vector2.up * GameConstant.collissionForceY, ForceMode2D.Impulse);
         rb.AddForce(isRight == true ? Vector2.right * GameConstant.collissionForceX : Vector2.left * GameConstant.collissionForceX, ForceMode2D.Impulse);
+
+        PLayerData data = SaveLoadSystem.LoadPlayerData();
+        if (data != null)
+        {
+            SceneLoader.getInstance().loadScene(data.sceneNumber, new Vector3(data.positionBench[0], data.positionBench[1], -0.01f));
+        }
+        else SceneLoader.getInstance().loadSceneCurrent();
+    }
+
+    // Revival
+    public void Revial()
+    {
+        transform.Find("BoxColiderMoving").GetComponent<BoxCollider2D>().size = new Vector2(0.5f, 1f);
+        isDead = false;
+
+        PLayerData data = SaveLoadSystem.LoadPlayerData();
+        if (data != null)
+            setState((int)STATE_PLAYER.Sit);
+        else
+        {
+            isMove = true;
+            currentHP = MaxHP;
+            HUDManager.getInstance().healthUpFull();
+            ani.Play("player_IDLE");
+        }
     }
 
     // Focus function
