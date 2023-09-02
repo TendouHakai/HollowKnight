@@ -103,6 +103,7 @@ public class slashEffect : MonoBehaviour
 
                 if (obj.isDead == true)
                 {
+                    if (obj as HollowShade) return;
                     rb.AddForce(Vector2.up * GameConstant.collissionForceY, ForceMode2D.Impulse);
 
                     if (player.isRight)
@@ -120,7 +121,7 @@ public class slashEffect : MonoBehaviour
 
                     if(repl != null)
                     {
-                        if (obj is Vengefly || obj is Gruzzer)
+                        if (obj is Vengefly || obj is Gruzzer || obj as HollowShade)
                         {
                             obj.GetComponent<Repel>().repel(player.isRight, isUP);
                             return;

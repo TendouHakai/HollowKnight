@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class ItemPurchaseControler : MonoBehaviour
 {
-    public const float height = 75;
+    public float height = 75;
     [SerializeField] Shop shopcontroler;
 
     [SerializeField] SelectAnimation selectAni;
@@ -20,6 +20,11 @@ public class ItemPurchaseControler : MonoBehaviour
     [SerializeField] TextMeshProUGUI geocountText;
     [SerializeField] List<GameObject> button;
     int index = 0;
+
+    private void Start()
+    {
+        height = Screen.height* height/1080f;
+    }
 
     private void Update()
     {

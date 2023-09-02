@@ -73,6 +73,53 @@ public static class SaveLoadSystem
         }
     }
 
+    // save hollowshade data
+    public static void SaveHollowShadeData(Vector3 pos, int sceneNumber)
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/HollowShadeData.fun";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        HollowShadeData data = new HollowShadeData(pos, sceneNumber);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
+    }
+
+    public static HollowShadeData LoadHollowShadeData()
+    {
+        string path = Application.persistentDataPath + "/HollowShadeData.fun";
+        Debug.Log(path);
+
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            HollowShadeData data = formatter.Deserialize(stream) as HollowShadeData;
+            stream.Close();
+            return data;
+        }
+        else
+        {
+            Debug.Log("Save file not found in " + path);
+            return null;
+        }
+    }
+
+    public static void deleteHollowShadeData()
+    {
+        string path = Application.persistentDataPath + "/HollowShadeData.fun";
+        if(File.Exists(path))
+        {
+            File.Delete(path);
+        }
+        else
+        {
+            Debug.Log("Delete file not found in " + path);
+        }
+    }
+
     // save setting data
     public static void SaveSettingData(int volumeSFX, int volumeMusic)
     {

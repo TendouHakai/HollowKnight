@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : PlayObject
 {
@@ -25,7 +26,7 @@ public class Player : PlayObject
     [SerializeField] private float timeUndying;
     private float timeStartUndying;
     [SerializeField] private BoxCollider2D colider; 
-    [SerializeField] private LayerMask layerMask; 
+    [SerializeField] private LayerMask layerMask;   
 
     [Header("----------Effect----------")]
     [SerializeField] private GameObject hitEffect;
@@ -50,12 +51,12 @@ public class Player : PlayObject
     protected override void Start()
     {
         base.Start();
-        //PLayerData data = SaveLoadSystem.LoadPlayerData();
-        //if (data != null)
-        //{
-        //    transform.position = new Vector3(data.positionBench[0], data.positionBench[1], -0.01f);
-        //    setState((int)STATE_PLAYER.Sit);
-        //}
+        PLayerData data = SaveLoadSystem.LoadPlayerData();
+        if (data != null)
+        {
+            transform.position = new Vector3(data.positionBench[0], data.positionBench[1], -0.01f);
+            setState((int)STATE_PLAYER.Sit);
+        }
     }
 
     // load data
@@ -156,6 +157,7 @@ public class Player : PlayObject
                 ani.Play("player_DEADTH");
                 rb.gravityScale = 0f;
 
+                SaveLoadSystem.SaveHollowShadeData(transform.position , SceneManager.GetActiveScene().buildIndex);
                 HUDManager.getInstance().downSoulToZero();
                 HUDManager.getInstance().downCointToZero();
                 SoundManager.getInstance().PlaySFXPlayer("knight_die");
@@ -179,7 +181,6 @@ public class Player : PlayObject
             case (int)STATE_PLAYER.Sit:
                 currentHP = MaxHP;
                 HUDManager.getInstance().healthUpFull();
-
                 isMove = false;
                 endCombo();
                 ani.Play("player_SIT");

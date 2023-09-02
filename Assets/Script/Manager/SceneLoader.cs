@@ -36,6 +36,9 @@ public class SceneLoader : MonoBehaviour, Subcriber
 
     public int sceneNumber;
 
+    [Header("----------Hollow Shade-----------")]
+    [SerializeField] GameObject hollowShadeFrefabs;
+
     private void Start()
     {
         if(player == null)
@@ -45,6 +48,7 @@ public class SceneLoader : MonoBehaviour, Subcriber
 
         sceneNumber = SceneManager.GetActiveScene().buildIndex;
         playerPos = player.transform.position;
+        checkHollowShade();
     }
 
     private void Update()
@@ -69,7 +73,7 @@ public class SceneLoader : MonoBehaviour, Subcriber
             {
                 isSetplayerPos = false;
                 setPlayerPosition();
-
+                checkHollowShade();
                 timeStart = 0f;
             }
             else timeStart += Time.deltaTime;
@@ -100,6 +104,19 @@ public class SceneLoader : MonoBehaviour, Subcriber
         if(player.isDead)
         {
             player.Revial();
+        }
+    }
+
+    public void checkHollowShade()
+    {
+        // check hollow shade
+        HollowShadeData data = SaveLoadSystem.LoadHollowShadeData();
+        if (data != null)
+        {
+            if(data.sceneNumber == this.sceneNumber)
+            {
+                Instantiate(hollowShadeFrefabs, new Vector3(data.position[0], data.position[1], data.position[2]), Quaternion.identity);
+            }
         }
     }
 

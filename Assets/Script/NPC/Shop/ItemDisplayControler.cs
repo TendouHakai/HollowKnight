@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class ItemDisplayControler : MonoBehaviour
 {
-    public const float Height = 140;
     [SerializeField] Shop shopcontroler;
 
     [SerializeField] GameObject listItemUI;
@@ -20,6 +19,7 @@ public class ItemDisplayControler : MonoBehaviour
     [SerializeField] TextMeshProUGUI descriptionText;
 
     protected int index;
+    float Height = 140f;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +36,9 @@ public class ItemDisplayControler : MonoBehaviour
                 i--;
             }
         }
+
+        Height = Screen.height * Height / 1080f;
+
         loadContent(listItems[0].ID);
     }
 

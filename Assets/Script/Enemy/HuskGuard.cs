@@ -18,7 +18,6 @@ public class HuskGuard : Boss
         base.Start();
 
         SleepPosition = transform.position;
-        isCombat = false;
 
         State = (int)STATE_HUSKGUARD.SLEEP;
     }

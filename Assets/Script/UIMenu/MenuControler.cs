@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 public class MenuControler : MonoBehaviour
 {
     [Header("----------------MENU----------------------")]
+    [SerializeField] GameObject MenuContain;
     [SerializeField] GameObject MainMenu;
     [SerializeField] GameObject SettingMenu;
     [SerializeField] GameObject GameSettingMenu;
     [SerializeField] GameObject SoundSettingMenu;
+
+    [Header("---------------TIMELINE-------------------")]
+    [SerializeField] PlayableDirector TimeLine;
 
     [Header("----------------CHANGE SCEME ENEMY---------------")]
     [SerializeField] Animator Ani;
@@ -18,12 +23,16 @@ public class MenuControler : MonoBehaviour
     float timeChange = 1.3f;
     bool isChange = false;
     bool isStart = true;
+    bool isEndTimeLine;
     // Start is called before the first frame update
     void Start()
     {
+        isEndTimeLine = true;
+        TimeLine.gameObject.SetActive(true);
+        MenuContain.SetActive(false);
+
         MainMenu.SetActive(true);
         SettingMenu.SetActive(false);
-
         GameSettingMenu.SetActive(false);
         SoundSettingMenu.SetActive(false);
 
@@ -35,8 +44,22 @@ public class MenuControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // end TimeLine
+        if (isEndTimeLine)
+        {
+            if (timeStart > TimeLine.duration - 0.5f)
+            {
+                TimeLine.gameObject.SetActive(false);
+                MenuContain.SetActive(true);
+
+                timeStart = 0f;
+                isEndTimeLine = false;
+            }
+            else timeStart += Time.deltaTime;
+        }
+
         // change scene
-        if(isChange)
+        if (isChange)
         {
             if (timeStart > timeChange)
             {

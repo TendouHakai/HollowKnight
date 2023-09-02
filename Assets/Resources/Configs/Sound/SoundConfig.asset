@@ -53,3 +53,5 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 3b4ef70857954db43a9e9b5408db0bf9, type: 3}
   - ID: DirtMouth_Music
     clip: {fileID: 8300000, guid: 3bb80da964c9aa748b49d10aba2a6642, type: 3}
+  - ID: Bench_rest
+    clip: {fileID: 8300000, guid: 19db3ff913c24f144b45ca6d74734114, type: 3}

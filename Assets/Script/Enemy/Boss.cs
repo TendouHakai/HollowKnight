@@ -13,6 +13,12 @@ public class Boss : Enemy
     [SerializeField] public List<AttackSkill> skillList;
     protected AttackSkill currentAttackSkill;
 
+    protected override void Start()
+    {
+        base.Start();
+        isCombat = false;
+    }
+
     protected override void Update()
     {
         base.Update();

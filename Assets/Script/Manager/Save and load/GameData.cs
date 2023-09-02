@@ -37,6 +37,23 @@ public class PLayerData
 }
 
 [System.Serializable]
+public class HollowShadeData
+{
+    public float[] position;
+    public int sceneNumber = -1;
+
+    public HollowShadeData(Vector3 position, int sceneNumber)
+    {
+        this.position = new float[3];
+        this.position[0] = position.x;
+        this.position[1] = position.y;
+        this.position[2] = -0.01f;
+
+        this.sceneNumber = sceneNumber;
+    }
+}
+
+[System.Serializable]
 public class SettingData
 {
     public int volumeSFX;

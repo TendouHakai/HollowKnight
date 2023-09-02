@@ -24,46 +24,48 @@ public class SelectAnimation : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
+        Debug.Log("current: " + UI.position);
         if(isRun)
         {
-            Vector3 pos = UI.transform.position;
+            Vector3 pos = UI.position;
             switch (direct)
             {
                 case DIRECT.up:
-                    if (UI.transform.position.y < DesPosition)
+                    if (UI.position.y < DesPosition)
                     {
                         pos.y = DesPosition;
-                        UI.transform.position = pos;
+                        UI.position = pos;
 
                         isRun = false;
                         return;
                     }
                     break;
                 case DIRECT.down:
-                    if (UI.transform.position.y > DesPosition)
+                    if (UI.position.y > DesPosition)
                     {
                         pos.y = DesPosition;
-                        UI.transform.position = pos;
+                        UI.position = pos;
+                        Debug.Log("finish:"+ UI.position);
 
                         isRun = false;
                         return;
                     }
                     break;
                 case DIRECT.left:
-                    if (UI.transform.position.x < DesPosition)
+                    if (UI.position.x < DesPosition)
                     {
                         pos.x = DesPosition;
-                        UI.transform.position = pos;
+                        UI.position = pos;
 
                         isRun = false;
                         return;
                     }
                     break;
                 case DIRECT.right:
-                    if (UI.transform.position.x > DesPosition)
+                    if (UI.position.x > DesPosition)
                     {
                         pos.x = DesPosition;
-                        UI.transform.position = pos;
+                        UI.position = pos;
 
                         isRun = false;
                         return;
@@ -96,6 +98,8 @@ public class SelectAnimation : MonoBehaviour
 
     public void runAnimation(DIRECT direct, float DesPosition)
     {
+        Debug.Log(UI.position);
+        Debug.Log(DesPosition); 
         setDirect(direct);
         this.DesPosition = DesPosition;
 

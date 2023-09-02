@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PanelSceneLoader : MonoBehaviour
 {
-    public void endSceneLoader()
+    public virtual void endSceneLoader()
     {
         this.gameObject.SetActive(false);   
     }

@@ -81,39 +81,40 @@ public class HUDManager : MonoBehaviour
             maxHealth = data.MaxHP;
             health = data.currentHP;
             coin = data.coin;
-            soul = data.soul - 1;
-            upSoul();
+            upSoul(data.soul);
         }
     }
 
     // Soul
-    public void upSoul()
+    public void upSoul(int soul = 1)
     {
-        if (soul == 4) return;
-        switch(soul)
+        if (this.soul == 4) return;
+
+        this.soul = this.soul + soul;
+        if (this.soul > 4)
+            this.soul = 4;
+        switch(this.soul)
         {
-            case 0:
+            case 1:
                 SoulAni.Play("Soul_UpToQuater");
                 break;
-            case 1:
+            case 2:
                 SoulAni.Play("Soul_UpToHalf");
                 break;
-            case 2:
+            case 3:
                 SoulAni.Play("Soul_UpTo3Quater");
                 break;
-            case 3:
+            case 4:
                 SoulAni.Play("Soul_FULL");
                 SoundManager.getInstance().PlaySFXPlayer("HUD_focus_ready");
                 break;
         }
-
-        soul += 1;
     }
 
     public void downSoul()
     {
-        if (soul == 0) return;
-        switch (soul)
+        if (this.soul == 0) return;
+        switch (this.soul)
         {
             case 4:
                 SoulAni.Play("Soul_DownTo3Quater");
