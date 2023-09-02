@@ -75,7 +75,7 @@ public class ItemPurchaseControler : MonoBehaviour
 
             //Debug.Log(UIManager.getInstance().Inventory.GetComponent<InventoryManager>().add);
 
-            UIManager.getInstance().Inventory.GetComponent<InventoryManager>().addItemShop(item.ID);
+            UIManager.getInstance().Inventory.GetComponent<IMenuManager>().addItemShop(item.ID);
             shopcontroler.ItemDisplayW.GetComponent<ItemDisplayControler>().removeItem();
             shopcontroler.ItemPurchasedW.SetActive(true);
             this.gameObject.SetActive(false);

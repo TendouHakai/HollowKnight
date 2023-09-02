@@ -35,9 +35,7 @@ public class TownBench : MonoBehaviour
                     Vector3 temp = transform.position;
                     temp.y = player.transform.position.y;
                     // save data
-                    SaveLoadSystem.SavePlayerData(temp, SceneManager.GetActiveScene().buildIndex);
-                    SaveLoadSystem.SaveHUDData(HUDManager.getInstance());
-                    SaveLoadSystem.SaveSettingData(SoundManager.getInstance().getVolumeSFX(), SoundManager.getInstance().getVolumeMusic());
+                    SaveLoadSystem.saveAllData();
 
                     player.setState((int)STATE_PLAYER.Sit);
                     talkUI.SetActive(false);

@@ -156,7 +156,7 @@ public class Player : PlayObject
                 endCombo();
                 ani.Play("player_DEADTH");
                 rb.gravityScale = 0f;
-
+                SaveLoadSystem.saveAllData();
                 SaveLoadSystem.SaveHollowShadeData(transform.position , SceneManager.GetActiveScene().buildIndex);
                 HUDManager.getInstance().downSoulToZero();
                 HUDManager.getInstance().downCointToZero();
@@ -370,6 +370,7 @@ public class Player : PlayObject
     {
         if(state == (int)Game_State.BacktoMenu)
         {
+            Debug.Log("Destroy player");
             Destroy(this.gameObject);
         }
         else base.update(state);

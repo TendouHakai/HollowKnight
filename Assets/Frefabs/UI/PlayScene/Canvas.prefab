@@ -5259,6 +5259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 761297749}
   - component: {fileID: 761297751}
+  - component: {fileID: 7797564266543961327}
   m_Layer: 5
   m_Name: PlayerMarker
   m_TagString: Untagged
@@ -5295,6 +5296,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761297748}
   m_CullTransparentMesh: 1
+--- !u!114 &7797564266543961327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761297748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7910d84bcbab597458b694733b97fc25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 0
+  img: {fileID: 1909476819}
 --- !u!1 &761438236
 GameObject:
   m_ObjectHideFlags: 0
@@ -8451,7 +8466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1172150995
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11182,6 +11197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1589132839}
   - component: {fileID: 1589132840}
+  - component: {fileID: 6230817935043818097}
   m_Layer: 5
   m_Name: PlayerMarker
   m_TagString: Untagged
@@ -11218,6 +11234,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589132838}
   m_CullTransparentMesh: 1
+--- !u!114 &6230817935043818097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589132838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7910d84bcbab597458b694733b97fc25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: 0
+  img: {fileID: 1747461594}
 --- !u!1 &1612982589
 GameObject:
   m_ObjectHideFlags: 0
@@ -16808,6 +16838,7 @@ GameObject:
   - component: {fileID: 7445170975922481521}
   - component: {fileID: 7445170975922481520}
   - component: {fileID: 7445170975922481532}
+  - component: {fileID: 7471521154986085135}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -16916,6 +16947,23 @@ MonoBehaviour:
   Inventory: {fileID: 1172150994}
   Map: {fileID: 43510823}
   PauseMenu: {fileID: 815409177547748400}
+--- !u!114 &7471521154986085135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7445170975922481527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08f5128469be2b4ca73c35b22e09acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaskSharp_ID: -1
+  DreamNail_ID: -1
+  Nail_ID: -1
+  Spell_ID: -1
+  listInventoryItemShop: 
 --- !u!1001 &263846806
 PrefabInstance:
   m_ObjectHideFlags: 0

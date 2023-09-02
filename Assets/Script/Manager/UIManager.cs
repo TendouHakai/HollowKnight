@@ -61,7 +61,7 @@ public class UIManager : MonoBehaviour, Subcriber
 
     public void closeAllMenu()
     {
-        Inventory.SetActive(false );
+        Inventory.SetActive(false);
     }
 
     public void OpenIMenu()

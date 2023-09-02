@@ -26,7 +26,7 @@ public class InventoryItem : MonoBehaviour
     [SerializeField] GameObject inventoryShop;
 
     [Header("_____________IMENU CONTROLER---------")]
-    [SerializeField] InventoryManager inventoryManager;
+    [SerializeField] IMenuManager inventoryManager;
 
     int index = 0;
 

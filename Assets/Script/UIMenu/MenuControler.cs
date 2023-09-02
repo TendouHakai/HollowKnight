@@ -58,6 +58,15 @@ public class MenuControler : MonoBehaviour
             else timeStart += Time.deltaTime;
         }
 
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            TimeLine.gameObject.SetActive(false);
+            MenuContain.SetActive(true);
+
+            timeStart = 0f;
+            isEndTimeLine = false;
+        }
+
         // change scene
         if (isChange)
         {

@@ -13,7 +13,7 @@ public class MapMenuControler : MonoBehaviour
     [SerializeField] GameObject GuideUICompass;
 
     [Header("-------------IMENU CONTROLER------------")]
-    [SerializeField] InventoryManager inventoryManager;
+    [SerializeField] IMenuManager inventoryManager;
 
     private void Start()
     {

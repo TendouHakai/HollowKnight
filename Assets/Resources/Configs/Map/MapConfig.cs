@@ -44,7 +44,7 @@ public class MapConfig : ScriptableObject
 
     public List<markerInArea> GetMarkerInArea(int idAreea)
     {
-        return areaConfigs.Find(x=>x.ID ==idAreea).Markers;
+        return areaConfigs.Find(x=>x.ID ==idAreea).getMarkers();
     }
 
     public bool AreaIsHaveScene( int idArea, int idScene)
@@ -68,6 +68,44 @@ public class AreaConfig
     public bool isHaveScene(int ID)
     {
         return SceneIDs.Contains(ID);
+    }
+
+    public List<markerInArea> getMarkers()
+    {
+        if(Markers == null)
+        {
+            Markers = new List<markerInArea>();
+            MarkerDataInArea data = SaveLoadSystem.LoadMarkerMapData(ID);
+            if(data != null)
+            {
+                for (int i = 0; i < data.MarkerIDs.Length; i++)
+                {
+                    Markers.Add(new markerInArea(data.MarkerIDs[i], new Vector3(data.MarkerPositions[i, 0], data.MarkerPositions[i, 1], data.MarkerPositions[i, 2])));
+                }
+            }
+        }
+
+        return Markers;
+    }
+}
+
+[System.Serializable]
+public class MarkerDataInArea
+{
+    public int[] MarkerIDs;
+    public float[,] MarkerPositions;
+
+    public MarkerDataInArea(AreaConfig config)
+    {
+        MarkerIDs = new int[config.Markers.Count];
+        MarkerPositions = new float[config.Markers.Count,3];
+        for(int i = 0; i < config.Markers.Count; i++)
+        {
+            MarkerIDs[i] = config.Markers[i].ID;
+            MarkerPositions[i, 0] = config.Markers[i].position.x;
+            MarkerPositions[i, 1] = config.Markers[i].position.y;
+            MarkerPositions[i, 2] = config.Markers[i].position.z;
+        }
     }
 }
 

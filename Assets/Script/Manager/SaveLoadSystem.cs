@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public static class SaveLoadSystem
@@ -152,5 +153,89 @@ public static class SaveLoadSystem
             Debug.Log("Save file not found in " + path);
             return null;
         }
+    }
+
+    // save inventory data
+    public static void saveInventoryData(InventoryConfig config)
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/InventoryData.fun";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        InventoryData data = new InventoryData(config);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
+    }
+
+    public static InventoryData LoadInventoryData()
+    {
+        string path = Application.persistentDataPath + "/InventoryData.fun";
+        Debug.Log(path);
+
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            InventoryData data = formatter.Deserialize(stream) as InventoryData;
+            stream.Close();
+            return data;
+        }
+        else
+        {
+            Debug.Log("Save file not found in " + path);
+            return null;
+        }
+    }
+
+    // save markerMap
+    public static void saveMarkerMapData(AreaConfig config)
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/Marker/"+config.ID+".fun";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        MarkerDataInArea data = new MarkerDataInArea(config);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
+    }
+
+    public static void saveAllMarkerMapData(List<AreaConfig> listArea)
+    {
+        foreach (AreaConfig config in listArea)
+        {
+            saveMarkerMapData(config);
+        }
+    }
+
+    public static MarkerDataInArea LoadMarkerMapData(int ID)
+    {
+        string path = Application.persistentDataPath + "/Marker/" + ID + ".fun";
+        Debug.Log(path);
+
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            MarkerDataInArea data = formatter.Deserialize(stream) as MarkerDataInArea;
+            stream.Close();
+            return data;
+        }
+        else
+        {
+            Debug.Log("Save file not found in " + path);
+            return null;
+        }
+    }
+
+    public static void saveAllData()
+    {
+        SaveLoadSystem.SaveHUDData(HUDManager.getInstance());
+        SaveLoadSystem.SaveSettingData(SoundManager.getInstance().getVolumeSFX(), SoundManager.getInstance().getVolumeMusic());
+        SaveLoadSystem.saveInventoryData(InventoryConfig.getInstance());
+        SaveLoadSystem.saveAllMarkerMapData(MapConfig.getInstance().GetAreaConfigs());
     }
 }

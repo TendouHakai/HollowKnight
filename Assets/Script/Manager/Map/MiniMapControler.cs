@@ -18,6 +18,7 @@ public class MiniMapControler : MonoBehaviour
     [SerializeField] public Transform endRTranform;
     [SerializeField] protected RectTransform endMTranform;
     [SerializeField] protected RectTransform playerMarkerTranform;
+    int idMarkerplayer;
 
     [Header("-------------MARKER----------------")]
     [SerializeField] protected Marker markerFrefab;
@@ -29,7 +30,8 @@ public class MiniMapControler : MonoBehaviour
     protected virtual void Start()
     {
         player = GameObject.FindObjectOfType<Player>();
-        if(MapConfig.getInstance().GetAreaConfig(ID).isUnlock == false)
+        idMarkerplayer = playerMarkerTranform.GetComponent<Marker>().ID;
+        if (MapConfig.getInstance().GetAreaConfig(ID).isUnlock == false)
         {
             minimapManager.isNoMap = true;
             minimapManager.changeToNoMapUI();
@@ -39,12 +41,21 @@ public class MiniMapControler : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        normalized = Divide(
+        MarkerConfig config = MarkerConfigs.getInstance().getConfig(idMarkerplayer);
+        if (InventoryConfig.getInstance().IsInInventory(config.IDItemNeed))
+        {
+            playerMarkerTranform.gameObject.SetActive(true);
+            normalized = Divide(
                 originRTranform.InverseTransformPoint(player.transform.position),
                 endRTranform.position - originRTranform.position
             );
-        mapped = Multiply(normalized, endMTranform.localPosition);
-        playerMarkerTranform.localPosition = mapped;
+            mapped = Multiply(normalized, endMTranform.localPosition);
+            playerMarkerTranform.localPosition = mapped;
+        }
+        else
+        {
+            playerMarkerTranform.gameObject.SetActive(false);
+        }
     }
 
     public Vector3 Divide(Vector3 a, Vector3 b)

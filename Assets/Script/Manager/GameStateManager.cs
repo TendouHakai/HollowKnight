@@ -73,7 +73,7 @@ public class GameStateManager : MonoBehaviour
 
 public class Publisher
 {
-    List<Subcriber> subcribers = new List<Subcriber> ();
+    public List<Subcriber> subcribers = new List<Subcriber> ();
 
     public void subcribe(Subcriber subcriber)
     {

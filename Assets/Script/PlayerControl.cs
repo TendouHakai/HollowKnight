@@ -100,6 +100,7 @@ public class PlayerControl : MonoBehaviour, Subcriber
     {
         if(state == (int)Game_State.BacktoMenu)
         {
+            Debug.Log("Destroy playerControl");
             Destroy(this.gameObject);
         }
         else if(state == (int)Game_State.Pause)

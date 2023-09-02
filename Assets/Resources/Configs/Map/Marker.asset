@@ -16,7 +16,7 @@ MonoBehaviour:
   - ID: 0
     Name: player
     img: {fileID: 21300000, guid: eff2f38e39b60b6459ea084ed5f3a5f6, type: 3}
-    IDItemNeed: -1
+    IDItemNeed: 0
   - ID: 1
     Name: Iseda
     img: {fileID: 21300000, guid: 2c534c3fbb2951342a191de81968b752, type: 3}
