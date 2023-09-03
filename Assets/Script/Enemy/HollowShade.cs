@@ -5,8 +5,8 @@ using UnityEngine;
 public class HollowShade : Boss
 {
     [Header("-------------COIN-----------------")]
-    [SerializeField] int coin;
-    [SerializeField] int soul;
+    [SerializeField]public int coin;
+    [SerializeField]public int soul;
     protected override void Start()
     {
         base.Start();

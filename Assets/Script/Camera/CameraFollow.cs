@@ -29,7 +29,9 @@ public class CameraFollow : MonoBehaviour
         Player player = GameObject.FindObjectOfType<Player>();
         if (player == null)
         {
-            player = Instantiate(playerFrefabs, transform.position, Quaternion.identity);
+            Vector3 temp = transform.position;
+            temp.z = -0.01f;
+            player = Instantiate(playerFrefabs, temp, Quaternion.identity);
             target = player.transform;
 
             Instantiate(playerControlFrefabs, Vector3.zero, Quaternion.identity);

@@ -2533,7 +2533,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.51, y: 0}
+  m_Offset: {x: -0.60585296, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2544,7 +2544,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 3}
+  m_Size: {x: 1.808294, y: 3}
   m_EdgeRadius: 0
 --- !u!1 &674171986
 GameObject:
@@ -4506,8 +4506,14 @@ MonoBehaviour:
   talkUI: {fileID: 476636267}
   dialogText: {fileID: 2066593571}
   dialogTexts:
-  - Hello,
-  - "T\xF4i l\xE0 Iseda"
+  - "Trong t\u1EA5t c\u1EA3 n\u01A1i \u0111\u1EC3 s\u1ED1ng, ch\xFAng t\xF4i ch\u1ECDn
+    c\xE1i th\u1ECB tr\u1EA5n \u1EA3m \u0111\u1EA1m n\xE0y. T\xF4i t\u01B0\u1EDFng
+    ch\u1ECB d\u1EEBng ch\xE2n m\u1ED9t ch\xFAt th\xF4i, c\xF3 \u0111i\u1EC1u ch\u1ED3ng
+    t\xF4i tr\u1EDF n\xEAn \xE1m \u1EA3nh v\u1EDBi c\xE1i t\xE0n t\xEDch c\u1ED5
+    kia."
+  - "Gi\u1EDD th\xEC anh \u1EA5y d\xE0nh h\u1EBFt th\u1EDDi gian d\u01B0\u1EDBi kia.
+    Anh cho r\u1EB1ng tr\u1EAFc \u0111\u1ECBa l\xE0 kinh doanh c\xF3 l\u1EDDi nh\u01B0ng
+    tr\u1EEB c\u1EADu ra, c\xF3 ai mua \u0111\xE2u?"
   wordSpeed: 0.05
   NPCObject: {fileID: 1036971812}
 --- !u!61 &1036971811
@@ -4523,7 +4529,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.38, y: 0}
+  m_Offset: {x: 0.4427607, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4534,7 +4540,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 2.87}
+  m_Size: {x: 2.8744788, y: 2.87}
   m_EdgeRadius: 0
 --- !u!114 &1036971812
 MonoBehaviour:
@@ -4623,7 +4629,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ce09b283da8b4df4fb8a90b89f24c7be, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4687,7 +4693,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1076132689
@@ -5437,7 +5443,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Nh\u1EA5n ph\xEDm Up arrow \u0111\u1EC3 ti\u1EBFp t\u1EE5c"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ce09b283da8b4df4fb8a90b89f24c7be, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5501,7 +5507,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1254498884
@@ -7783,7 +7789,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: dialog text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ce09b283da8b4df4fb8a90b89f24c7be, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7847,7 +7853,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2066593572

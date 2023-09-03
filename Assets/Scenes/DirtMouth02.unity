@@ -50509,6 +50509,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1574579470710741035, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ce09b283da8b4df4fb8a90b89f24c7be, type: 2}
+    - target: {fileID: 1574579470710741035, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1574579471527220458, guid: 68669f8478262564fa33c704feb11925, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -50553,6 +50561,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1574579471527220459, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: dialogTexts.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471527220459, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: dialogTexts.Array.data[0]
+      value: "\u1ED2! C\u1EADu quay tr\u1EDF l\u1EA1i r\u1ED3i! C\u1EADu \u0111i
+        th\u1EB3ng qua t\xF4i v\xE0 \u0111i th\u1EB3ng xu\u1ED1ng \u0111\u1ED1ng
+        t\xE0n t\xEDch c\u1ED5 m\xE0 kh\xF4ng m\u1ED9t l\u1EDDi ch\xE0o! L\xE0m t\xF4i
+        t\u01B0\u1EDFng t\xF4i v\u1EEBa th\u1EA5y ma"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471527220459, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: dialogTexts.Array.data[1]
+      value: "T\xE2m tr\xED \u0111\xF4i l\xFAc s\u1EBD \u0111\xE1nh l\u1EEBa ta n\u1EBFu
+        ta c\xF4 \u0111\u01A1n m\u1ED9t m\xECnh qu\xE1 l\xE2u \u0111\u1EA5y"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471527220459, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: dialogTexts.Array.data[2]
+      value: "C\xE1c c\u01B0 d\xE2n kh\xE1c, h\u1ECD bi\u1EBFn m\u1EA5t h\u1EBFt
+        r\u1ED3i! Tr\xE8o xu\u1ED1ng c\xE1i gi\u1EBFng \u0111\xF3 t\u1EEBng ng\u01B0\u1EDDi
+        t\u1EEBng ng\u01B0\u1EDDi m\u1ED9t, xu\u1ED1ng hang \u0111\u1ED9ng b\u1EBFn
+        d\u01B0\u1EDBi."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471527220459, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: dialogTexts.Array.data[3]
+      value: "D\u01B0\u1EDBi thi tr\u1EA5n c\u1EE7a t\xF4i t\u1EEBng t\u1ED3n t\u1EA1i
+        m\u1ED9t th\u1ECB tr\u1EA5n v\u0129 \u0111\u1EA1i. N\xF3 t\xE0n l\u1EE5i
+        l\xE2u l\u1EAFm r\u1ED3i, nh\u01B0ng v\u1EABn thu h\xFAt \u0111\u1EE7 ng\u01B0\u1EDDi
+        kh\xE1m ph\xE1 n\xF3."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471527220459, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: dialogTexts.Array.data[4]
+      value: "Gi\xE0u c\xF3, vinh quang, ni\u1EC1m vui, ki\u1EBFn th\u1EE9c, c\xE1i
+        n\u01A1i \u0111en t\u1ED1i \u0111\xF3 h\u1EE9a h\u1EB9n \u0111\u1EE7 \u0111i\u1EC1u.
+        T\xF4i ch\u1EAFc c\u1EADu c\u0169ng \u0111u\u1ED5i theo gi\u1EA5c m\u01A1
+        c\u1EE7a m\xECnh d\u01B0\u1EDBi kia."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471527220459, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: dialogTexts.Array.data[5]
+      value: "Nh\u1EDB c\u1EA9n th\u1EADn \u0111\u1EA5y! Kh\xF4ng kh\xED d\u01B0\u1EDBi
+        \u0111\xF3 th\u1EADt khi\u1EBFn ta ph\xE1t b\u1EC7nh. Sinh v\u1EADt ph\xE1t
+        \u0111i\xEAn v\xE0 ng\u01B0\u1EDDi du h\xE0nh c\u01B0\u1EDBp \u0111i k\xFD
+        \u1EE9c c\u1EE7a h\u1ECD."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471527220459, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: dialogTexts.Array.data[6]
+      value: "C\xF3 l\u1EBB sau c\xF9ng gi\xE1c m\u01A1 c\u0169ng ch\u1EAFc t\u1ED1t
+        \u0111\u1EB9p g\xEC"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471527220459, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: dialogTexts.Array.data[7]
+      value: "C\xF3 l\u1EBB sau c\xF9ng gi\xE1c m\u01A1 c\u0169ng ch\u1EAFc t\u1ED1t
+        \u0111\u1EB9p g\xEC"
+      objectReference: {fileID: 0}
     - target: {fileID: 1574579471527220461, guid: 68669f8478262564fa33c704feb11925, type: 3}
       propertyPath: markerID
       value: 1
@@ -50560,6 +50622,42 @@ PrefabInstance:
     - target: {fileID: 1574579471527220471, guid: 68669f8478262564fa33c704feb11925, type: 3}
       propertyPath: m_Name
       value: Elderbug
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471832148350, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ce09b283da8b4df4fb8a90b89f24c7be, type: 2}
+    - target: {fileID: 1574579471832148350, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471878761417, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_text
+      value: "Nh\u1EA5n ph\xEDm Up Arrow \u0111\u1EC3 ti\u1EBFp t\u1EE5c"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471878761417, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_margin.x
+      value: -63.962753
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471878761417, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: ce09b283da8b4df4fb8a90b89f24c7be, type: 2}
+    - target: {fileID: 1574579471878761417, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5400214836445384494, guid: ce09b283da8b4df4fb8a90b89f24c7be, type: 2}
+    - target: {fileID: 1574579471878761417, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579471878761417, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574579472182605019, guid: 68669f8478262564fa33c704feb11925, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1574579472182605022, guid: 68669f8478262564fa33c704feb11925, type: 3}
       propertyPath: m_UiScaleMode
@@ -50575,6 +50673,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68669f8478262564fa33c704feb11925, type: 3}
+--- !u!1 &1574579471209934649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1574579471878761431, guid: 68669f8478262564fa33c704feb11925, type: 3}
+  m_PrefabInstance: {fileID: 1574579471209934648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1574579471209934650
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574579471209934649}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e34b45ed433df7948889283176a791d9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1750258210585707631
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -37,7 +37,7 @@ public class SceneLoader : MonoBehaviour, Subcriber
     public int sceneNumber;
 
     [Header("----------Hollow Shade-----------")]
-    [SerializeField] GameObject hollowShadeFrefabs;
+    [SerializeField] HollowShade hollowShadeFrefabs;
 
     private void Start()
     {
@@ -115,7 +115,9 @@ public class SceneLoader : MonoBehaviour, Subcriber
         {
             if(data.sceneNumber == this.sceneNumber)
             {
-                Instantiate(hollowShadeFrefabs, new Vector3(data.position[0], data.position[1], data.position[2]), Quaternion.identity);
+                HollowShade obj = Instantiate(hollowShadeFrefabs, new Vector3(data.position[0], data.position[1], data.position[2]), Quaternion.identity);
+                obj.coin = data.coin;
+                obj.soul = data.soul;
             }
         }
     }

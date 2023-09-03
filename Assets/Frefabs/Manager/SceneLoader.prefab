@@ -51,7 +51,7 @@ MonoBehaviour:
   timeChangeScene: 1
   timeSetPlayerPos: 0.15
   sceneNumber: 0
-  hollowShadeFrefabs: {fileID: 3253494660900379607, guid: 2d8473e74ef8fde4684ba445f28ebbf7, type: 3}
+  hollowShadeFrefabs: {fileID: 3253494660900379603, guid: 2d8473e74ef8fde4684ba445f28ebbf7, type: 3}
 --- !u!1 &5135139576343916529
 GameObject:
   m_ObjectHideFlags: 0

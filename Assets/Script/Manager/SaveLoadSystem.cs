@@ -75,13 +75,13 @@ public static class SaveLoadSystem
     }
 
     // save hollowshade data
-    public static void SaveHollowShadeData(Vector3 pos, int sceneNumber)
+    public static void SaveHollowShadeData(Vector3 pos, int sceneNumber, HUDManager manager)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/HollowShadeData.fun";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        HollowShadeData data = new HollowShadeData(pos, sceneNumber);
+        HollowShadeData data = new HollowShadeData(pos, sceneNumber, manager);
 
         formatter.Serialize(stream, data);
         stream.Close();

@@ -42,7 +42,10 @@ public class HollowShadeData
     public float[] position;
     public int sceneNumber = -1;
 
-    public HollowShadeData(Vector3 position, int sceneNumber)
+    public int coin;
+    public int soul;
+
+    public HollowShadeData(Vector3 position, int sceneNumber, HUDManager manager)
     {
         this.position = new float[3];
         this.position[0] = position.x;
@@ -50,6 +53,9 @@ public class HollowShadeData
         this.position[2] = -0.01f;
 
         this.sceneNumber = sceneNumber;
+
+        coin = manager.coin;
+        soul = manager.soul;
     }
 }
 

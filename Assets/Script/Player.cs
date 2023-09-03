@@ -156,8 +156,8 @@ public class Player : PlayObject
                 endCombo();
                 ani.Play("player_DEADTH");
                 rb.gravityScale = 0f;
+                SaveLoadSystem.SaveHollowShadeData(transform.position, SceneManager.GetActiveScene().buildIndex, HUDManager.getInstance());
                 SaveLoadSystem.saveAllData();
-                SaveLoadSystem.SaveHollowShadeData(transform.position , SceneManager.GetActiveScene().buildIndex);
                 HUDManager.getInstance().downSoulToZero();
                 HUDManager.getInstance().downCointToZero();
                 SoundManager.getInstance().PlaySFXPlayer("knight_die");
