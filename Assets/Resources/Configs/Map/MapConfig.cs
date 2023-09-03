@@ -65,6 +65,7 @@ public class AreaConfig
     public List<int> SceneIDs;
     public List<markerInArea> Markers;
 
+    bool isLoaded = false;
     public bool isHaveScene(int ID)
     {
         return SceneIDs.Contains(ID);
@@ -72,10 +73,11 @@ public class AreaConfig
 
     public List<markerInArea> getMarkers()
     {
-        if(Markers == null)
+        if(isLoaded == false)
         {
             Markers = new List<markerInArea>();
             MarkerDataInArea data = SaveLoadSystem.LoadMarkerMapData(ID);
+            Debug.Log("load data mpa marker" + data);
             if(data != null)
             {
                 for (int i = 0; i < data.MarkerIDs.Length; i++)
@@ -83,6 +85,12 @@ public class AreaConfig
                     Markers.Add(new markerInArea(data.MarkerIDs[i], new Vector3(data.MarkerPositions[i, 0], data.MarkerPositions[i, 1], data.MarkerPositions[i, 2])));
                 }
             }
+
+            isLoaded = true;
+        }
+        else
+        {
+            Debug.Log("Markers loaded");
         }
 
         return Markers;

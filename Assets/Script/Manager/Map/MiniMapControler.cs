@@ -71,7 +71,7 @@ public class MiniMapControler : MonoBehaviour
     public virtual void loadMarkersData()
     {
         List<markerInArea> markersInArea = MapConfig.getInstance().GetMarkerInArea(ID);
-
+        Debug.Log("markers in area "+ markersInArea.Count);   
         foreach (markerInArea markerA in markersInArea)
         {
             Marker marker = Instantiate(markerFrefab, transform.position, Quaternion.identity);
