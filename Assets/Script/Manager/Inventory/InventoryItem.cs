@@ -62,6 +62,8 @@ public class InventoryItem : MonoBehaviour
             loadDataInventoryItem();
         Item item = Instantiate(itemFrefabs, transform.position, Quaternion.identity);
         item.ID = ID;
+        float size = item.rectTranform.sizeDelta.y * Screen.height / 1080;
+        item.rectTranform.sizeDelta = new Vector2(size, size);
         item.gameObject.transform.parent = inventoryShop.transform;
         items.Add(item);
 
@@ -101,6 +103,8 @@ public class InventoryItem : MonoBehaviour
         {
             Item item = Instantiate(itemFrefabs, transform.position, Quaternion.identity);
             item.ID = i;
+            float size = item.rectTranform.sizeDelta.y * Screen.height / 1080;
+            item.rectTranform.sizeDelta = new Vector2(size, size);
             item.gameObject.transform.parent = inventoryShop.transform;
             items.Add(item);
         }

@@ -11,6 +11,7 @@ public class Item : MonoBehaviour
     [Header("----------Component----------")]
     [SerializeField] Image img;
     [SerializeField] TextMeshProUGUI geocountText;
+    [SerializeField] public RectTransform rectTranform;
 
     public bool isEmpty;
 
