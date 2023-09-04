@@ -38,7 +38,12 @@ public class MenuControler : MonoBehaviour
 
         SoundManager.getInstance().PlayMusic("DirtMouth_Music");
 
-        Screen.SetResolution(1366, 768, true);
+        GameSettingData data = SaveLoadSystem.LoadGameSettingData();
+        if (data != null && data.WidthScreen != 0 && data.HeightScreen != 0)
+        {
+            Debug.Log(data.WidthScreen + "x" + data.HeightScreen);
+            Screen.SetResolution(data.WidthScreen, data.HeightScreen, false);
+        }
     }
 
     // Update is called once per frame
@@ -134,8 +139,9 @@ public class MenuControler : MonoBehaviour
     public void BackToSettingMenu()
     {
         // save soundSetting
-        SaveLoadSystem.SaveSettingData(SoundManager.getInstance().getVolumeSFX(), SoundManager.getInstance().getVolumeMusic());
+        SaveLoadSystem.SaveSoundSettingData(SoundManager.getInstance().getVolumeSFX(), SoundManager.getInstance().getVolumeMusic());
 
+        SoundManager.getInstance().PlaySFXEnemy("btn_click");
         SettingMenu.SetActive(true);
         SoundSettingMenu.SetActive(false);
         GameSettingMenu.SetActive(false);

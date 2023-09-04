@@ -122,21 +122,21 @@ public static class SaveLoadSystem
     }
 
     // save setting data
-    public static void SaveSettingData(int volumeSFX, int volumeMusic)
+    public static void SaveSoundSettingData(int volumeSFX, int volumeMusic)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/SettingData.fun";
+        string path = Application.persistentDataPath + "/SoundSettingData.fun";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        SettingData data = new SettingData(volumeSFX, volumeMusic);
+        SoundSettingData data = new SoundSettingData(volumeSFX, volumeMusic);
 
         formatter.Serialize(stream, data);
         stream.Close();
     }
 
-    public static SettingData LoadSettingData()
+    public static SoundSettingData LoadSoundSettingData()
     {
-        string path = Application.persistentDataPath + "/SettingData.fun";
+        string path = Application.persistentDataPath + "/SoundSettingData.fun";
         Debug.Log(path);
 
         if (File.Exists(path))
@@ -144,7 +144,41 @@ public static class SaveLoadSystem
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
 
-            SettingData data = formatter.Deserialize(stream) as SettingData;
+            SoundSettingData data = formatter.Deserialize(stream) as SoundSettingData;
+            stream.Close();
+            return data;
+        }
+        else
+        {
+            Debug.Log("Save file not found in " + path);
+            return null;
+        }
+    }
+
+    // save setting GameSetting Data
+    public static void SaveGameSettingData(Resolution resolution)
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/GameSettingData.fun";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        GameSettingData data = new GameSettingData(resolution);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
+    }
+
+    public static GameSettingData LoadGameSettingData()
+    {
+        string path = Application.persistentDataPath + "/GameSettingData.fun";
+        Debug.Log(path);
+
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            GameSettingData data = formatter.Deserialize(stream) as GameSettingData;
             stream.Close();
             return data;
         }
@@ -193,7 +227,7 @@ public static class SaveLoadSystem
     public static void saveMarkerMapData(AreaConfig config)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/Marker/"+config.ID+".fun";
+        string path = Application.persistentDataPath + "/Marker"+config.ID+".fun";
         FileStream stream = new FileStream(path, FileMode.Create);
 
         MarkerDataInArea data = new MarkerDataInArea(config);
@@ -212,7 +246,7 @@ public static class SaveLoadSystem
 
     public static MarkerDataInArea LoadMarkerMapData(int ID)
     {
-        string path = Application.persistentDataPath + "/Marker/" + ID + ".fun";
+        string path = Application.persistentDataPath + "/Marker" + ID + ".fun";
         Debug.Log(path);
 
         if (File.Exists(path))
@@ -234,7 +268,7 @@ public static class SaveLoadSystem
     public static void saveAllData()
     {
         SaveLoadSystem.SaveHUDData(HUDManager.getInstance());
-        SaveLoadSystem.SaveSettingData(SoundManager.getInstance().getVolumeSFX(), SoundManager.getInstance().getVolumeMusic());
+        SaveLoadSystem.SaveSoundSettingData(SoundManager.getInstance().getVolumeSFX(), SoundManager.getInstance().getVolumeMusic());
         SaveLoadSystem.saveInventoryData(InventoryConfig.getInstance());
         SaveLoadSystem.saveAllMarkerMapData(MapConfig.getInstance().GetAreaConfigs());
     }

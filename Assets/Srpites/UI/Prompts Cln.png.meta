@@ -377,7 +377,7 @@ TextureImporter:
         width: 83
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -385,6 +385,27 @@ TextureImporter:
       bones: []
       spriteID: bc4eb512ac9fa5a4aa7c4f01cde3f741
       internalID: 345540659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prompts Cln_13
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1922
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f1be73fae8bf74ab00983969a790a2
+      internalID: 643879662
       vertices: []
       indices: 
       edges: []
@@ -405,6 +426,7 @@ TextureImporter:
       Prompts Cln_10: -2133582079
       Prompts Cln_11: 1108148376
       Prompts Cln_12: 345540659
+      Prompts Cln_13: 643879662
       Prompts Cln_2: 597912652
       Prompts Cln_3: -984860198
       Prompts Cln_4: 1568341058

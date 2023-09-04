@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking.Types;
-using static UnityEditor.PlayerSettings;
 
 public class MiniMapExpandControler : MiniMapControler
 {

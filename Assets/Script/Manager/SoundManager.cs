@@ -26,7 +26,7 @@ public class SoundManager : MonoBehaviour, Subcriber
 
     void Start()
     {
-        SettingData data = SaveLoadSystem.LoadSettingData();
+        SoundSettingData data = SaveLoadSystem.LoadSoundSettingData();
         if (data != null)
         {
             setVolumeSFX(data.volumeSFX);

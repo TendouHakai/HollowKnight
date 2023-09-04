@@ -60,14 +60,28 @@ public class HollowShadeData
 }
 
 [System.Serializable]
-public class SettingData
+public class SoundSettingData
 {
+    // setting sound
     public int volumeSFX;
     public int volumeMusic;
 
-    public SettingData(int volumeSFX, int volumeMusic)
+    public SoundSettingData(int volumeSFX, int volumeMusic)
     {
         this.volumeSFX = volumeSFX;
         this.volumeMusic = volumeMusic;
+    }
+}
+
+[System.Serializable]
+public class GameSettingData
+{
+    public int WidthScreen;
+    public int HeightScreen;
+
+    public GameSettingData(Resolution resolution)
+    {
+        this.WidthScreen = resolution.width;
+        this.HeightScreen = resolution.height;
     }
 }
