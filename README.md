@@ -37,4 +37,5 @@ https://github.com/TendouHakai/HollowKnight/assets/91006076/c60315b0-82de-459a-a
 Xem full video [tại đây](https://youtu.be/QxKdPAfv6ZA)
 ## Tác giả:
 - Tên: Trần Trung Thành
-- Email: 20521927@gm.uit.edu.vn
+- Email: trantrungthanh13112002@gmail.com\
+Nếu bạn có bất kỳ câu hỏi hay ý kiến gì có thể liên hệ với tôi thông qua email này.
